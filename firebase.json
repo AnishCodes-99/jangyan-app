@@ -6,6 +6,7 @@
     "rules": "storage.rules"
   },
   "hosting": {
+    "site": "jangyan-e2608",
     "public": "build/web",
     "ignore": [
       "firebase.json",
