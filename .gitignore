@@ -53,3 +53,8 @@ app.*.map.json
 .env.*
 lib/core/app_secrets.dart
 
+# Mobile binaries
+*.apk
+*.aab
+
+
