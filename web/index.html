@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="JanGyan - India's Premier Civic Literacy & Digital Citizen Empowerment Platform. 6 Domains, 66 Handbooks, 3,000 Questions, and AI Citizen Assistant.">
+  <meta name="theme-color" content="#0D47A1">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="JanGyan">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>JanGyan</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background: #FFFFFF;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0F172A;
+    }
+
+    #loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: opacity 0.3s ease-out;
+    }
+
+    .logo-img-box {
+      width: 110px;
+      height: 110px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .app-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0D47A1;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .app-tagline {
+      font-size: 13px;
+      font-weight: 600;
+      color: #64748B;
+      letter-spacing: 0.2px;
+      margin-bottom: 20px;
+    }
+
+    .simple-spinner {
+      width: 24px;
+      height: 24px;
+      border: 2.5px solid #E2E8F0;
+      border-top-color: #0D47A1;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Direct App Logo Screen -->
+  <div id="loading-container">
+    <div class="logo-img-box">
+      <img src="logo.png" alt="JanGyan" onerror="this.src='favicon.png'">
+    </div>
+    <h1 class="app-title">JanGyan</h1>
+    <p class="app-tagline">Learn Without Limits</p>
+    <div class="simple-spinner"></div>
+  </div>
+
+  <script>
+    function removeLoader() {
+      var loader = document.getElementById('loading-container');
+      if (loader && loader.style.opacity !== '0') {
+        loader.style.opacity = '0';
+        setTimeout(function () {
+          if (loader.parentNode) loader.parentNode.removeChild(loader);
+        }, 200);
+      }
+    }
+    window.addEventListener('flutter-first-frame', removeLoader);
+    window.addEventListener('flutter-initialized', removeLoader);
+    var observer = new MutationObserver(function() {
+      if (document.querySelector('flt-glass-pane, flutter-view, canvas, [flt-renderer]')) {
+        setTimeout(removeLoader, 300);
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    setTimeout(removeLoader, 2500);
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

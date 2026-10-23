@@ -1,0 +1,81 @@
+{
+  "citizen@jangyan.in": {
+    "email": "citizen@jangyan.in",
+    "fullName": "Aarav Sharma",
+    "attemptedCount": 85,
+    "correctCount": 80,
+    "incorrectCount": 5,
+    "passwordHash": "123456",
+    "proficiencyBadge": "Distinguished Citizen"
+  },
+  "sddsv@gmail.com": {
+    "uid": "usr_ffb6b8e0",
+    "fullName": "ghirjnf",
+    "email": "sddsv@gmail.com",
+    "isAdmin": false,
+    "attemptedCount": 0,
+    "correctCount": 0,
+    "incorrectCount": 0,
+    "createdAt": "2026-10-23T18:25:59.211",
+    "updatedAt": "2026-10-23T18:25:59.211",
+    "passwordHash": "723ac113"
+  },
+  "anish@gmail.com": {
+    "uid": "usr_a32d34eb",
+    "fullName": "jfwejfb",
+    "email": "anish@gmail.com",
+    "isAdmin": false,
+    "attemptedCount": 0,
+    "correctCount": 0,
+    "incorrectCount": 0,
+    "createdAt": "2026-10-23T18:30:13.851",
+    "updatedAt": "2026-10-23T18:30:13.851",
+    "passwordHash": "794aaf14"
+  },
+  "wanianish75@gmail.com": {
+    "uid": "usr_c3e210b5",
+    "fullName": "Anish Wani",
+    "email": "wanianish75@gmail.com",
+    "isAdmin": false,
+    "attemptedCount": 0,
+    "correctCount": 0,
+    "incorrectCount": 0,
+    "createdAt": "2026-10-23T18:33:20.131",
+    "updatedAt": "2026-10-23T18:33:20.131",
+    "passwordHash": "7cc6d4c3"
+  },
+  "admin@jangyan.in": {
+    "uid": "demo_admin",
+    "fullName": "JanGyan Administrator",
+    "email": "admin@jangyan.in",
+    "isAdmin": true,
+    "attemptedCount": 15,
+    "correctCount": 14,
+    "incorrectCount": 1,
+    "createdAt": "2026-10-23T18:35:30.402",
+    "updatedAt": "2026-10-23T18:35:30.402",
+    "passwordHash": "6da7ce4c"
+  },
+  "kunalyadav9507@gmail.com": {
+    "uid": "usr_a7d9efdf",
+    "fullName": "kunal yadav",
+    "email": "kunalyadav9507@gmail.com",
+    "photoUrl": null,
+    "isAdmin": false,
+    "attemptedCount": 0,
+    "correctCount": 0,
+    "incorrectCount": 0,
+    "createdAt": "2026-10-23T23:52:38.453",
+    "updatedAt": "2026-10-23T23:59:05.106",
+    "passwordHash": "7cc6d4c3"
+  },
+  "test.citizen@jangyan.in": {
+    "uid": "usr_test_verification",
+    "email": "test.citizen@jangyan.in",
+    "fullName": "Test Citizen",
+    "isAdmin": false,
+    "attemptedCount": 5,
+    "correctCount": 5,
+    "incorrectCount": 0
+  }
+}

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JanGyan User Guide & Citizen Literacy Platform. Official documentation on reading 66 verified PDF handbooks, taking full 500-MCQ exams, using Gemini AI assistant, and earning citizen certificates." />
+  <title>JanGyan</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span><i class="fa-solid fa-flag-checkered"></i> <strong>JanGyan Citizen Mission</strong> — 100% Free Civic Awareness, 66 Official Handbooks & Full 500-MCQ Exams</span>
+      <div class="top-bar-links">
+        <a href="#helplines"><i class="fa-solid fa-phone-volume"></i> National Emergency: <strong>112</strong> | Cyber Fraud: <strong>1930</strong></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home">
+      <img src="assets/logo.png" alt="JanGyan logo" onerror="this.src='JanGyan Logo.png'" />
+      <div>
+        <strong>JanGyan</strong>
+        <span>Learn Without Limits</span>
+      </div>
+    </a>
+    
+    <nav class="nav-menu" id="navMenu">
+      <a href="#about">About JanGyan</a>
+      <a href="#how-to-use">How to Use App</a>
+      <a href="#handbooks">66 Handbooks</a>
+      <a href="#exam-engine">500-MCQ Exam</a>
+      <a href="#ai-assistant">Gemini AI</a>
+      <a href="#helplines">Emergency Directory</a>
+      <a href="#faqs">FAQs</a>
+    </nav>
+    
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a class="btn btn-sm btn-primary" href="http://localhost:8000" target="_blank">
+        <i class="fa-solid fa-rocket"></i> Launch WebApp
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-copy">
+          <div class="badge-pill">
+            <span class="badge-dot"></span> Republic of India • Citizen Empowerment Initiative
+          </div>
+          <h1>Master Everyday <span>Law, Safety & Rights.</span></h1>
+          <p class="hero-text">
+            JanGyan empowers every Indian citizen with vital everyday knowledge. Read <strong>66 verified government handbooks (PDFs)</strong>, take full <strong>500-MCQ category mastery examinations</strong> with live question palettes, receive 24/7 legal guidance from our <strong>Gemini AI Assistant</strong>, and earn verified Citizen Literacy Certificates.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="http://localhost:8000" target="_blank">
+              <i class="fa-solid fa-rocket"></i> Launch JanGyan WebApp
+            </a>
+            <a class="btn btn-secondary btn-lg" href="#how-to-use">
+              <i class="fa-solid fa-book-bookmark"></i> Read App User Guide
+            </a>
+            <a class="btn btn-outline" href="#helplines">
+              <i class="fa-solid fa-phone"></i> Emergency Helplines
+            </a>
+          </div>
+          
+          <!-- Key Metrics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>66</strong>
+              <span>Verified PDF Handbooks</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>3,000</strong>
+              <span>Authentic MCQs (500/Domain)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>500</strong>
+              <span>MCQs Full Exam Mode</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>24/7</strong>
+              <span>Bilingual Gemini AI</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>$0</strong>
+              <span>100% Free & Open Access</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="hero-card-glow"></div>
+          <div class="hero-logo-box">
+            <img src="assets/logo.png" alt="JanGyan National Civic Portal" class="hero-logo-img" onerror="this.src='JanGyan Logo.png'" />
+            <div class="floating-badge badge-top">
+              <i class="fa-solid fa-file-pdf"></i>
+              <div>
+                <strong>66 Official PDFs</strong>
+                <span>All Modules Verified</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <i class="fa-solid fa-list-check"></i>
+              <div>
+                <strong>Full 500-MCQ Exam</strong>
+                <span>Palette & Review Mode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Platform Section -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">WHAT IS JANGYAN?</p>
+          <h2>Bridging the Citizen Awareness Gap in India</h2>
+          <p class="subheading">Complex legal gazettes and statutory guidelines simplified into actionable handbooks, AI assistance, and certified tests.</p>
+        </div>
+        
+        <div class="about-grid">
+          <div class="feature-card">
+            <div class="feature-icon icon-danger">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h3>The Urgent Challenge</h3>
+            <p>Every year, millions of Indian citizens fall prey to digital banking fraud, cyber extortion, road accident trauma, consumer exploitation, or are denied public welfare rights simply because essential legal acts remain buried in government gazettes.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-primary">
+              <i class="fa-solid fa-book-open-reader"></i>
+            </div>
+            <h3>The JanGyan Solution</h3>
+            <p>JanGyan organizes critical citizen literacy across <strong>6 national domains</strong> with <strong>66 verified official handbooks</strong> (MHA, MeitY, MoRTH, MoHFW), <strong>3,000 authentic MCQs</strong>, and interactive simulations that make civic readiness effortless.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-success">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>NoSQL Database Architecture</h3>
+            <p>Powered by a dedicated <strong>MongoDB</strong> database and GridFS document engine, storing all 3,000 MCQs and streaming 66 handbooks at sub-second speeds with zero cloud server expenses ($0 budget).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Use Our App: Comprehensive Step-by-Step Guide -->
+    <section id="how-to-use" class="section bg-alt">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">COMPREHENSIVE APP GUIDE</p>
+          <h2>How to Use JanGyan App (Step-by-Step)</h2>
+          <p class="subheading">Follow this illustrated guide to master official handbooks, pass 500-MCQ examinations, and consult Gemini AI.</p>
+        </div>
+
+        <div class="guide-steps-grid">
+          <!-- Step 1 -->
+          <div class="guide-step-card">
+            <div class="step-badge">STEP 01</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Access the Platform</h3>
+            <p>Open <strong>JanGyan WebApp</strong> directly in your browser (<a href="http://localhost:8000" target="_blank" class="text-link">localhost:8000</a>) or install the Android APK on your smartphone. JanGyan is 100% free with no subscription barriers or hidden charges.</p>
+            <ul class="step-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Responsive across mobile, tablet, and desktop</li>
+              <li><i class="fa-solid fa-circle-check"></i> Secure guest or user login backed by Firebase</li>
+            </ul>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="guide-step-card">
+            <div class="step-badge">STEP 02</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <h3>Study 66 Verified Handbooks (PDFs)</h3>
+            <p>Click on the <strong>Domains</strong> tab to explore the 6 civic categories. Tap on any domain (e.g. Cyber Safety or Citizen Rights) to open its Knowledge Hub, and click <strong>"Read Handbook (PDF)"</strong> on any module.</p>
+            <ul class="step-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Dual-mode reader: integrated reader + 1-click external full-screen tab</li>
+              <li><i class="fa-solid fa-circle-check"></i> Official guidelines from MHA, MeitY, MoRTH & MoHFW</li>
+              <li><i class="fa-solid fa-circle-check"></i> Offline download option for remote reading</li>
+            </ul>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="guide-step-card">
+            <div class="step-badge">STEP 03</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-list-ol"></i>
+            </div>
+            <h3>Select Your Assessment Mode</h3>
+            <p>Ready to test your civic literacy? When starting a quiz in any domain or on the Assessment tab, choose your preferred mode:</p>
+            <ul class="step-checklist">
+              <li><i class="fa-solid fa-bolt"></i> <strong>Quick Practice (20 MCQs)</strong>: 15-minute daily knowledge check.</li>
+              <li><i class="fa-solid fa-clock"></i> <strong>Standard Assessment (50 MCQs)</strong>: 35-minute certified benchmark.</li>
+              <li><i class="fa-solid fa-trophy"></i> <strong>Complete Category Exam (All 500 MCQs!)</strong>: The ultimate mastery test covering every single question, legal clause, and scenario in the domain!</li>
+            </ul>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="guide-step-card">
+            <div class="step-badge">STEP 04</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-table-cells"></i>
+            </div>
+            <h3>Navigate with the 500-Question Palette</h3>
+            <p>During the examination, you have full control over all questions via our advanced examination console:</p>
+            <ul class="step-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Question Palette Grid</strong>: Tap the grid icon anytime to see all 500 questions. Filter by <em>Answered (Green)</em>, <em>Review (Amber)</em>, or <em>Unattempted (Grey)</em>.</li>
+              <li><i class="fa-solid fa-bookmark"></i> <strong>Mark for Review</strong>: Flag uncertain questions with a single tap to revisit before submitting.</li>
+              <li><i class="fa-solid fa-lightbulb"></i> <strong>Instant Official Explanations</strong>: Understand the exact legal sections (IT Act §66D, CPA 2019, Motor Vehicles Act) backing each answer.</li>
+            </ul>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="guide-step-card">
+            <div class="step-badge">STEP 05</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3>Consult Gemini AI Legal Assistant</h3>
+            <p>Navigate to the <strong>AI Guide</strong> tab for 24/7 intelligent assistance. Ask questions in natural English or Hindi:</p>
+            <ul class="step-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Ask: <em>"UPI se unauthorized money cut gayi, immediate steps kya hain?"</em></li>
+              <li><i class="fa-solid fa-circle-check"></i> Ask: <em>"How to file an RTI against a municipal office?"</em></li>
+              <li><i class="fa-solid fa-circle-check"></i> Powered by Google's Gemini Flash model with instant legal act references and emergency helpline direct connects.</li>
+            </ul>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="guide-step-card">
+            <div class="step-badge">STEP 06</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h3>Earn Your Citizen Certificate</h3>
+            <p>Score <strong>70% or higher</strong> on your assessment to automatically qualify for an official <strong>JanGyan Citizen Accreditation Certificate</strong>.</p>
+            <ul class="step-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Contains unique certificate ID and verification hash</li>
+              <li><i class="fa-solid fa-circle-check"></i> High-resolution printable PDF format ready to share on LinkedIn or CV</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center mt-30">
+          <a class="btn btn-primary btn-lg" href="http://localhost:8000" target="_blank">
+            <i class="fa-solid fa-rocket"></i> Launch JanGyan WebApp & Start Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 66 Handbooks Showcase -->
+    <section id="handbooks" class="section">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">CURATED READING REPOSITORY</p>
+          <h2>66 Official Government Handbooks (PDFs)</h2>
+          <p class="subheading">Access authentic educational handbooks across all 6 civic domains, directly inside the JanGyan app.</p>
+        </div>
+
+        <div class="handbook-domains-grid">
+          <!-- Domain 1 -->
+          <div class="handbook-domain-card">
+            <div class="hd-header">
+              <span class="hd-badge">Domain 01</span>
+              <span class="hd-count"><i class="fa-solid fa-file-pdf"></i> 10 Handbooks • 500 MCQs</span>
+            </div>
+            <h3>Cyber Safety & Digital Security</h3>
+            <p>Phishing prevention, banking OTP protocols, 1930 Helpline golden window, DPDP Act 2023, identity theft shields, and safe social media practices.</p>
+            <div class="hd-sources">Source: Ministry of Home Affairs (I4C) & MeitY</div>
+          </div>
+
+          <!-- Domain 2 -->
+          <div class="handbook-domain-card">
+            <div class="hd-header">
+              <span class="hd-badge">Domain 02</span>
+              <span class="hd-count"><i class="fa-solid fa-file-pdf"></i> 10 Handbooks • 500 MCQs</span>
+            </div>
+            <h3>Government Services & Citizen Rights</h3>
+            <p>Right to Information (RTI Act 2005), DigiLocker legal validity (Rule 9A), UMANG portal, CPGRAMS public grievance redressal, and Fundamental Rights.</p>
+            <div class="hd-sources">Source: Dept. of Administrative Reforms & NIC</div>
+          </div>
+
+          <!-- Domain 3 -->
+          <div class="handbook-domain-card">
+            <div class="hd-header">
+              <span class="hd-badge">Domain 03</span>
+              <span class="hd-count"><i class="fa-solid fa-file-pdf"></i> 11 Handbooks • 500 MCQs</span>
+            </div>
+            <h3>Road Safety & Public Safety</h3>
+            <p>Motor Vehicles Amendment Act 2019, Good Samaritan protection laws, Cashless Accident Treatment Scheme 2025, Golden Hour care, and speed regulations.</p>
+            <div class="hd-sources">Source: Ministry of Road Transport & Highways (MoRTH)</div>
+          </div>
+
+          <!-- Domain 4 -->
+          <div class="handbook-domain-card">
+            <div class="hd-header">
+              <span class="hd-badge">Domain 04</span>
+              <span class="hd-count"><i class="fa-solid fa-file-pdf"></i> 11 Handbooks • 500 MCQs</span>
+            </div>
+            <h3>Health & Emergency Awareness</h3>
+            <p>Ayushman Bharat (PM-JAY), CPR & First-Aid protocols, 108 emergency ambulance response, fire evacuation drills, mental health, and disaster resilience.</p>
+            <div class="hd-sources">Source: MoHFW & National Health Authority (NHA)</div>
+          </div>
+
+          <!-- Domain 5 -->
+          <div class="handbook-domain-card">
+            <div class="hd-header">
+              <span class="hd-badge">Domain 05</span>
+              <span class="hd-count"><i class="fa-solid fa-file-pdf"></i> 11 Handbooks • 500 MCQs</span>
+            </div>
+            <h3>Financial Literacy & Digital Finance</h3>
+            <p>RBI Integrated Ombudsman Scheme 2021, UPI safety, insurance essentials, PMJDY, credit scores (CIBIL), mutual fund transparency, and retirement savings.</p>
+            <div class="hd-sources">Source: Reserve Bank of India (RBI) & SEBI</div>
+          </div>
+
+          <!-- Domain 6 -->
+          <div class="handbook-domain-card">
+            <div class="hd-header">
+              <span class="hd-badge">Domain 06</span>
+              <span class="hd-count"><i class="fa-solid fa-file-pdf"></i> 13 Handbooks • 500 MCQs</span>
+            </div>
+            <h3>Environment & Civic Responsibility</h3>
+            <p>Waste Segregation Rules 2016, single-use plastic ban, solar subsidy (PM Surya Ghar), water conservation, air quality indices (AQI), and community cleanliness.</p>
+            <div class="hd-sources">Source: Ministry of Environment, Forest & Climate Change</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full 500-MCQ Exam Engine Highlight -->
+    <section id="exam-engine" class="section bg-alt">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">RIGOROUS CITIZEN BENCHMARK</p>
+          <h2>The 500-Question Category Mastery Examination</h2>
+          <p class="subheading">Designed for citizens, students, and competitive exam aspirants who demand 100% comprehensive domain coverage.</p>
+        </div>
+
+        <div class="exam-features-row">
+          <div class="exam-card">
+            <div class="exam-icon"><i class="fa-solid fa-table-cells-large"></i></div>
+            <h4>Question Palette (1 to 500)</h4>
+            <p>Easily navigate across all 500 questions using the responsive modal palette. Filter by Answered, Marked for Review, and Unattempted at any moment.</p>
+          </div>
+
+          <div class="exam-card">
+            <div class="exam-icon"><i class="fa-solid fa-bookmark"></i></div>
+            <h4>Review Bookmarking</h4>
+            <p>Flag doubtful questions with an amber review badge so you can revisit, revise, and verify your choices before final submission.</p>
+          </div>
+
+          <div class="exam-card">
+            <div class="exam-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h4>Verified Explanations</h4>
+            <p>Every single question contains an official explanation referencing statutory acts, government circulars, and handbook pages.</p>
+          </div>
+
+          <div class="exam-card">
+            <div class="exam-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <h4>Telemetry & Time Tracking</h4>
+            <p>Live examination clock monitors total duration, pace per question, and instant accuracy metrics as you progress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gemini AI Assistant Showcase -->
+    <section id="ai-assistant" class="section">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">INTELLIGENT CITIZEN ASSISTANT</p>
+          <h2>24/7 AI Legal & Civic Guidance with Gemini Flash</h2>
+          <p class="subheading">Have an emergency query or want to know your rights? Ask JanGyan AI in English or Hindi.</p>
+        </div>
+
+        <div class="ai-showcase-box">
+          <div class="ai-sample-chat">
+            <div class="chat-bubble user-bubble">
+              <i class="fa-solid fa-user"></i>
+              <div>
+                <strong>Citizen Query:</strong>
+                <p>Mera UPI transaction fraud ho gaya, immediate 30 minutes mein kya karna chahiye?</p>
+              </div>
+            </div>
+
+            <div class="chat-bubble ai-bubble">
+              <i class="fa-solid fa-robot"></i>
+              <div>
+                <strong>JanGyan AI Assistant:</strong>
+                <p>⚠️ <strong>Immediate Action Required (Golden Window):</strong></p>
+                <ol>
+                  <li><strong>Dial 1930 immediately:</strong> Contact the National Cyber Crime Helpline to freeze the stolen funds in transit.</li>
+                  <li><strong>Lodge a complaint on cybercrime.gov.in:</strong> Note down the Acknowledgement Number.</li>
+                  <li><strong>Block UPI & NetBanking:</strong> Call your bank's emergency debit block number or use the bank app.</li>
+                  <li><strong>NPCI Grievance:</strong> Register a dispute on the NPCI portal (<em>npci.org.in</em>). Under RBI rules, zero liability applies if reported within 3 days!</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-features-list">
+            <div class="ai-feat-item">
+              <i class="fa-solid fa-language"></i>
+              <div>
+                <h4>Bilingual Fluency</h4>
+                <p>Understands queries in Hindi, Hinglish, and English with conversational ease.</p>
+              </div>
+            </div>
+            <div class="ai-feat-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <h4>Statutory Grounding</h4>
+                <p>Answers are grounded in Indian law (IT Act 2000, Consumer Protection Act, Motor Vehicles Act).</p>
+              </div>
+            </div>
+            <div class="ai-feat-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Helpline Direct Links</h4>
+                <p>Instantly provides verified toll-free helplines and official government portal links.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- National Helplines Directory -->
+    <section id="helplines" class="section bg-alt">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">NATIONAL EMERGENCY DIRECTORY</p>
+          <h2>Verified Citizen Emergency Helplines</h2>
+          <p class="subheading">Every citizen must save these toll-free numbers. Verified by the Government of India.</p>
+        </div>
+
+        <div class="helplines-grid">
+          <div class="helpline-card highlight-danger">
+            <div class="helpline-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="helpline-info">
+              <span class="helpline-num">1930</span>
+              <h4>Cyber Financial Fraud Helpline</h4>
+              <p>Report online banking scams, UPI fraud, and unauthorized deductions within the Golden Window.</p>
+              <a href="tel:1930" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> Call 1930</a>
+            </div>
+          </div>
+
+          <div class="helpline-card highlight-primary">
+            <div class="helpline-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <div class="helpline-info">
+              <span class="helpline-num">112</span>
+              <h4>All-in-One National Emergency</h4>
+              <p>Unified emergency number across India for immediate Police, Fire, and Ambulance response.</p>
+              <a href="tel:112" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> Call 112</a>
+            </div>
+          </div>
+
+          <div class="helpline-card highlight-warning">
+            <div class="helpline-icon"><i class="fa-solid fa-truck-medical"></i></div>
+            <div class="helpline-info">
+              <span class="helpline-num">108 / 102</span>
+              <h4>Emergency Ambulance Services</h4>
+              <p>Immediate medical evacuation, highway accident relief, and pregnant women emergency transport.</p>
+              <a href="tel:108" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> Call 108</a>
+            </div>
+          </div>
+
+          <div class="helpline-card">
+            <div class="helpline-icon"><i class="fa-solid fa-person-shelter"></i></div>
+            <div class="helpline-info">
+              <span class="helpline-num">1098</span>
+              <h4>Childline India</h4>
+              <p>24x7 emergency toll-free outreach service for children in need of care and immediate protection.</p>
+              <a href="tel:1098" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> Call 1098</a>
+            </div>
+          </div>
+
+          <div class="helpline-card">
+            <div class="helpline-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <div class="helpline-info">
+              <span class="helpline-num">1091</span>
+              <h4>Women in Distress Helpline</h4>
+              <p>Dedicated round-the-clock helpline providing assistance, legal counseling, and police intervention.</p>
+              <a href="tel:1091" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> Call 1091</a>
+            </div>
+          </div>
+
+          <div class="helpline-card">
+            <div class="helpline-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <div class="helpline-info">
+              <span class="helpline-num">14444</span>
+              <h4>Digital Payments & NPCI Helpline</h4>
+              <p>Immediate grievance redressal for UPI, AePS, and digital wallet payment disputes.</p>
+              <a href="tel:14444" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> Call 14444</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Citizen Portals Quick Links -->
+        <div class="official-portals-box">
+          <h3><i class="fa-solid fa-building-columns"></i> Official Citizen Portals</h3>
+          <div class="portal-badges">
+            <a href="https://cybercrime.gov.in" target="_blank" class="portal-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> cybercrime.gov.in</a>
+            <a href="https://parivahan.gov.in" target="_blank" class="portal-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> parivahan.gov.in</a>
+            <a href="https://pgportal.gov.in" target="_blank" class="portal-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> pgportal.gov.in (CPGRAMS)</a>
+            <a href="https://www.digilocker.gov.in" target="_blank" class="portal-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> digilocker.gov.in</a>
+            <a href="https://pmjay.gov.in" target="_blank" class="portal-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> pmjay.gov.in</a>
+            <a href="https://services.india.gov.in" target="_blank" class="portal-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> india.gov.in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citizen FAQs Accordion Section -->
+    <section id="faqs" class="section">
+      <div class="section-container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">COMMON CITIZEN QUESTIONS</p>
+          <h2>Frequently Asked Questions</h2>
+          <p class="subheading">Everything you need to know about navigating and utilizing the JanGyan platform.</p>
+        </div>
+
+        <div class="faq-accordion-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I take the complete 500-question category exam?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Navigate to either the <strong>Domains</strong> tab (click "Take Quiz" on any domain) or the <strong>Assessment</strong> tab in the app. Select the option <strong>"Complete Category Exam (All 500 MCQs!)"</strong>. The app will load the entire authentic 500-question bank with the 500-item Question Palette and review bookmarks.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are all 66 PDF handbooks completely free to read and download?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, 100%! All 66 handbooks are official civic guidelines collated from ministries of the Government of India. They are hosted locally and streamed from our MongoDB database, and can be read inside the app or downloaded without any fees.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the separate MongoDB database connect to the project?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We created a dedicated MongoDB database with GridFS binary document storage. All 3,000 MCQs and 66 PDF handbooks are stored in MongoDB. A lightweight Python backend API (<code>backend/mongodb_api.py</code>) running on port 5001 serves these collections via high-speed REST endpoints, with seamless fallback to local assets.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the Gemini AI Assistant provide legal and civic advice?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>The AI Assistant utilizes Google's state-of-the-art <code>gemini-flash-lite-latest</code> model, engineered specifically with instructions on Indian statutory law (IT Act 2000, Motor Vehicles Act 2019, Consumer Protection Act 2019, RTI Act 2005). It answers in both English and Hindi and provides direct helplines.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I claim my official Citizen Literacy Certificate?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Complete any assessment with an accuracy score of 70% or higher. On the results screen, tap <strong>"View Certificate"</strong> or <strong>"Print Certificate"</strong> to generate your high-resolution certificate with your name and unique verification ID.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action Banner -->
+    <section class="section cta-section">
+      <div class="section-container text-center">
+        <h2>Ready to Master Your Rights and Civic Safety?</h2>
+        <p class="cta-subtitle">Start reading 66 verified handbooks or attempt the full 500-question category exam right now.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="http://localhost:8000" target="_blank">
+            <i class="fa-solid fa-rocket"></i> Launch JanGyan WebApp Now
+          </a>
+          <a class="btn btn-outline btn-lg" href="#helplines">
+            <i class="fa-solid fa-phone-volume"></i> View Emergency Directory
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="brand-line">
+          <img src="assets/logo.png" alt="JanGyan logo" onerror="this.src='JanGyan Logo.png'" />
+          <strong>JanGyan Citizen Platform</strong>
+        </div>
+        <p>National Civic Literacy & Public Awareness Initiative for Indian Citizens. Bridging statutory law, digital resilience, and everyday community safety through modular learning.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>User Guide</h4>
+        <ul>
+          <li><a href="#how-to-use">How to Use App</a></li>
+          <li><a href="#handbooks">66 Official Handbooks</a></li>
+          <li><a href="#exam-engine">500-MCQ Exam Console</a></li>
+          <li><a href="#ai-assistant">Gemini AI Assistant</a></li>
+          <li><a href="#faqs">Citizen FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Emergency Numbers</h4>
+        <ul>
+          <li><a href="tel:1930">Cyber Fraud (1930)</a></li>
+          <li><a href="tel:112">All Emergency (112)</a></li>
+          <li><a href="tel:108">Ambulance (108)</a></li>
+          <li><a href="tel:1098">Childline (1098)</a></li>
+          <li><a href="tel:1091">Women Helpline (1091)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 JanGyan National Civic Awareness Mission. 100% Free & Open Access.</p>
+      <p>Official Tagline: <em>Learn Without Limits</em></p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const isDark = document.body.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          document.body.removeAttribute('data-theme');
+          themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        } else {
+          document.body.setAttribute('data-theme', 'dark');
+          themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        }
+      });
+    }
+
+    // Mobile nav toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (mobileToggle && navMenu) {
+      mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('mobile-open');
+      });
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+        const icon = button.querySelector('i');
+        if (item.classList.contains('active')) {
+          icon.className = 'fa-solid fa-chevron-up';
+        } else {
+          icon.className = 'fa-solid fa-chevron-down';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

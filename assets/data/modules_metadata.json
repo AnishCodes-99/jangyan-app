@@ -1,0 +1,620 @@
+[
+  {
+    "id": "cyber_safety",
+    "title": "Cyber Safety & Digital Security",
+    "tagline": "Phishing, OTP protection, Cyber Helpline 1930 & DPDP Act",
+    "color": "#0284C7",
+    "icon": "security",
+    "folder": "1-Cyber Safety & Digital Security",
+    "mcq_pdf": "JanGyan_CyberSafety_MCQ_Handbook.pdf",
+    "mcq_relative_path": "1-Cyber Safety & Digital Security/JanGyan_CyberSafety_MCQ_Handbook.pdf",
+    "module_count": 10,
+    "modules": [
+      {
+        "module_number": 1,
+        "title": "Introduction to Cyber Security",
+        "subtitle": "Core principles, cyber threats, and digital safety for Indian citizens",
+        "file_name": "Jangyan_Catg 01_M1.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M1.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 2,
+        "title": "Digital Identity & Privacy",
+        "subtitle": "Protecting personal data, Aadhaar security, and the DPDP Act 2023",
+        "file_name": "Jangyan_Catg 01_M2.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M2.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 3,
+        "title": "Password & Authentication",
+        "subtitle": "Strong password formulas, 2FA/MFA, and biometric safety",
+        "file_name": "Jangyan_Catg 01_M3.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M3.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 4,
+        "title": "Banking & Payment Security",
+        "subtitle": "Safe UPI practices, PIN confidentiality, and debit/credit card protection",
+        "file_name": "Jangyan_Catg 01_M4.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M4.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 5,
+        "title": "Online Scams & Social Engineering",
+        "subtitle": "Detecting phishing, lottery scams, deepfakes, and sextortion traps",
+        "file_name": "Jangyan_Catg 01_M5.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M5.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 6,
+        "title": "Social Media Safety",
+        "subtitle": "Privacy settings, impersonation defense, and cyberbullying prevention",
+        "file_name": "Jangyan_Catg 01_M6.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M6.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 7,
+        "title": "Device Security",
+        "subtitle": "Securing smartphones, computers, public Wi-Fi risks, and malware avoidance",
+        "file_name": "Jangyan_Catg 01_M7.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M7.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 8,
+        "title": "Safe Internet Usage",
+        "subtitle": "Safe browsing, encrypted websites (HTTPS), and secure downloads",
+        "file_name": "Jangyan_Catg 01_M8.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M8.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 9,
+        "title": "Reporting Cyber Crime",
+        "subtitle": "National Helpline 1930, cybercrime.gov.in, and the golden hour recovery",
+        "file_name": "Jangyan_Catg 01_M9.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M9.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      },
+      {
+        "module_number": 10,
+        "title": "Daily Cyber Safety Checklist",
+        "subtitle": "Actionable morning-to-night security habits for every citizen",
+        "file_name": "Jangyan_Catg 01_M10.pdf",
+        "relative_path": "1-Cyber Safety & Digital Security/Jangyan_Catg 01_M10.pdf",
+        "category_id": "cyber_safety",
+        "category_title": "Cyber Safety & Digital Security"
+      }
+    ]
+  },
+  {
+    "id": "gov_services",
+    "title": "Government Services & Citizen Rights",
+    "tagline": "Constitution, RTI, DigiLocker, CPGRAMS & Citizen Rights",
+    "color": "#2563EB",
+    "icon": "account_balance",
+    "folder": "2-Government Services & Citizen Rights",
+    "mcq_pdf": "JanGyan_GovServices_MCQ_Handbook.pdf",
+    "mcq_relative_path": "2-Government Services & Citizen Rights/JanGyan_GovServices_MCQ_Handbook.pdf",
+    "module_count": 10,
+    "modules": [
+      {
+        "module_number": 1,
+        "title": "Understanding the Indian Government",
+        "subtitle": "Constitution, democratic pillars, executive, legislature, and judiciary",
+        "file_name": "Jangyan_Catg 02_M1.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M1.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 2,
+        "title": "Citizen Identity & Essential Documents",
+        "subtitle": "Aadhaar, PAN card, Voter ID, Passport, and Ration card issuance",
+        "file_name": "Jangyan_Catg 02_M2.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M2.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 3,
+        "title": "Digital Government Services",
+        "subtitle": "DigiLocker legal validity (Rule 9A), UMANG portal, and mAadhaar",
+        "file_name": "Jangyan_Catg 02_M3.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M3.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 4,
+        "title": "Citizen Rights & Responsibilities",
+        "subtitle": "Fundamental Rights (Part III), RTI Act 2005, and Fundamental Duties",
+        "file_name": "Jangyan_Catg 02_M4.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M4.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 5,
+        "title": "Government Welfare Schemes",
+        "subtitle": "DBT benefits, PM Kisan, PMAY, and social welfare subsidies",
+        "file_name": "Jangyan_Catg 02_M5.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M5.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 6,
+        "title": "Public Services & Utilities",
+        "subtitle": "Electricity, water, municipal corporations, and online bill payments",
+        "file_name": "Jangyan_Catg 02_M6.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M6.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 7,
+        "title": "Emergency & Public Support Services",
+        "subtitle": "National helplines, disaster relief portals, and legal aid services",
+        "file_name": "Jangyan_Catg 02_M7.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M7.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 8,
+        "title": "Government Grievance Systems",
+        "subtitle": "CPGRAMS (pgportal.gov.in) and citizen charter dispute escalation",
+        "file_name": "Jangyan_Catg 02_M8.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M8.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 9,
+        "title": "Elections & Democratic Participation",
+        "subtitle": "Voter registration (NVSP/Voter Helpline app) and polling etiquette",
+        "file_name": "Jangyan_Catg 02_M9.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M9.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      },
+      {
+        "module_number": 10,
+        "title": "Smart Citizen Guide",
+        "subtitle": "Checklist of citizen entitlements, civil rights, and public duties",
+        "file_name": "Jangyan_Catg 02_M10.pdf",
+        "relative_path": "2-Government Services & Citizen Rights/Jangyan_Catg 02_M10.pdf",
+        "category_id": "gov_services",
+        "category_title": "Government Services & Citizen Rights"
+      }
+    ]
+  },
+  {
+    "id": "road_safety",
+    "title": "Traffic Rules & Road Safety",
+    "tagline": "Motor Vehicles Act, Good Samaritan Law & Golden Hour protocols",
+    "color": "#D97706",
+    "icon": "traffic",
+    "folder": "3-Road Safety & Public Safety",
+    "mcq_pdf": "JanGyan_Category3_MCQ.pdf",
+    "mcq_relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_MCQ.pdf",
+    "module_count": 10,
+    "modules": [
+      {
+        "module_number": 1,
+        "title": "Fundamentals of Road Safety",
+        "subtitle": "Global road safety principles, Vision Zero, and safe system design",
+        "file_name": "JanGyan_Category3_Module1.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module1.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 2,
+        "title": "Traffic Rules & Regulations",
+        "subtitle": "Right-of-way, lane discipline, overtaking norms, and zebra crossings",
+        "file_name": "JanGyan_Category3_Module2.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module2.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 3,
+        "title": "Traffic Signs & Road Symbols",
+        "subtitle": "Mandatory, cautionary, and informatory signboards in India",
+        "file_name": "JanGyan_Category3_Module3.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module3.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 4,
+        "title": "Safe Driving Practices",
+        "subtitle": "Speed management, defensive driving, safe following distances, and night driving",
+        "file_name": "JanGyan_Category3_Module4.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module4.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 5,
+        "title": "Two-Wheeler & Four-Wheeler Safety",
+        "subtitle": "ISI-certified helmet mandates, seatbelt science, and vehicle maintenance",
+        "file_name": "JanGyan_Category3_Module5.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module5.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 6,
+        "title": "Pedestrian & Public Transport Safety",
+        "subtitle": "Sidewalk safety, boarding precautions, and vulnerable road users",
+        "file_name": "JanGyan_Category3_Module6.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module6.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 7,
+        "title": "Emergency Response & Accident Management",
+        "subtitle": "The Good Samaritan Law (Sec 134A) and the Golden Hour survival protocols",
+        "file_name": "JanGyan_Category3_Module7.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module7.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 8,
+        "title": "Traffic Laws & Legal Awareness",
+        "subtitle": "Motor Vehicles (Amendment) Act 2019, compoundable offences, and e-Challan",
+        "file_name": "JanGyan_Category3_Module8.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module8.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 9,
+        "title": "Modern Road Safety & Smart Mobility",
+        "subtitle": "Intelligent traffic systems, dashcams, and electronic enforcement cameras",
+        "file_name": "JanGyan_Category3_Module9.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module9.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      },
+      {
+        "module_number": 10,
+        "title": "Responsible Road Citizen Checklist",
+        "subtitle": "Pre-trip safety routine, emergency kit checklist, and driver pledge",
+        "file_name": "JanGyan_Category3_Module10.PDF",
+        "relative_path": "3-Road Safety & Public Safety/JanGyan_Category3_Module10.PDF",
+        "category_id": "road_safety",
+        "category_title": "Traffic Rules & Road Safety"
+      }
+    ]
+  },
+  {
+    "id": "health_emergency",
+    "title": "Health & Emergency Awareness",
+    "tagline": "Emergency 112, First Aid, CPR, Ayushman Bharat & NCDs",
+    "color": "#DC2626",
+    "icon": "local_hospital",
+    "folder": "4-Health & Emergency Awareness",
+    "mcq_pdf": "Jangyan_Catg 04_MCQ.pdf",
+    "mcq_relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_MCQ.pdf",
+    "module_count": 10,
+    "modules": [
+      {
+        "module_number": 1,
+        "title": "Fundamentals of Health & Well-Being",
+        "subtitle": "Preventive healthcare, sanitation, clean drinking water, and immunization",
+        "file_name": "JanGyan_Catg 04_M1.pdf",
+        "relative_path": "4-Health & Emergency Awareness/JanGyan_Catg 04_M1.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 2,
+        "title": "First Aid Essentials",
+        "subtitle": "Bleeding control, burn treatment, fracture stabilization, and the recovery position",
+        "file_name": "Jangyan_Catg 04_M2.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M2.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 3,
+        "title": "Medical Emergencies & CPR",
+        "subtitle": "Hands-only Cardiopulmonary Resuscitation (30:2 ratio) and choking relief",
+        "file_name": "Jangyan_Catg 04_M3.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M3.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 4,
+        "title": "Disaster & Emergency Preparedness",
+        "subtitle": "Dial 112 unified response, earthquake drills, and household emergency kits",
+        "file_name": "Jangyan_Catg 04_M4.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M4.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 5,
+        "title": "Communicable & Lifestyle Diseases",
+        "subtitle": "Screening for silent NCDs (hypertension, diabetes) and vector-borne diseases",
+        "file_name": "Jangyan_Catg 04_M5.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M5.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 6,
+        "title": "Mental Health & Emotional Well-Being",
+        "subtitle": "Stress management, destigmatizing therapy, and Tele-MANAS helpline 14416",
+        "file_name": "Jangyan_Catg 04_M6.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M6.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 7,
+        "title": "Nutrition & Healthy Living",
+        "subtitle": "Eat Right India, balanced regional diets, and physical exercise routines",
+        "file_name": "Jangyan_Catg 04_M7.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M7.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 8,
+        "title": "Women, Child & Senior Citizen Health",
+        "subtitle": "Maternal health (Janani Suraksha), Poshan Abhiyaan, and geriatric care",
+        "file_name": "Jangyan_Catg 04_M8.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M8.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 9,
+        "title": "Healthcare Services & Medical Rights",
+        "subtitle": "Ayushman Bharat PM-JAY (₹5 Lakh cover) and patient rights charters",
+        "file_name": "Jangyan_Catg 04_M9.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M9.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      },
+      {
+        "module_number": 10,
+        "title": "Healthy Citizen Checklist",
+        "subtitle": "Annual health checkup timetable, medicine storage, and emergency medical contacts",
+        "file_name": "Jangyan_Catg 04_M10.pdf",
+        "relative_path": "4-Health & Emergency Awareness/Jangyan_Catg 04_M10.pdf",
+        "category_id": "health_emergency",
+        "category_title": "Health & Emergency Awareness"
+      }
+    ]
+  },
+  {
+    "id": "financial_literacy",
+    "title": "Financial Literacy & Digital Payments",
+    "tagline": "Safe UPI, 50-30-20 Rule, CIBIL, EPF/NPS & Fraud Prevention",
+    "color": "#059669",
+    "icon": "payments",
+    "folder": "5-Financial Literacy & Digital Finance",
+    "mcq_pdf": "MCQ_Handbook_Financial_Literacy_Digital_Finance.pdf",
+    "mcq_relative_path": "5-Financial Literacy & Digital Finance/MCQ_Handbook_Financial_Literacy_Digital_Finance.pdf",
+    "module_count": 10,
+    "modules": [
+      {
+        "module_number": 1,
+        "title": "Fundamentals of Financial Literacy",
+        "subtitle": "Understanding money, inflation, compounding interest, and financial goals",
+        "file_name": "module1_financial_literacy.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module1_financial_literacy.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 2,
+        "title": "Banking & Financial Services",
+        "subtitle": "Savings vs current accounts, PM Jan Dhan Yojana, and fixed/recurring deposits",
+        "file_name": "module2_banking_financial_services.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module2_banking_financial_services.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 3,
+        "title": "Digital Payments & Cashless Economy",
+        "subtitle": "UPI QR mechanics, BHIM app, AEPS, and safe online payment workflows",
+        "file_name": "module3_digital_payments_cashless_economy.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module3_digital_payments_cashless_economy.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 4,
+        "title": "Saving, Budgeting & Money Management",
+        "subtitle": "The 50-30-20 budgeting rule, emergency funds, and expense tracking",
+        "file_name": "module4_saving_budgeting_money_management.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module4_saving_budgeting_money_management.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 5,
+        "title": "Investment Fundamentals",
+        "subtitle": "Mutual funds, SIPs, gold bonds, index funds, and stock market basics",
+        "file_name": "module5_investment_fundamentals.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module5_investment_fundamentals.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 6,
+        "title": "Insurance & Retirement Planning",
+        "subtitle": "Term life insurance, health policies, NPS, and Atal Pension Yojana (APY)",
+        "file_name": "module6_insurance_retirement_planning.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module6_insurance_retirement_planning.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 7,
+        "title": "Loans, Credit & Taxation",
+        "subtitle": "Credit score (CIBIL > 750), home/education loans, and basic income tax slabs",
+        "file_name": "module7_loans_credit_taxation.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module7_loans_credit_taxation.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 8,
+        "title": "Financial Fraud Prevention",
+        "subtitle": "Detecting Ponzi schemes, unauthorized loan apps, and SEBI/RBI investor safeguards",
+        "file_name": "module8_financial_fraud_prevention_consumer_protection.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module8_financial_fraud_prevention_consumer_protection.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 9,
+        "title": "Government Financial Schemes",
+        "subtitle": "Sukanya Samriddhi Yojana, Stand-Up India, Mudra loans, and PMJJBY/PMSBY",
+        "file_name": "module9_government_financial_schemes_financial_inclusion.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module9_government_financial_schemes_financial_inclusion.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      },
+      {
+        "module_number": 10,
+        "title": "Smart Financial Citizen Checklist",
+        "subtitle": "Financial health score card, annual insurance review, and retirement roadmap",
+        "file_name": "module10_smart_financial_citizen_checklist.pdf",
+        "relative_path": "5-Financial Literacy & Digital Finance/module10_smart_financial_citizen_checklist.pdf",
+        "category_id": "financial_literacy",
+        "category_title": "Financial Literacy & Digital Payments"
+      }
+    ]
+  },
+  {
+    "id": "environment",
+    "title": "Environmental Responsibility",
+    "tagline": "Waste segregation, Plastic ban, AQI, Energy & Civic duties",
+    "color": "#16A34A",
+    "icon": "eco",
+    "folder": "6-Environment & Civic Responsibility",
+    "mcq_pdf": "6_mcq.pdf",
+    "mcq_relative_path": "6-Environment & Civic Responsibility/6_mcq.pdf",
+    "module_count": 10,
+    "modules": [
+      {
+        "module_number": 1,
+        "title": "Fundamentals of Environment & Sustainability",
+        "subtitle": "Ecosystem balance, carbon footprint, and Article 51A(g) environmental duties",
+        "file_name": "6_module1.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module1.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 2,
+        "title": "Waste Management & Cleanliness",
+        "subtitle": "Three-bin segregation (Green Wet, Blue Dry, Red Hazardous) and Swachh Bharat",
+        "file_name": "6_module2.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module2.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 3,
+        "title": "Water Conservation & Management",
+        "subtitle": "Rainwater harvesting, tap aeration, Jal Jeevan Mission, and greywater reuse",
+        "file_name": "6_module3.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module3.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 4,
+        "title": "Air Quality & Pollution Control",
+        "subtitle": "Air Quality Index (AQI categories), smog protection, and vehicular emission norms",
+        "file_name": "6_module4.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module4.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 5,
+        "title": "Energy Conservation & Renewable Energy",
+        "subtitle": "LED adoption, star rating appliances, PM Surya Ghar (Rooftop Solar)",
+        "file_name": "6_module5.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module5.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 6,
+        "title": "Climate Change & Disaster Awareness",
+        "subtitle": "Extreme weather readiness, urban flooding response, and heatwave survival",
+        "file_name": "6_module6.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module6.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 7,
+        "title": "Biodiversity & Wildlife Conservation",
+        "subtitle": "Native trees, urban birds, Wildlife Protection Act, and preventing cruelty to animals",
+        "file_name": "6_module7.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module7.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 8,
+        "title": "Civic Responsibility & Public Property",
+        "subtitle": "Protecting heritage, public transport ethics, and anti-littering civic laws",
+        "file_name": "6_module8.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module8.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 9,
+        "title": "Green Lifestyle & Sustainable Living",
+        "subtitle": "Single-use plastic alternatives, composting kitchen waste, and circular economy",
+        "file_name": "6_module9.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module9.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      },
+      {
+        "module_number": 10,
+        "title": "Smart Green Citizen Checklist",
+        "subtitle": "Eco-friendly household audit, tree plantation pledge, and community cleanliness action",
+        "file_name": "6_module10.pdf",
+        "relative_path": "6-Environment & Civic Responsibility/6_module10.pdf",
+        "category_id": "environment",
+        "category_title": "Environmental Responsibility"
+      }
+    ]
+  }
+]

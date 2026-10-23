@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "827728772517",
+    "project_id": "jangyan-e2608",
+    "storage_bucket": "jangyan-e2608.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827728772517:android:e1a861a94cfc5c3697fc4c",
+        "android_client_info": {
+          "package_name": "in.jangyan.jangyan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh9-EGQyZaJJ3EoBW-rJ7BKpmFnOuN8aA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
