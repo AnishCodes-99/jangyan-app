@@ -154,9 +154,7 @@ class AuthService extends ChangeNotifier {
         }
       }
 
-      final isAdmin =
-          normalizedEmail == 'admin@jangyan.in' ||
-          normalizedEmail.startsWith('admin@');
+      final isAdmin = normalizedEmail.startsWith('admin@');
 
       final newProfile = UserProfile(
         uid: uid,
@@ -246,7 +244,7 @@ class AuthService extends ChangeNotifier {
             uid: uid,
             fullName: credential.user?.displayName ?? 'JanGyan Citizen',
             email: normalizedEmail,
-            isAdmin: normalizedEmail == 'admin@jangyan.in' || normalizedEmail.startsWith('admin@'),
+            isAdmin: normalizedEmail.startsWith('admin@'),
           );
         } on FirebaseAuthException catch (fae) {
           debugPrint('[AuthService] Firebase login notice (${fae.code}): ${fae.message}');
@@ -286,20 +284,6 @@ class AuthService extends ChangeNotifier {
           } else {
             throw 'Incorrect password for $normalizedEmail. Please try again.';
           }
-        } else if (normalizedEmail == 'admin@jangyan.in' ||
-            normalizedEmail == 'citizen@jangyan.in' ||
-            normalizedEmail == 'test@jangyan.in') {
-          authenticatedProfile = UserProfile(
-            uid: 'demo_${normalizedEmail.split('@').first}',
-            fullName: normalizedEmail == 'admin@jangyan.in'
-                ? 'JanGyan Administrator'
-                : 'JanGyan Citizen',
-            email: normalizedEmail,
-            isAdmin: normalizedEmail == 'admin@jangyan.in',
-            attemptedCount: 15,
-            correctCount: 14,
-            incorrectCount: 1,
-          );
         } else {
           throw 'No account found for $normalizedEmail. Please register first.';
         }
@@ -416,7 +400,7 @@ class AuthService extends ChangeNotifier {
       final prefs = await SharedPreferences.getInstance();
       final dbJson = prefs.getString(_localUsersDbKey) ?? '{}';
       final Map<String, dynamic> db = jsonDecode(dbJson);
-      if (db.containsKey(normalizedEmail) || normalizedEmail == 'citizen@jangyan.in' || normalizedEmail == 'admin@jangyan.in') {
+      if (db.containsKey(normalizedEmail)) {
         _setLoading(false);
         return true;
       }
@@ -542,7 +526,7 @@ class AuthService extends ChangeNotifier {
             fullName: fullName,
             email: email,
             photoUrl: photoUrl,
-            isAdmin: email == 'admin@jangyan.in' || email.startsWith('admin@'),
+            isAdmin: email.startsWith('admin@'),
             attemptedCount: 0,
             correctCount: 0,
             incorrectCount: 0,
@@ -587,7 +571,7 @@ class AuthService extends ChangeNotifier {
         fullName: fullName.isNotEmpty ? fullName : 'Citizen',
         email: email,
         photoUrl: photoUrl,
-        isAdmin: email == 'admin@jangyan.in' || email.startsWith('admin@'),
+        isAdmin: email.startsWith('admin@'),
         attemptedCount: 0,
         correctCount: 0,
         incorrectCount: 0,

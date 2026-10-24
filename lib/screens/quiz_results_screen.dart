@@ -455,7 +455,7 @@ class _CertificateDialogState extends State<_CertificateDialog> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       final auth = Provider.of<AuthService>(context, listen: false);
-      final email = auth.currentUser?.email ?? 'citizen@jangyan.in';
+      final email = auth.currentUser?.email ?? 'Unknown';
       CertificateSaver.recordCertificate(
         serialNumber: _serialNumber,
         citizenName: widget.citizenName,

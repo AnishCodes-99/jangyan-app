@@ -211,7 +211,7 @@ class _HomeContentTab extends StatelessWidget {
                             ),
                             const SizedBox(height: 2),
                             Text(
-                              user?.email ?? 'citizen@jangyan.in',
+                              user?.email ?? '',
                               style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.white.withValues(alpha: 0.8),

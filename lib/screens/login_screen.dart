@@ -146,7 +146,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
                       labelText: 'Email Address',
-                      hintText: 'citizen@jangyan.in',
+                      hintText: 'name@example.com',
                       prefixIcon: Icon(
                         Icons.email_outlined,
                         color: AppColors.primary,

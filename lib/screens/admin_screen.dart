@@ -120,7 +120,7 @@ class _AdminScreenState extends State<AdminScreen>
                               ),
                             ),
                             Text(
-                              'Signed in as: ${user?.email ?? "admin@jangyan.in"}',
+                              'Signed in as: ${user?.email ?? "Administrator"}',
                               style: const TextStyle(
                                 fontSize: 11,
                                 color: AppColors.textSecondary,

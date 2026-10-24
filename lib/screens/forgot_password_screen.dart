@@ -438,7 +438,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         onFieldSubmitted: (_) => _handleReset(),
                         decoration: const InputDecoration(
                           labelText: 'Registered Email',
-                          hintText: 'citizen@jangyan.in',
+                          hintText: 'name@example.com',
                           prefixIcon: Icon(
                             Icons.email_outlined,
                             color: AppColors.primary,

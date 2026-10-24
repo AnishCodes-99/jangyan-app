@@ -1,13 +1,4 @@
 {
-  "citizen@jangyan.in": {
-    "email": "citizen@jangyan.in",
-    "fullName": "Aarav Sharma",
-    "attemptedCount": 85,
-    "correctCount": 80,
-    "incorrectCount": 5,
-    "passwordHash": "123456",
-    "proficiencyBadge": "Distinguished Citizen"
-  },
   "sddsv@gmail.com": {
     "uid": "usr_ffb6b8e0",
     "fullName": "ghirjnf",
@@ -44,18 +35,6 @@
     "updatedAt": "2026-10-23T18:33:20.131",
     "passwordHash": "7cc6d4c3"
   },
-  "admin@jangyan.in": {
-    "uid": "demo_admin",
-    "fullName": "JanGyan Administrator",
-    "email": "admin@jangyan.in",
-    "isAdmin": true,
-    "attemptedCount": 15,
-    "correctCount": 14,
-    "incorrectCount": 1,
-    "createdAt": "2026-10-23T18:35:30.402",
-    "updatedAt": "2026-10-23T18:35:30.402",
-    "passwordHash": "6da7ce4c"
-  },
   "kunalyadav9507@gmail.com": {
     "uid": "usr_a7d9efdf",
     "fullName": "kunal yadav",
@@ -68,14 +47,5 @@
     "createdAt": "2026-10-23T23:52:38.453",
     "updatedAt": "2026-10-23T23:59:05.106",
     "passwordHash": "7cc6d4c3"
-  },
-  "test.citizen@jangyan.in": {
-    "uid": "usr_test_verification",
-    "email": "test.citizen@jangyan.in",
-    "fullName": "Test Citizen",
-    "isAdmin": false,
-    "attemptedCount": 5,
-    "correctCount": 5,
-    "incorrectCount": 0
   }
 }

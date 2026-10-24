@@ -52,7 +52,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
       id: const Uuid().v4(),
       userId: user?.uid ?? 'guest_citizen',
       userName: user?.fullName ?? 'Anonymous Citizen',
-      userEmail: user?.email ?? 'citizen@jangyan.in',
+      userEmail: user?.email ?? 'citizen@example.com',
       rating: _rating,
       category: _selectedCategory,
       message: _messageController.text.trim(),
