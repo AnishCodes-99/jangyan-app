@@ -474,8 +474,8 @@ class _CertificateDialogState extends State<_CertificateDialog> {
 
   @override
   Widget build(BuildContext context) {
-    final certId = widget.attempt.id.length >= 8
-        ? widget.attempt.id.substring(0, 8).toUpperCase()
+    final certId = widget.attempt.attemptId.length >= 8
+        ? widget.attempt.attemptId.substring(0, 8).toUpperCase()
         : 'JG${DateTime.now().millisecondsSinceEpoch % 100000}';
     final dateStr =
         '${widget.attempt.timestamp.day.toString().padLeft(2, '0')}/${widget.attempt.timestamp.month.toString().padLeft(2, '0')}/${widget.attempt.timestamp.year}';
