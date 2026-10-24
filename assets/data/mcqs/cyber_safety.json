@@ -50,7 +50,7 @@
       "question": "Which of the following is an example of malware that disguises itself as legitimate software?",
       "options": [
         "Firewall",
-        "VPN✅ Correct Answer: Option B",
+        "VPN",
         "Worm",
         "Trojan Horse"
       ],
@@ -80,7 +80,7 @@
         "Smishing",
         "Digital arrest scam",
         "Firewall breach",
-        "Data breach✅ Correct Answer: Option B"
+        "Data breach"
       ],
       "answer": 1,
       "explanation": "This is a \"digital arrest\" scam — no genuine Indian law enforcement agency ever conducts arrests or investigations over a\nvideo call.",
@@ -106,7 +106,7 @@
       "question": "Which term describes fraud carried out through fake SMS messages?",
       "options": [
         "Vishing",
-        "Trolling✅ Correct Answer: Option C",
+        "Trolling",
         "Phishing",
         "Smishing"
       ],
@@ -136,7 +136,7 @@
         "UIDAI",
         "CERT-In",
         "RBI",
-        "NPCI✅ Correct Answer: Option B"
+        "NPCI"
       ],
       "answer": 1,
       "explanation": "CERT-In (Indian Computer Emergency Response Team), under MeitY, is designated as India's national agency for cyber\nincident response under Section 70B of the IT Act.",
@@ -150,7 +150,7 @@
         "100",
         "108",
         "1930",
-        "181✅ Correct Answer: Option C"
+        "181"
       ],
       "answer": 2,
       "explanation": "1930 is India's dedicated 24x7 cybercrime helpline, especially useful for reporting financial fraud quickly.",
@@ -161,7 +161,7 @@
       "id": 12,
       "question": "Which section of the IT Act, 2000, deals with identity theft?",
       "options": [
-        "Section 72✅ Correct Answer: Option B",
+        "Section 72",
         "Section 67",
         "Section 43",
         "Section 66C"
@@ -233,7 +233,7 @@
       "options": [
         "Biometric data, health records, and financial details",
         "Your city of residence",
-        "Your job title✅ Correct Answer: Option B",
+        "Your job title",
         "Your favourite colour"
       ],
       "answer": 0,
@@ -329,7 +329,7 @@
       "id": 24,
       "question": "Which of the following is NOT one of the common cyber security triggers scammers exploit?",
       "options": [
-        "Greed✅ Correct Answer: Option C",
+        "Greed",
         "Urgency",
         "Fear",
         "Software updates"
@@ -569,7 +569,7 @@
       "options": [
         "Integrity",
         "Confidentiality",
-        "Accessibility✅ Correct Answer: Option B",
+        "Accessibility",
         "Availability"
       ],
       "answer": 0,
@@ -722,7 +722,7 @@
       "question": "Which landmark 2017 Supreme Court judgment declared privacy a fundamental right in India?",
       "options": [
         "Maneka Gandhi case",
-        "Vishaka case✅ Correct Answer: Option B",
+        "Vishaka case",
         "Kesavananda Bharati case",
         "Justice K.S. Puttaswamy vs Union of India"
       ],
@@ -891,7 +891,7 @@
       "options": [
         "RBI",
         "UIDAI",
-        "SEBI✅ Correct Answer: Option B",
+        "SEBI",
         "Data Protection Board of India"
       ],
       "answer": 3,
@@ -2179,7 +2179,7 @@
       "options": [
         "₹500",
         "₹10,000",
-        "₹1 crore✅ Correct Answer: Option C",
+        "₹1 crore",
         "₹1 lakh"
       ],
       "answer": 3,
@@ -2250,7 +2250,7 @@
         "Up to ₹2 lakh",
         "₹500",
         "₹10,000",
-        "Unlimited✅ Correct Answer: Option C"
+        "Unlimited"
       ],
       "answer": 0,
       "explanation": "Full-KYC wallets, which require complete identity verification, can typically hold balances up to around ₹2 lakh under RBI's\nframework.",
@@ -2261,7 +2261,7 @@
       "id": 162,
       "question": "What is the approximate balance cap for a minimum-KYC (small) PPI wallet?",
       "options": [
-        "₹50,000✅ Correct Answer: Option A",
+        "₹50,000",
         "Around ₹10,000, with no cash withdrawal or fund transfer allowed",
         "Unlimited",
         "₹5 lakh"
@@ -2726,7 +2726,7 @@
         "A discount shop for banking products",
         "A shop offering the lowest prices on electronics",
         "A shop distributing subsidised food grains under the Public Distribution System (unrelated to card payments)",
-        "A type of ATM✅ Correct Answer: Option B"
+        "A type of ATM"
       ],
       "answer": 2,
       "explanation": "While not a payment method itself, understanding related terms like Fair Price Shops helps distinguish genuine\ngovernment service channels from payment fraud schemes exploiting similar names.",
@@ -2851,7 +2851,7 @@
       "options": [
         "Boredom",
         "Curiosity",
-        "Generosity✅ Correct Answer: Option B",
+        "Generosity",
         "Fear"
       ],
       "answer": 3,
@@ -2877,7 +2877,7 @@
       "id": 206,
       "question": "According to a 2025 survey, approximately what percentage of WhatsApp users in India had received fraudulent job-\noffer messages?",
       "options": [
-        "15%✅ Correct Answer: Option B",
+        "15%",
         "42%",
         "5%",
         "90%"
@@ -2948,7 +2948,7 @@
       "question": "How many phishing domains did CERT-In's monitoring systems reportedly identify within billions of malicious DNS\nqueries analysed?",
       "options": [
         "About 1,000",
-        "About 10,000✅ Correct Answer: Option B",
+        "About 10,000",
         "About 128 million",
         "About 50"
       ],
@@ -2961,7 +2961,7 @@
       "id": 212,
       "question": "Approximately how many cyber incidents did CERT-In handle in 2025?",
       "options": [
-        "About 2,000✅ Correct Answer: Option B",
+        "About 2,000",
         "About 10,000",
         "About 500",
         "About 29.44 lakh"
@@ -2992,7 +2992,7 @@
         "Section 43",
         "Section 66D",
         "Section 67",
-        "Section 72✅ Correct Answer: Option B"
+        "Section 72"
       ],
       "answer": 1,
       "explanation": "Section 66D covers cheating by impersonation through computer resources, forming the legal basis for prosecuting most\nonline scams.",
@@ -3018,7 +3018,7 @@
       "question": "Which of these is NOT one of the five common psychological triggers scammers use?",
       "options": [
         "Authority",
-        "Greed✅ Correct Answer: Option C",
+        "Greed",
         "Urgency",
         "Software updates"
       ],
@@ -3075,7 +3075,7 @@
       "options": [
         "42%",
         "90%",
-        "65%✅ Correct Answer: Option C",
+        "65%",
         "12%"
       ],
       "answer": 3,
@@ -3172,7 +3172,7 @@
       "question": "Which state recorded 395 task-fraud cases in a recent year, according to reported data?",
       "options": [
         "Sikkim",
-        "Nagaland✅ Correct Answer: Option A",
+        "Nagaland",
         "Karnataka",
         "Goa"
       ],
@@ -3564,7 +3564,7 @@
       "question": "According to a 2025 survey, what percentage of Indian teenagers reported experiencing cyberbullying?",
       "options": [
         "90%",
-        "15%✅ Correct Answer: Option B",
+        "15%",
         "37%",
         "5%"
       ],
@@ -3577,7 +3577,7 @@
       "id": 256,
       "question": "Under India's amended IT Rules, within how many hours must a platform acknowledge a user complaint?",
       "options": [
-        "1 hour✅ Correct Answer: Option B",
+        "1 hour",
         "72 hours",
         "7 days",
         "24 hours"
@@ -3593,7 +3593,7 @@
       "options": [
         "24 hours",
         "90 days",
-        "6 months✅ Correct Answer: Option B",
+        "6 months",
         "1 year"
       ],
       "answer": 0,
@@ -3664,7 +3664,7 @@
         "Section 8",
         "Section 66E",
         "Section 43A",
-        "Section 12✅ Correct Answer: Option A"
+        "Section 12"
       ],
       "answer": 1,
       "explanation": "Section 66E specifically addresses violation of privacy through capturing or publishing images of a person's private activity\nwithout consent.",
@@ -4641,7 +4641,7 @@
       "id": 332,
       "question": "How many policy-violating apps did Google reportedly block from the Play Store in 2025?",
       "options": [
-        "About 100✅ Correct Answer: Option A",
+        "About 100",
         "About 10",
         "About 500,000,000",
         "About 1.75 million"
@@ -5050,7 +5050,7 @@
         "examplebank.com",
         "www.",
         "https://",
-        "/login✅ Correct Answer: Option C"
+        "/login"
       ],
       "answer": 0,
       "explanation": "The domain — here, examplebank.com — is the core identifying part of a website's address that confirms its actual\nownership.",
@@ -5609,7 +5609,7 @@
       "options": [
         "cybercrime.gov.in",
         "reportfraud.org",
-        "safeindia.net✅ Correct Answer: Option A",
+        "safeindia.net",
         "cybersafety.com"
       ],
       "answer": 0,
@@ -5624,7 +5624,7 @@
         "100",
         "1930",
         "108",
-        "181✅ Correct Answer: Option B"
+        "181"
       ],
       "answer": 1,
       "explanation": "1930 is India's dedicated 24x7 helpline specifically for reporting financial cyber fraud quickly.",
@@ -5736,7 +5736,7 @@
         "1 year",
         "3 working days",
         "30 days",
-        "6 months✅ Correct Answer: Option B"
+        "6 months"
       ],
       "answer": 1,
       "explanation": "RBI's rules provide zero customer liability if unauthorised transactions are reported within 3 working days, provided the\nfault isn't the customer's own.",
@@ -5748,7 +5748,7 @@
       "question": "Which portal should you use to report a lost or stolen mobile phone in India?",
       "options": [
         "UMANG exclusively",
-        "MyGov✅ Correct Answer: Option B",
+        "MyGov",
         "Sanchar Saathi (sancharsaathi.gov.in)",
         "cybercrime.gov.in only"
       ],
@@ -5818,7 +5818,7 @@
       "question": "Between April 2021 and September 2025, what percentage of the total defrauded amount was reportedly recovered?",
       "options": [
         "About 90%",
-        "100%✅ Correct Answer: Option B",
+        "100%",
         "About 50%",
         "About 6.7%"
       ],
@@ -5946,7 +5946,7 @@
         "112",
         "1098",
         "1930",
-        "181✅ Correct Answer: Option B"
+        "181"
       ],
       "answer": 0,
       "explanation": "112 is India's unified emergency number for immediate danger situations, complementing specialised helplines like 1930\nfor financial cyber fraud.",
@@ -6027,7 +6027,7 @@
       "id": 431,
       "question": "What number specifically serves as CHILDLINE, India's child helpline?",
       "options": [
-        "112✅ Correct Answer: Option B",
+        "112",
         "1930",
         "1098",
         "181"
@@ -6042,7 +6042,7 @@
       "question": "Which of these is the correct definition of the \"Women's Helpline\"?",
       "options": [
         "1930",
-        "100✅ Correct Answer: Option B",
+        "100",
         "108",
         "181"
       ],
@@ -6870,7 +6870,7 @@
         "Daily",
         "Only once, when the phone is first purchased",
         "Weekly",
-        "Never✅ Correct Answer: Option B"
+        "Never"
       ],
       "answer": 2,
       "explanation": "Reviewing new app installs and their permissions weekly ensures newly added risks are caught promptly without\nrequiring constant daily attention.",
@@ -6982,7 +6982,7 @@
         "Daily",
         "Weekly",
         "Yearly",
-        "As-Needed✅ Correct Answer: Option C"
+        "As-Needed"
       ],
       "answer": 2,
       "explanation": "The four cadences used are Daily, Weekly, Monthly, and As-Needed — \"Yearly\" is not one of the categories, though the\nmodule references annual national campaigns separately.",

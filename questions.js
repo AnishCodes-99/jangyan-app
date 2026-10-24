@@ -51,7 +51,7 @@ const jangyanQuestions = {
       "question": "Which of the following is an example of malware that disguises itself as legitimate software?",
       "options": [
         "Firewall",
-        "VPN✅ Correct Answer: Option B",
+        "VPN",
         "Worm",
         "Trojan Horse"
       ],
@@ -81,7 +81,7 @@ const jangyanQuestions = {
         "Smishing",
         "Digital arrest scam",
         "Firewall breach",
-        "Data breach✅ Correct Answer: Option B"
+        "Data breach"
       ],
       "answer": 1,
       "explanation": "This is a \"digital arrest\" scam — no genuine Indian law enforcement agency ever conducts arrests or investigations over a\nvideo call.",
@@ -107,7 +107,7 @@ const jangyanQuestions = {
       "question": "Which term describes fraud carried out through fake SMS messages?",
       "options": [
         "Vishing",
-        "Trolling✅ Correct Answer: Option C",
+        "Trolling",
         "Phishing",
         "Smishing"
       ],
@@ -137,7 +137,7 @@ const jangyanQuestions = {
         "UIDAI",
         "CERT-In",
         "RBI",
-        "NPCI✅ Correct Answer: Option B"
+        "NPCI"
       ],
       "answer": 1,
       "explanation": "CERT-In (Indian Computer Emergency Response Team), under MeitY, is designated as India's national agency for cyber\nincident response under Section 70B of the IT Act.",
@@ -151,7 +151,7 @@ const jangyanQuestions = {
         "100",
         "108",
         "1930",
-        "181✅ Correct Answer: Option C"
+        "181"
       ],
       "answer": 2,
       "explanation": "1930 is India's dedicated 24x7 cybercrime helpline, especially useful for reporting financial fraud quickly.",
@@ -162,7 +162,7 @@ const jangyanQuestions = {
       "id": 12,
       "question": "Which section of the IT Act, 2000, deals with identity theft?",
       "options": [
-        "Section 72✅ Correct Answer: Option B",
+        "Section 72",
         "Section 67",
         "Section 43",
         "Section 66C"
@@ -234,7 +234,7 @@ const jangyanQuestions = {
       "options": [
         "Biometric data, health records, and financial details",
         "Your city of residence",
-        "Your job title✅ Correct Answer: Option B",
+        "Your job title",
         "Your favourite colour"
       ],
       "answer": 0,
@@ -330,7 +330,7 @@ const jangyanQuestions = {
       "id": 24,
       "question": "Which of the following is NOT one of the common cyber security triggers scammers exploit?",
       "options": [
-        "Greed✅ Correct Answer: Option C",
+        "Greed",
         "Urgency",
         "Fear",
         "Software updates"
@@ -570,7 +570,7 @@ const jangyanQuestions = {
       "options": [
         "Integrity",
         "Confidentiality",
-        "Accessibility✅ Correct Answer: Option B",
+        "Accessibility",
         "Availability"
       ],
       "answer": 0,
@@ -723,7 +723,7 @@ const jangyanQuestions = {
       "question": "Which landmark 2017 Supreme Court judgment declared privacy a fundamental right in India?",
       "options": [
         "Maneka Gandhi case",
-        "Vishaka case✅ Correct Answer: Option B",
+        "Vishaka case",
         "Kesavananda Bharati case",
         "Justice K.S. Puttaswamy vs Union of India"
       ],
@@ -892,7 +892,7 @@ const jangyanQuestions = {
       "options": [
         "RBI",
         "UIDAI",
-        "SEBI✅ Correct Answer: Option B",
+        "SEBI",
         "Data Protection Board of India"
       ],
       "answer": 3,
@@ -2180,7 +2180,7 @@ const jangyanQuestions = {
       "options": [
         "₹500",
         "₹10,000",
-        "₹1 crore✅ Correct Answer: Option C",
+        "₹1 crore",
         "₹1 lakh"
       ],
       "answer": 3,
@@ -2251,7 +2251,7 @@ const jangyanQuestions = {
         "Up to ₹2 lakh",
         "₹500",
         "₹10,000",
-        "Unlimited✅ Correct Answer: Option C"
+        "Unlimited"
       ],
       "answer": 0,
       "explanation": "Full-KYC wallets, which require complete identity verification, can typically hold balances up to around ₹2 lakh under RBI's\nframework.",
@@ -2262,7 +2262,7 @@ const jangyanQuestions = {
       "id": 162,
       "question": "What is the approximate balance cap for a minimum-KYC (small) PPI wallet?",
       "options": [
-        "₹50,000✅ Correct Answer: Option A",
+        "₹50,000",
         "Around ₹10,000, with no cash withdrawal or fund transfer allowed",
         "Unlimited",
         "₹5 lakh"
@@ -2727,7 +2727,7 @@ const jangyanQuestions = {
         "A discount shop for banking products",
         "A shop offering the lowest prices on electronics",
         "A shop distributing subsidised food grains under the Public Distribution System (unrelated to card payments)",
-        "A type of ATM✅ Correct Answer: Option B"
+        "A type of ATM"
       ],
       "answer": 2,
       "explanation": "While not a payment method itself, understanding related terms like Fair Price Shops helps distinguish genuine\ngovernment service channels from payment fraud schemes exploiting similar names.",
@@ -2852,7 +2852,7 @@ const jangyanQuestions = {
       "options": [
         "Boredom",
         "Curiosity",
-        "Generosity✅ Correct Answer: Option B",
+        "Generosity",
         "Fear"
       ],
       "answer": 3,
@@ -2878,7 +2878,7 @@ const jangyanQuestions = {
       "id": 206,
       "question": "According to a 2025 survey, approximately what percentage of WhatsApp users in India had received fraudulent job-\noffer messages?",
       "options": [
-        "15%✅ Correct Answer: Option B",
+        "15%",
         "42%",
         "5%",
         "90%"
@@ -2949,7 +2949,7 @@ const jangyanQuestions = {
       "question": "How many phishing domains did CERT-In's monitoring systems reportedly identify within billions of malicious DNS\nqueries analysed?",
       "options": [
         "About 1,000",
-        "About 10,000✅ Correct Answer: Option B",
+        "About 10,000",
         "About 128 million",
         "About 50"
       ],
@@ -2962,7 +2962,7 @@ const jangyanQuestions = {
       "id": 212,
       "question": "Approximately how many cyber incidents did CERT-In handle in 2025?",
       "options": [
-        "About 2,000✅ Correct Answer: Option B",
+        "About 2,000",
         "About 10,000",
         "About 500",
         "About 29.44 lakh"
@@ -2993,7 +2993,7 @@ const jangyanQuestions = {
         "Section 43",
         "Section 66D",
         "Section 67",
-        "Section 72✅ Correct Answer: Option B"
+        "Section 72"
       ],
       "answer": 1,
       "explanation": "Section 66D covers cheating by impersonation through computer resources, forming the legal basis for prosecuting most\nonline scams.",
@@ -3019,7 +3019,7 @@ const jangyanQuestions = {
       "question": "Which of these is NOT one of the five common psychological triggers scammers use?",
       "options": [
         "Authority",
-        "Greed✅ Correct Answer: Option C",
+        "Greed",
         "Urgency",
         "Software updates"
       ],
@@ -3076,7 +3076,7 @@ const jangyanQuestions = {
       "options": [
         "42%",
         "90%",
-        "65%✅ Correct Answer: Option C",
+        "65%",
         "12%"
       ],
       "answer": 3,
@@ -3173,7 +3173,7 @@ const jangyanQuestions = {
       "question": "Which state recorded 395 task-fraud cases in a recent year, according to reported data?",
       "options": [
         "Sikkim",
-        "Nagaland✅ Correct Answer: Option A",
+        "Nagaland",
         "Karnataka",
         "Goa"
       ],
@@ -3565,7 +3565,7 @@ const jangyanQuestions = {
       "question": "According to a 2025 survey, what percentage of Indian teenagers reported experiencing cyberbullying?",
       "options": [
         "90%",
-        "15%✅ Correct Answer: Option B",
+        "15%",
         "37%",
         "5%"
       ],
@@ -3578,7 +3578,7 @@ const jangyanQuestions = {
       "id": 256,
       "question": "Under India's amended IT Rules, within how many hours must a platform acknowledge a user complaint?",
       "options": [
-        "1 hour✅ Correct Answer: Option B",
+        "1 hour",
         "72 hours",
         "7 days",
         "24 hours"
@@ -3594,7 +3594,7 @@ const jangyanQuestions = {
       "options": [
         "24 hours",
         "90 days",
-        "6 months✅ Correct Answer: Option B",
+        "6 months",
         "1 year"
       ],
       "answer": 0,
@@ -3665,7 +3665,7 @@ const jangyanQuestions = {
         "Section 8",
         "Section 66E",
         "Section 43A",
-        "Section 12✅ Correct Answer: Option A"
+        "Section 12"
       ],
       "answer": 1,
       "explanation": "Section 66E specifically addresses violation of privacy through capturing or publishing images of a person's private activity\nwithout consent.",
@@ -4642,7 +4642,7 @@ const jangyanQuestions = {
       "id": 332,
       "question": "How many policy-violating apps did Google reportedly block from the Play Store in 2025?",
       "options": [
-        "About 100✅ Correct Answer: Option A",
+        "About 100",
         "About 10",
         "About 500,000,000",
         "About 1.75 million"
@@ -5051,7 +5051,7 @@ const jangyanQuestions = {
         "examplebank.com",
         "www.",
         "https://",
-        "/login✅ Correct Answer: Option C"
+        "/login"
       ],
       "answer": 0,
       "explanation": "The domain — here, examplebank.com — is the core identifying part of a website's address that confirms its actual\nownership.",
@@ -5610,7 +5610,7 @@ const jangyanQuestions = {
       "options": [
         "cybercrime.gov.in",
         "reportfraud.org",
-        "safeindia.net✅ Correct Answer: Option A",
+        "safeindia.net",
         "cybersafety.com"
       ],
       "answer": 0,
@@ -5625,7 +5625,7 @@ const jangyanQuestions = {
         "100",
         "1930",
         "108",
-        "181✅ Correct Answer: Option B"
+        "181"
       ],
       "answer": 1,
       "explanation": "1930 is India's dedicated 24x7 helpline specifically for reporting financial cyber fraud quickly.",
@@ -5737,7 +5737,7 @@ const jangyanQuestions = {
         "1 year",
         "3 working days",
         "30 days",
-        "6 months✅ Correct Answer: Option B"
+        "6 months"
       ],
       "answer": 1,
       "explanation": "RBI's rules provide zero customer liability if unauthorised transactions are reported within 3 working days, provided the\nfault isn't the customer's own.",
@@ -5749,7 +5749,7 @@ const jangyanQuestions = {
       "question": "Which portal should you use to report a lost or stolen mobile phone in India?",
       "options": [
         "UMANG exclusively",
-        "MyGov✅ Correct Answer: Option B",
+        "MyGov",
         "Sanchar Saathi (sancharsaathi.gov.in)",
         "cybercrime.gov.in only"
       ],
@@ -5819,7 +5819,7 @@ const jangyanQuestions = {
       "question": "Between April 2021 and September 2025, what percentage of the total defrauded amount was reportedly recovered?",
       "options": [
         "About 90%",
-        "100%✅ Correct Answer: Option B",
+        "100%",
         "About 50%",
         "About 6.7%"
       ],
@@ -5947,7 +5947,7 @@ const jangyanQuestions = {
         "112",
         "1098",
         "1930",
-        "181✅ Correct Answer: Option B"
+        "181"
       ],
       "answer": 0,
       "explanation": "112 is India's unified emergency number for immediate danger situations, complementing specialised helplines like 1930\nfor financial cyber fraud.",
@@ -6028,7 +6028,7 @@ const jangyanQuestions = {
       "id": 431,
       "question": "What number specifically serves as CHILDLINE, India's child helpline?",
       "options": [
-        "112✅ Correct Answer: Option B",
+        "112",
         "1930",
         "1098",
         "181"
@@ -6043,7 +6043,7 @@ const jangyanQuestions = {
       "question": "Which of these is the correct definition of the \"Women's Helpline\"?",
       "options": [
         "1930",
-        "100✅ Correct Answer: Option B",
+        "100",
         "108",
         "181"
       ],
@@ -6871,7 +6871,7 @@ const jangyanQuestions = {
         "Daily",
         "Only once, when the phone is first purchased",
         "Weekly",
-        "Never✅ Correct Answer: Option B"
+        "Never"
       ],
       "answer": 2,
       "explanation": "Reviewing new app installs and their permissions weekly ensures newly added risks are caught promptly without\nrequiring constant daily attention.",
@@ -6983,7 +6983,7 @@ const jangyanQuestions = {
         "Daily",
         "Weekly",
         "Yearly",
-        "As-Needed✅ Correct Answer: Option C"
+        "As-Needed"
       ],
       "answer": 2,
       "explanation": "The four cadences used are Daily, Weekly, Monthly, and As-Needed — \"Yearly\" is not one of the categories, though the\nmodule references annual national campaigns separately.",
@@ -7152,7 +7152,7 @@ const jangyanQuestions = {
       "options": [
         "Foreign affairs",
         "Defence",
-        "Currency✅ Correct Answer: Option B",
+        "Currency",
         "Police"
       ],
       "answer": 3,
@@ -7166,7 +7166,7 @@ const jangyanQuestions = {
       "options": [
         "Defence",
         "Local government",
-        "Agriculture✅ Correct Answer: Option C",
+        "Agriculture",
         "Public health"
       ],
       "answer": 0,
@@ -7503,7 +7503,7 @@ const jangyanQuestions = {
         "Articles 163 and 164",
         "Articles 124 and 214",
         "Articles 74 and 75",
-        "Article 1✅ Correct Answer: Option B"
+        "Article 1"
       ],
       "answer": 0,
       "explanation": "Articles 163 and 164 establish the State Council of Ministers, headed by the Chief Minister.",
@@ -7727,7 +7727,7 @@ const jangyanQuestions = {
         "12",
         "16",
         "10",
-        "8✅ Correct Answer: Option B"
+        "8"
       ],
       "answer": 0,
       "explanation": "Aadhaar is a 12-digit random identity number based on demographic and biometric data.",
@@ -7839,7 +7839,7 @@ const jangyanQuestions = {
         "A Learner's Licence",
         "A PAN card",
         "A Voter ID",
-        "A passport✅ Correct Answer: Option B"
+        "A passport"
       ],
       "answer": 0,
       "explanation": "Applicants must first hold a Learner's Licence and pass a road test before receiving a Permanent Driving Licence.",
@@ -7864,7 +7864,7 @@ const jangyanQuestions = {
       "id": 62,
       "question": "Within how many days should a birth typically be registered for free registration?",
       "options": [
-        "6 months✅ Correct Answer: Option B",
+        "6 months",
         "1 year",
         "21 days",
         "90 days"
@@ -7962,7 +7962,7 @@ const jangyanQuestions = {
       "id": 69,
       "question": "Which of these is classified under \"Civil Registration\" documents?",
       "options": [
-        "DigiLocker✅ Correct Answer: Option B",
+        "DigiLocker",
         "Birth Certificate, Death Certificate, Marriage Certificate",
         "Ration Card only",
         "Aadhaar, PAN, Voter ID"
@@ -8048,7 +8048,7 @@ const jangyanQuestions = {
       "options": [
         "Aadhaar card",
         "Ration card",
-        "PAN card✅ Correct Answer: Option B",
+        "PAN card",
         "Driving Licence"
       ],
       "answer": 3,
@@ -8074,7 +8074,7 @@ const jangyanQuestions = {
       "id": 77,
       "question": "What percentage of India's adult population is estimated to be enrolled in Aadhaar?",
       "options": [
-        "About 10%✅ Correct Answer: Option B",
+        "About 10%",
         "About 99%",
         "About 25%",
         "About 50%"
@@ -8496,7 +8496,7 @@ const jangyanQuestions = {
       "options": [
         "Section 43A",
         "Section 66C",
-        "Section 72✅ Correct Answer: Option B",
+        "Section 72",
         "Section 3A"
       ],
       "answer": 3,
@@ -8858,7 +8858,7 @@ const jangyanQuestions = {
       "id": 133,
       "question": "Which government platform would be most appropriate for tracking the status of a passport application?",
       "options": [
-        "DigiLocker✅ Correct Answer: Option B",
+        "DigiLocker",
         "Passport Seva",
         "MyGov",
         "UMANG exclusively"
@@ -9110,7 +9110,7 @@ const jangyanQuestions = {
       "id": 151,
       "question": "Which part of the Constitution contains the Fundamental Rights?",
       "options": [
-        "Part IVA✅ Correct Answer: Option B",
+        "Part IVA",
         "Part IV",
         "Part II",
         "Part III"
@@ -9126,7 +9126,7 @@ const jangyanQuestions = {
       "options": [
         "Part IVA",
         "Part III",
-        "Part V✅ Correct Answer: Option C",
+        "Part V",
         "Part IV"
       ],
       "answer": 0,
@@ -9155,7 +9155,7 @@ const jangyanQuestions = {
         "20",
         "6",
         "11",
-        "3✅ Correct Answer: Option B"
+        "3"
       ],
       "answer": 2,
       "explanation": "Article 51A lists 11 Fundamental Duties, with the 11th added later by the 86th Constitutional Amendment in 2002.",
@@ -9211,7 +9211,7 @@ const jangyanQuestions = {
         "90 days",
         "7 days",
         "30 days",
-        "1 year✅ Correct Answer: Option B"
+        "1 year"
       ],
       "answer": 2,
       "explanation": "The Right to Information Act, 2005, requires public authorities to respond to requests within 30 days.",
@@ -9309,7 +9309,7 @@ const jangyanQuestions = {
         "NHRC",
         "NCPCR (National Commission for Protection of Child Rights)",
         "NCW",
-        "CCPA✅ Correct Answer: Option A"
+        "CCPA"
       ],
       "answer": 1,
       "explanation": "NCPCR, established in 2007, focuses specifically on protecting the rights of children in India.",
@@ -9321,7 +9321,7 @@ const jangyanQuestions = {
       "question": "Under the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, senior citizens are defined as those aged:",
       "options": [
         "50 and above",
-        "65 and above✅ Correct Answer: Option B",
+        "65 and above",
         "60 and above",
         "70 and above"
       ],
@@ -9405,7 +9405,7 @@ const jangyanQuestions = {
       "question": "How many RTI applications have reportedly been filed in India since the Act came into force in 2005?",
       "options": [
         "Over 2.5 crore",
-        "Exactly 1 lakh✅ Correct Answer: Option B",
+        "Exactly 1 lakh",
         "About 500",
         "About 10,000"
       ],
@@ -9951,7 +9951,7 @@ const jangyanQuestions = {
       "question": "Approximately how many loans has PM Mudra Yojana sanctioned since its 2015 launch?",
       "options": [
         "About 1,000",
-        "Exactly 1 lakh✅ Correct Answer: Option B",
+        "Exactly 1 lakh",
         "About 500,000",
         "Over 52 crore, worth more than ₹32 lakh crore"
       ],
@@ -10510,7 +10510,7 @@ const jangyanQuestions = {
       "id": 251,
       "question": "Who typically supplies electricity to homes in India?",
       "options": [
-        "UIDAI✅ Correct Answer: Option B",
+        "UIDAI",
         "The Election Commission",
         "The Ministry of External Affairs",
         "State-run or private Distribution Companies (Discoms)"
@@ -10540,7 +10540,7 @@ const jangyanQuestions = {
       "options": [
         "1 July 2015",
         "15 August 2019",
-        "26 July 2014✅ Correct Answer: Option A",
+        "26 July 2014",
         "23 November 2017"
       ],
       "answer": 1,
@@ -10552,7 +10552,7 @@ const jangyanQuestions = {
       "id": 254,
       "question": "Approximately what percentage of rural India had tap water coverage by late 2025?",
       "options": [
-        "About 50%✅ Correct Answer: Option B",
+        "About 50%",
         "About 10%",
         "Over 81%",
         "About 30%"
@@ -10597,7 +10597,7 @@ const jangyanQuestions = {
         "About 500",
         "Over 1.64 lakh",
         "About 1,000",
-        "About 10,000✅ Correct Answer: Option B"
+        "About 10,000"
       ],
       "answer": 1,
       "explanation": "India Post operates over 1.64 lakh post offices, making it one of the most extensive postal networks in the world.",
@@ -10622,7 +10622,7 @@ const jangyanQuestions = {
       "id": 259,
       "question": "Which portal/app is used to book Indian Railways tickets?",
       "options": [
-        "MyGov✅ Correct Answer: Option A",
+        "MyGov",
         "UMANG exclusively",
         "DigiLocker",
         "IRCTC"
@@ -10791,7 +10791,7 @@ const jangyanQuestions = {
       "question": "Priya's family recently moved to a new city and is unsure who manages their new home's water/sewage connection.\nWhich authority should they approach?",
       "options": [
         "The central government exclusively",
-        "IRCTC✅ Correct Answer: Option B",
+        "IRCTC",
         "The Election Commission",
         "Their local Municipal Corporation"
       ],
@@ -11212,7 +11212,7 @@ const jangyanQuestions = {
       "options": [
         "108",
         "112",
-        "1930✅ Correct Answer: Option B",
+        "1930",
         "100"
       ],
       "answer": 1,
@@ -11227,7 +11227,7 @@ const jangyanQuestions = {
         "23 November 2017",
         "1 July 2015",
         "19 February 2019",
-        "26 July 2014✅ Correct Answer: Option A"
+        "26 July 2014"
       ],
       "answer": 2,
       "explanation": "The Emergency Response Support System (ERSS-112) was launched on 19 February 2019 by the Ministry of Home Affairs.",
@@ -11295,7 +11295,7 @@ const jangyanQuestions = {
       "question": "What is the dedicated helpline number for CHILDLINE?",
       "options": [
         "181",
-        "112✅ Correct Answer: Option B",
+        "112",
         "1930",
         "1098"
       ],
@@ -11310,7 +11310,7 @@ const jangyanQuestions = {
       "options": [
         "181",
         "1930",
-        "108✅ Correct Answer: Option C",
+        "108",
         "1098"
       ],
       "answer": 0,
@@ -11322,7 +11322,7 @@ const jangyanQuestions = {
       "id": 309,
       "question": "Which number is India's dedicated financial cybercrime helpline?",
       "options": [
-        "101✅ Correct Answer: Option B",
+        "101",
         "1930",
         "108",
         "112"
@@ -11351,7 +11351,7 @@ const jangyanQuestions = {
       "question": "Which department operates CPGRAMS?",
       "options": [
         "Ministry of External Affairs",
-        "UIDAI✅ Correct Answer: Option A",
+        "UIDAI",
         "Election Commission of India",
         "Department of Administrative Reforms and Public Grievances (DARPG)"
       ],
@@ -11380,7 +11380,7 @@ const jangyanQuestions = {
       "options": [
         "1 year",
         "21 days",
-        "90 days✅ Correct Answer: Option A",
+        "90 days",
         "6 months"
       ],
       "answer": 1,
@@ -11406,7 +11406,7 @@ const jangyanQuestions = {
       "id": 315,
       "question": "Which body coordinates national disaster response in India?",
       "options": [
-        "RBI✅ Correct Answer: Option A",
+        "RBI",
         "Election Commission of India",
         "UIDAI",
         "National Disaster Management Authority (NDMA)"
@@ -11434,7 +11434,7 @@ const jangyanQuestions = {
       "id": 317,
       "question": "Which of these is the correct number for police services (before full integration into 112)?",
       "options": [
-        "1090✅ Correct Answer: Option A",
+        "1090",
         "100",
         "101",
         "108"
@@ -11451,7 +11451,7 @@ const jangyanQuestions = {
         "108",
         "100",
         "101",
-        "181✅ Correct Answer: Option B"
+        "181"
       ],
       "answer": 2,
       "explanation": "101 was the traditional fire emergency number, now also accessible through the unified 112 system.",
@@ -11462,7 +11462,7 @@ const jangyanQuestions = {
       "id": 319,
       "question": "Which of these numbers is commonly used for ambulance/medical emergencies in many states?",
       "options": [
-        "1098✅ Correct Answer: Option C",
+        "1098",
         "100",
         "101",
         "108"
@@ -11589,7 +11589,7 @@ const jangyanQuestions = {
       "question": "Which of these best reflects the correct total grievances redressed on CPGRAMS between 2019 and 2024?",
       "options": [
         "Over 1.15 crore",
-        "About 500✅ Correct Answer: Option A",
+        "About 500",
         "Exactly 50,000",
         "About 1,000"
       ],
@@ -11926,7 +11926,7 @@ const jangyanQuestions = {
       "options": [
         "17,792",
         "About 1,000",
-        "About 500✅ Correct Answer: Option B",
+        "About 500",
         "About 100"
       ],
       "answer": 0,
@@ -11996,7 +11996,7 @@ const jangyanQuestions = {
       "options": [
         "19 February 2019",
         "12 November 2021",
-        "26 July 2014✅ Correct Answer: Option A",
+        "26 July 2014",
         "1 April 2026"
       ],
       "answer": 1,
@@ -12053,7 +12053,7 @@ const jangyanQuestions = {
         "1 year",
         "30 days",
         "90 days",
-        "7 days✅ Correct Answer: Option A"
+        "7 days"
       ],
       "answer": 1,
       "explanation": "If a bank or NBFC doesn't respond within 30 days, or the response is unsatisfactory, the customer can escalate to the RBI\nOmbudsman.",
@@ -12079,7 +12079,7 @@ const jangyanQuestions = {
       "question": "What is the toll-free contact centre number for the RBI Ombudsman Scheme?",
       "options": [
         "1098",
-        "181✅ Correct Answer: Option B",
+        "181",
         "1930",
         "14448"
       ],
@@ -12610,7 +12610,7 @@ const jangyanQuestions = {
       "id": 401,
       "question": "Which Article of the Constitution establishes the Election Commission of India?",
       "options": [
-        "Article 51A✅ Correct Answer: Option B",
+        "Article 51A",
         "Article 324",
         "Article 1",
         "Article 32"
@@ -12654,7 +12654,7 @@ const jangyanQuestions = {
       "options": [
         "18 years",
         "16 years",
-        "25 years✅ Correct Answer: Option B",
+        "25 years",
         "21 years"
       ],
       "answer": 0,
@@ -12669,7 +12669,7 @@ const jangyanQuestions = {
         "Form 7",
         "Form 6",
         "Form 8",
-        "Form 16✅ Correct Answer: Option A"
+        "Form 16"
       ],
       "answer": 1,
       "explanation": "Form 6 is used for registering as a new voter, or when moving to a new constituency.",
@@ -12681,7 +12681,7 @@ const jangyanQuestions = {
       "question": "Which form is used to object to or seek deletion of an entry in the electoral roll?",
       "options": [
         "Form 8",
-        "Form 12✅ Correct Answer: Option B",
+        "Form 12",
         "Form 7",
         "Form 6"
       ],
@@ -12695,7 +12695,7 @@ const jangyanQuestions = {
       "question": "Which form is used for correcting details within the same constituency?",
       "options": [
         "Form 7",
-        "Form 10✅ Correct Answer: Option C",
+        "Form 10",
         "Form 6",
         "Form 8"
       ],
@@ -12724,7 +12724,7 @@ const jangyanQuestions = {
       "options": [
         "A physical voter ID card only",
         "The digital version of the Electors Photo Identity Card",
-        "A railway pass✅ Correct Answer: Option B",
+        "A railway pass",
         "A type of Aadhaar card"
       ],
       "answer": 1,
@@ -12767,7 +12767,7 @@ const jangyanQuestions = {
         "Kerala, in the 1960 Assembly elections",
         "Tamil Nadu",
         "Uttar Pradesh",
-        "Maharashtra✅ Correct Answer: Option A"
+        "Maharashtra"
       ],
       "answer": 0,
       "explanation": "The MCC originated with Kerala's 1960 Assembly elections before being circulated nationally ahead of the 1962 Lok Sabha\nelections.",
@@ -12792,7 +12792,7 @@ const jangyanQuestions = {
       "id": 414,
       "question": "Which Supreme Court case made VVPATs a mandatory safeguard?",
       "options": [
-        "Vishaka case✅ Correct Answer: Option B",
+        "Vishaka case",
         "Kesavananda Bharati case",
         "Subramanian Swamy vs Election Commission of India",
         "Maneka Gandhi case"
@@ -12863,7 +12863,7 @@ const jangyanQuestions = {
       "question": "Who is India's current Chief Election Commissioner, as of 2026?",
       "options": [
         "Sunil Arora",
-        "Om Birla✅ Correct Answer: Option A",
+        "Om Birla",
         "Rajiv Kumar",
         "Gyanesh Kumar"
       ],
@@ -14015,7 +14015,7 @@ const jangyanQuestions = {
         "Reducing the risk of death, injury, or damage on roads",
         "Increasing the number of traffic police",
         "Reducing the number of vehicles on the road",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Road safety refers to the practices, rules, and systems designed to reduce the risk of death, injury, or damage on roads for everyone who uses them.",
@@ -14027,7 +14027,7 @@ const jangyanQuestions = {
       "question": "According to MoRTH, which factor was linked to the highest share of road accident deaths in India in 2023?\nDrunk driving",
       "options": [
         "Mobile phone use",
-        "Correct Answer: Option (B)",
+        "",
         "Overspeeding",
         "Wrong-side driving"
       ],
@@ -14043,7 +14043,7 @@ const jangyanQuestions = {
         "Around 6 lakh",
         "Around 4.8 lakh",
         "Around 8 lakh",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "MoRTH recorded 4,80,583 road accidents in 2023, the highest number of fatalities ever recorded in a single year in India.",
@@ -14056,7 +14056,7 @@ const jangyanQuestions = {
       "options": [
         "Two-wheeler riders",
         "Car occupants",
-        "Correct Answer: Option (C)",
+        "",
         "Cyclists"
       ],
       "answer": 1,
@@ -14069,7 +14069,7 @@ const jangyanQuestions = {
       "question": "Highways make up roughly what share of India's total road network, yet account for over half of all accidents?\nAround 1%",
       "options": [
         "Around 5%",
-        "Correct Answer: Option (B)",
+        "",
         "Around 15%",
         "Around 25%"
       ],
@@ -14084,7 +14084,7 @@ const jangyanQuestions = {
       "options": [
         "The Safe System (Safe System Approach)",
         "The compoundable offence principle",
-        "Correct Answer: Option (B)",
+        "",
         "The Golden Hour concept"
       ],
       "answer": 3,
@@ -14097,7 +14097,7 @@ const jangyanQuestions = {
       "question": "What does the term 'Black Spot' refer to in road safety?\nA pothole on the road",
       "options": [
         "A poorly lit street lamp",
-        "Correct Answer: Option (B)",
+        "",
         "A road stretch with a history of frequent or severe accidents",
         "A damaged traffic signal"
       ],
@@ -14110,7 +14110,7 @@ const jangyanQuestions = {
       "id": 8,
       "question": "Which age group accounted for around 66% of road accident victims in India, according to MoRTH data?\nBelow 18 years",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "46–60 years",
         "Above 60 years",
         "18–45 years"
@@ -14124,7 +14124,7 @@ const jangyanQuestions = {
       "id": 9,
       "question": "What is the 'Golden Hour' in the context of road accidents?\nThe busiest traffic hour of the day",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The hour reserved for road safety awareness campaigns",
         "The hour when most accidents are reported",
         "The first hour after a traumatic injury, critical for survival"
@@ -14140,7 +14140,7 @@ const jangyanQuestions = {
       "options": [
         "Kerala",
         "Haryana",
-        "Correct Answer: Option (C)",
+        "",
         "Gujarat"
       ],
       "answer": 3,
@@ -14154,7 +14154,7 @@ const jangyanQuestions = {
       "options": [
         "Only professional drivers should be allowed on public roads",
         "No loss of life on the road is acceptable, and deaths are preventable, not inevitable",
-        "Correct Answer: Option (B)",
+        "",
         "Road speed limits should be maximised to reduce congestion"
       ],
       "answer": 0,
@@ -14166,7 +14166,7 @@ const jangyanQuestions = {
       "id": 12,
       "question": "Under the Motor Vehicles Act, which section makes helmet-wearing compulsory for riders and pillion passengers on two-wheelers?\nSection 112",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Section 146",
         "Section 185",
         "Section 129"
@@ -14181,7 +14181,7 @@ const jangyanQuestions = {
       "question": "What is the legal blood alcohol limit for driving in India under Section 185 of the Motor Vehicles Act?\n10 mg per 100 ml of blood",
       "options": [
         "80 mg per 100 ml of blood",
-        "Correct Answer: Option (B)",
+        "",
         "50 mg per 100 ml of blood",
         "30 mg per 100 ml of blood"
       ],
@@ -14195,7 +14195,7 @@ const jangyanQuestions = {
       "question": "What is the minimum age to obtain a licence to drive a car or geared two-wheeler in India?\n16 years",
       "options": [
         "18 years",
-        "Correct Answer: Option (B)",
+        "",
         "21 years",
         "20 years"
       ],
@@ -14209,7 +14209,7 @@ const jangyanQuestions = {
       "question": "Who is legally protected from harassment under India's Good Samaritan guidelines?\nOnly doctors who treat accident victims",
       "options": [
         "Only the driver responsible for the accident",
-        "Correct Answer: Option (B)",
+        "",
         "Only police officers at the scene",
         "Any bystander who voluntarily helps an accident victim"
       ],
@@ -14225,7 +14225,7 @@ const jangyanQuestions = {
         "Free treatment up to ₹1.5 lakh for the first seven days at designated hospitals",
         "A one-time cash payment of ₹1.5 lakh",
         "Free vehicle repair after an accident",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The Cashless Treatment Scheme, 2025 guarantees cashless emergency treatment of up to ₹1.5 lakh for the first seven days after an accident, at designated hospitals.",
@@ -14239,7 +14239,7 @@ const jangyanQuestions = {
         "About 10%",
         "About 20%",
         "About 35%",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "MoRTH data for 2022 shows that around 20.4% of accidents occurred between 6 PM and 9 PM, making it the busiest and riskiest window of the day.",
@@ -14252,7 +14252,7 @@ const jangyanQuestions = {
       "options": [
         "Pedestrians",
         "Car drivers",
-        "Correct Answer: Option (C)",
+        "",
         "Truck drivers"
       ],
       "answer": 3,
@@ -14266,7 +14266,7 @@ const jangyanQuestions = {
       "options": [
         "March",
         "November",
-        "Correct Answer: Option (A)",
+        "",
         "July"
       ],
       "answer": 0,
@@ -14280,7 +14280,7 @@ const jangyanQuestions = {
       "options": [
         "Higher-speed highway stretches run largely through rural and semi-urban areas",
         "Urban areas have no traffic laws",
-        "Correct Answer: Option (B)",
+        "",
         "Rural residents do not use helmets or seatbelts at all"
       ],
       "answer": 1,
@@ -14293,7 +14293,7 @@ const jangyanQuestions = {
       "question": "Under the Motor Vehicles (Amendment) Act, 2019, what is the minimum compensation for an accident death, up from the earlier ₹25,000?\n₹50,000",
       "options": [
         "₹1 lakh",
-        "Correct Answer: Option (C)",
+        "",
         "₹5 lakh",
         "₹2 lakh"
       ],
@@ -14307,7 +14307,7 @@ const jangyanQuestions = {
       "question": "Which Indian city recorded the highest number of road accidents among million-plus population cities in 2022?\nMumbai",
       "options": [
         "Delhi",
-        "Correct Answer: Option (C)",
+        "",
         "Bengaluru",
         "Chennai"
       ],
@@ -14323,7 +14323,7 @@ const jangyanQuestions = {
         "Any traffic jam lasting more than 30 minutes",
         "An unplanned, unexpected event on a public road resulting in death, injury, or damage",
         "Only accidents involving two or more vehicles",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A road accident is defined as an unplanned, unexpected event on a public road that results in death, injury, or damage.",
@@ -14337,7 +14337,7 @@ const jangyanQuestions = {
         "1,72,890",
         "1,80,320",
         "1,68,491",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 1,
       "explanation": "India recorded 1,72,890 road accident deaths in 2023, the highest ever recorded in a single year according to MoRTH.",
@@ -14350,7 +14350,7 @@ const jangyanQuestions = {
       "options": [
         "Neither, since black spot rectification is the only effective measure",
         "It depends on whether the stretch is also a high-speed corridor, since overspeeding remains the leading cause nationally",
-        "Correct Answer: Option (D)",
+        "",
         "The lighting improvement, since darkness is the leading cause of all accidents"
       ],
       "answer": 2,
@@ -14362,7 +14362,7 @@ const jangyanQuestions = {
       "id": 26,
       "question": "What does 'Fatality Rate' typically measure in road safety statistics?\nNumber of accidents per day",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Number of traffic police per city",
         "Number of road deaths per 10,000 registered vehicles",
         "Number of vehicles manufactured per year"
@@ -14378,7 +14378,7 @@ const jangyanQuestions = {
       "options": [
         "Traffic Signal Standardisation",
         "Post-Crash Response",
-        "Correct Answer: Option (B)",
+        "",
         "Toll Collection Efficiency"
       ],
       "answer": 0,
@@ -14392,7 +14392,7 @@ const jangyanQuestions = {
       "options": [
         "Parking a vehicle inside a private garage",
         "Driving a new vehicle for the first time",
-        "Correct Answer: Option (B)",
+        "",
         "Breaking any rule under the Motor Vehicles Act, such as overspeeding or signal jumping"
       ],
       "answer": 1,
@@ -14405,7 +14405,7 @@ const jangyanQuestions = {
       "question": "What long-term national goal was set by the New Delhi Road Safety Declaration in February 2026?\nDoubling the number of highways by 2030",
       "options": [
         "Zero preventable road fatalities",
-        "Correct Answer: Option (B)",
+        "",
         "Banning two-wheelers from national highways",
         "Making all vehicles electric by 2030"
       ],
@@ -14418,7 +14418,7 @@ const jangyanQuestions = {
       "id": 30,
       "question": "Which of these road users is specifically responsible for using footpaths and zebra crossings wherever available?\nOnly truck drivers",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "Pedestrians",
         "Only cyclists",
         "Only bus drivers"
@@ -14435,7 +14435,7 @@ const jangyanQuestions = {
         "5,20,000",
         "3,10,500",
         "4,62,825",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 0,
       "explanation": "MoRTH recorded 4,62,825 road accident injuries in 2023, an increase over the previous year's figures.",
@@ -14449,7 +14449,7 @@ const jangyanQuestions = {
         "Awareness alone, without matching gains in enforcement and infrastructure, has been insufficient to reverse the trend",
         "Vehicle numbers must have decreased during this period",
         "MoRTH stopped collecting accurate data after 2021",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A continued rise in accidents, deaths, and injuries despite awareness efforts suggests that education alone is not enough — sustained gains typically require it to be matched by stronger\nenforcement, engineering, and emergency response improvements.",
@@ -14463,7 +14463,7 @@ const jangyanQuestions = {
         "Wearing a seatbelt and not distracting the driver",
         "Repairing the vehicle's brakes",
         "Choosing the driving route",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Passengers are expected to wear seatbelts, avoid distracting the driver, and board or alight only at designated stops.",
@@ -14476,7 +14476,7 @@ const jangyanQuestions = {
       "options": [
         "Maharashtra",
         "Uttar Pradesh",
-        "Correct Answer: Option (C)",
+        "",
         "Karnataka"
       ],
       "answer": 3,
@@ -14489,7 +14489,7 @@ const jangyanQuestions = {
       "question": "What does 'Right of Way' mean in road safety?\nThe fastest route to a destination",
       "options": [
         "The right lane on a multi-lane highway",
-        "Correct Answer: Option (B)",
+        "",
         "The legal priority given to one road user to proceed before another",
         "A road reserved only for VIP movement"
       ],
@@ -14504,7 +14504,7 @@ const jangyanQuestions = {
       "options": [
         "To formally and systematically check road design for safety risks",
         "To issue driving licences",
-        "Correct Answer: Option (B)",
+        "",
         "To collect toll payments"
       ],
       "answer": 1,
@@ -14519,7 +14519,7 @@ const jangyanQuestions = {
         "Close the expressway permanently",
         "Conduct a road safety audit of the merge points and re-engineer them for safer merging behaviour",
         "Rely solely on driver education campaigns near the expressway",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Under the Safe System Approach, when a specific location repeatedly produces crashes despite meeting general standards, the appropriate response is to audit and re-engineer that location,\nsince infrastructure design is expected to compensate for predictable human error.",
@@ -14531,7 +14531,7 @@ const jangyanQuestions = {
       "question": "What is the main takeaway of the statement that 'awareness is the first layer of protection' in road safety?\nAwareness alone guarantees safety in all situations",
       "options": [
         "Knowing risks and rules is a necessary starting point, even though it must be combined with action",
-        "Correct Answer: Option (B)",
+        "",
         "Only new drivers need road safety awareness",
         "Awareness is less important than expensive safety equipment"
       ],
@@ -14547,7 +14547,7 @@ const jangyanQuestions = {
         "Any accident occurring on a national highway",
         "An accident causing only vehicle damage",
         "An accident in which one or more people lose their lives",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A fatal accident is specifically defined as one in which one or more people lose their lives, distinguishing it from accidents causing only injury or property damage.",
@@ -14561,7 +14561,7 @@ const jangyanQuestions = {
         "Improving helmet compliance enforcement and separated pedestrian infrastructure together",
         "Increasing the number of luxury bus routes",
         "Reducing the price of car insurance",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Since two-wheeler riders and pedestrians together represent the two largest victim groups, addressing both helmet compliance and safe pedestrian infrastructure targets the largest combined\nshare of fatalities.",
@@ -14572,7 +14572,7 @@ const jangyanQuestions = {
       "id": 41,
       "question": "What is the core idea behind describing road safety as a 'shared system' involving road users, government, vehicle manufacturers, and emergency services?\nOnly the government is legally responsible for all accidents",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Effective road safety depends on multiple stakeholders working together, not any single group alone",
         "Vehicle manufacturers bear no responsibility for road safety",
         "Emergency services are only relevant after an accident has already occurred"
@@ -14588,7 +14588,7 @@ const jangyanQuestions = {
       "options": [
         "Enforcement has no relationship with overspeeding-related fatalities",
         "Town B is likely to see a higher fatality rate, since signage without enforcement rarely changes driver behaviour on its own",
-        "Correct Answer: Option (B)",
+        "",
         "Town A will have a higher fatality rate due to stricter enforcement"
       ],
       "answer": 3,
@@ -14603,7 +14603,7 @@ const jangyanQuestions = {
         "Cross diagonally to save time",
         "Use a zebra crossing, subway, or foot-over-bridge wherever available",
         "Wait for a vehicle to slow down before starting to cross anywhere",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Pedestrians are advised to use a zebra crossing, subway, or foot-over-bridge wherever available, rather than crossing at an undesignated point.",
@@ -14614,7 +14614,7 @@ const jangyanQuestions = {
       "id": 44,
       "question": "What is the significance of the number '5%' frequently cited in relation to India's highways and road safety statistics?\nHighways represent about 5% of vehicles on Indian roads",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "5% of Indian drivers hold a valid licence",
         "5% of road accidents involve pedestrians",
         "Highways make up about 5% of India's total road network but a much larger share of accidents"
@@ -14629,7 +14629,7 @@ const jangyanQuestions = {
       "question": "Which of these best describes 'Defensive Driving'?\nDriving as fast as possible to avoid being hit from behind",
       "options": [
         "Driving with headlights on at all times, regardless of visibility",
-        "Correct Answer: Option (B)",
+        "",
         "Driving only during daylight hours",
         "Driving in a way that anticipates and avoids potential hazards"
       ],
@@ -14643,7 +14643,7 @@ const jangyanQuestions = {
       "question": "Why does the Safe System Approach place responsibility on system designers (road engineers, policymakers) in addition to individual drivers?\nBecause drivers are never at fault in accidents",
       "options": [
         "Because policymakers physically operate vehicles on the road",
-        "Correct Answer: Option (B)",
+        "",
         "Because it assumes humans will inevitably make mistakes, and the system should prevent those mistakes from becoming fatal",
         "Because engineers are legally liable for every accident"
       ],
@@ -14658,7 +14658,7 @@ const jangyanQuestions = {
       "options": [
         "Total kilometres of new highway constructed",
         "Number of road safety posters displayed in public places",
-        "Correct Answer: Option (B)",
+        "",
         "Year-on-year change in accidents, deaths, and injuries, alongside the fatality rate per 10,000 vehicles"
       ],
       "answer": 0,
@@ -14672,7 +14672,7 @@ const jangyanQuestions = {
       "options": [
         "Because every road user's daily choices directly affect their own and others' safety",
         "Because it is taught only in driving schools",
-        "Correct Answer: Option (B)",
+        "",
         "Because it has no connection to everyday behaviour"
       ],
       "answer": 1,
@@ -14684,7 +14684,7 @@ const jangyanQuestions = {
       "id": 49,
       "question": "Roughly how many road accident deaths does India's 2023 total of 1,72,890 correspond to, in terms of frequency?\nAround one death every 30 minutes",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Around one death every three minutes",
         "Around one death every hour",
         "Around one death every 10 minutes"
@@ -14698,7 +14698,7 @@ const jangyanQuestions = {
       "id": 50,
       "question": "A highway stretch has good lighting, well-maintained signage, and low rainfall year-round, yet still records a high fatality rate. Based on the four broad categories of\naccident causes, which category should investigators prioritise checking first, given the other three are largely ruled out?\nWeather-related factors",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "Road environment factors",
         "Human error and vehicle-related factors (such as speeding or poor vehicle maintenance)",
         "None of the four categories, since the stretch is well-designed"
@@ -14714,7 +14714,7 @@ const jangyanQuestions = {
       "options": [
         "Centre",
         "Left",
-        "Correct Answer: Option (B)",
+        "",
         "Either side, as convenient"
       ],
       "answer": 0,
@@ -14729,7 +14729,7 @@ const jangyanQuestions = {
         "Prepare to accelerate",
         "Slow down only",
         "Complete stop",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A red signal requires a complete stop behind the stop line or crosswalk, and vehicles must wait until the signal turns green.",
@@ -14743,7 +14743,7 @@ const jangyanQuestions = {
         "120 km/h",
         "100 km/h",
         "140 km/h",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "The national default speed limit for cars on expressways is 120 km/h, as notified by MoRTH via S.O. 1522(E) in April 2018.",
@@ -14756,7 +14756,7 @@ const jangyanQuestions = {
       "options": [
         "The road is one-way",
         "No overtaking is allowed",
-        "Correct Answer: Option (B)",
+        "",
         "The lane is reserved for buses"
       ],
       "answer": 3,
@@ -14771,7 +14771,7 @@ const jangyanQuestions = {
         "Sound the horn and proceed slowly",
         "Stop, since a police officer's signal overrides the automatic light signal",
         "Wait for the light to turn red before deciding",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A traffic police officer's hand signal always overrides an automatic light signal, so the driver must stop despite the green light.",
@@ -14785,7 +14785,7 @@ const jangyanQuestions = {
         "Triangle",
         "Rectangle",
         "Octagon",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Cautionary or warning signs are triangular, with a red border and the apex pointing upward, alerting drivers to hazards ahead.",
@@ -14799,7 +14799,7 @@ const jangyanQuestions = {
         "Leaving a vehicle in a dangerous or obstructive parking position",
         "Driving without a valid PUC certificate",
         "Failing to wear a seatbelt",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Section 122 prohibits leaving a vehicle stationary on a public road in a manner that causes danger, obstruction, or inconvenience to other road users.",
@@ -14810,7 +14810,7 @@ const jangyanQuestions = {
       "id": 58,
       "question": "According to the Rules of the Road Regulations, 1989, what is prohibited on a road marked 'One Way'?\nParking at any time",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Driving against the marked direction of travel",
         "Using indicators",
         "Overtaking any vehicle"
@@ -14826,7 +14826,7 @@ const jangyanQuestions = {
       "options": [
         "Overtaking is not permitted in any case",
         "From the left, since the truck is turning right and has signalled accordingly",
-        "Correct Answer: Option (B)",
+        "",
         "Only if the truck comes to a complete stop first"
       ],
       "answer": 0,
@@ -14841,7 +14841,7 @@ const jangyanQuestions = {
         "Lane changing is permitted when safe",
         "The road is closed ahead",
         "A pedestrian crossing is near",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A broken white line indicates that changing lanes is permitted when it is safe to do so, unlike a solid white line which discourages lane shifting.",
@@ -14855,7 +14855,7 @@ const jangyanQuestions = {
         "Caution — prepare to stop if safe to do so",
         "Pedestrians may cross",
         "Stop immediately, no exceptions",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A yellow or amber light signals caution, meaning drivers should slow down and prepare to stop if it is safe to do so, since the signal is about to change.",
@@ -14868,7 +14868,7 @@ const jangyanQuestions = {
       "options": [
         "Green rectangle",
         "Red octagon with white text",
-        "Correct Answer: Option (C)",
+        "",
         "Yellow triangle"
       ],
       "answer": 3,
@@ -14882,7 +14882,7 @@ const jangyanQuestions = {
       "options": [
         "100 km/h",
         "90 km/h",
-        "Correct Answer: Option (C)",
+        "",
         "70 km/h"
       ],
       "answer": 0,
@@ -14896,7 +14896,7 @@ const jangyanQuestions = {
       "options": [
         "No Parking allows a brief stop with the driver present; No Stopping allows no halt at all",
         "No Stopping only applies to two-wheelers",
-        "Correct Answer: Option (B)",
+        "",
         "No Parking applies only at night"
       ],
       "answer": 1,
@@ -14908,7 +14908,7 @@ const jangyanQuestions = {
       "id": 65,
       "question": "A driver sees a broken yellow line on their side of the road but a solid yellow line on the opposing side. What does this combination most likely mean?\nNeither side may overtake under any circumstances",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The road is closed to all traffic",
         "Both sides may overtake freely",
         "The driver's side may overtake when safe, but oncoming traffic may not overtake at this point"
@@ -14922,7 +14922,7 @@ const jangyanQuestions = {
       "id": 66,
       "question": "What is the minimum age to obtain a licence for a gearless two-wheeler up to 50cc in India?\n14 years",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "16 years",
         "21 years",
         "18 years"
@@ -14939,7 +14939,7 @@ const jangyanQuestions = {
         "₹10,000 flat fine for all vehicles",
         "₹1,000 – ₹4,000, varying by vehicle category",
         "No monetary penalty, only licence suspension",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Overspeeding penalties range from about ₹1,000 to ₹4,000 depending on the vehicle category, under the Motor Vehicles (Amendment) Act, 2019.",
@@ -14952,7 +14952,7 @@ const jangyanQuestions = {
       "options": [
         "At junctions, bends, and pedestrian crossings",
         "Only on single-lane rural roads",
-        "Correct Answer: Option (B)",
+        "",
         "Only during night-time driving"
       ],
       "answer": 1,
@@ -14965,7 +14965,7 @@ const jangyanQuestions = {
       "question": "What is the purpose of a 'Give Way' sign?\nTo indicate a mandatory stop at all times",
       "options": [
         "To require yielding to traffic on the road being entered, if traffic is present",
-        "Correct Answer: Option (B)",
+        "",
         "To mark a pedestrian-only zone",
         "To indicate the end of a one-way road"
       ],
@@ -14978,7 +14978,7 @@ const jangyanQuestions = {
       "id": 70,
       "question": "A driver on a two-lane road wants to overtake a slow-moving cyclist. The road has no centre line markings at all, and the road ahead is clearly visible for a long\ndistance with no oncoming traffic. What is the most appropriate action?\nNever overtake, since there is no marking permitting it",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Overtake with adequate clearance, since the road ahead is clearly visible and safe, applying general safe overtaking judgment",
         "Only overtake if a traffic police officer is present",
         "Wait for a solid line to appear before overtaking"
@@ -14995,7 +14995,7 @@ const jangyanQuestions = {
         "Ignore it and follow the previous signal",
         "Treat it like a Stop sign — stop completely, then proceed when safe",
         "Only slow down, without stopping",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A flashing red light is treated exactly like a Stop sign: the driver must come to a complete stop and proceed only when it is safe to do so.",
@@ -15008,7 +15008,7 @@ const jangyanQuestions = {
       "options": [
         "Green rectangle with white text",
         "Red triangle",
-        "Correct Answer: Option (B)",
+        "",
         "Yellow octagon"
       ],
       "answer": 1,
@@ -15020,7 +15020,7 @@ const jangyanQuestions = {
       "id": 73,
       "question": "What is the national default speed limit for goods vehicles (N category) on a municipal road?\n40 km/h",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "60 km/h",
         "70 km/h",
         "50 km/h"
@@ -15034,7 +15034,7 @@ const jangyanQuestions = {
       "id": 74,
       "question": "What does a double white line on a road mean?\nLane changes are always permitted",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "It marks a temporary construction zone",
         "The line must never be crossed under any circumstance",
         "Only two-wheelers may cross it"
@@ -15051,7 +15051,7 @@ const jangyanQuestions = {
         "Colour has no legal significance in Indian traffic signs",
         "Red circles are mandatory and prohibit an action; blue circles are also mandatory but instruct a required, positive action",
         "Both are equally non-binding suggestions",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 0,
       "explanation": "Both blue and red circular signs are mandatory and legally binding, but red circles prohibit an action ('don't'), while blue circles instruct a required action ('do'), such as a compulsory turn.",
@@ -15064,7 +15064,7 @@ const jangyanQuestions = {
       "options": [
         "Staying within a marked lane and changing lanes only when safe and signalled",
         "Driving with headlights on during the day",
-        "Correct Answer: Option (B)",
+        "",
         "Avoiding driving on highways altogether"
       ],
       "answer": 1,
@@ -15079,7 +15079,7 @@ const jangyanQuestions = {
         "Overtaking only, not continuous use",
         "Two-wheelers exclusively",
         "Parking during heavy traffic",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "On multi-lane roads, the rightmost lane is intended for overtaking only; drivers should return to the left lane promptly after completing an overtake.",
@@ -15092,7 +15092,7 @@ const jangyanQuestions = {
       "options": [
         "The vehicle owner or guardian is fined ₹25,000 and the registration may be cancelled",
         "A fine of ₹500 is imposed on the juvenile",
-        "Correct Answer: Option (B)",
+        "",
         "Only a verbal warning is issued"
       ],
       "answer": 3,
@@ -15106,7 +15106,7 @@ const jangyanQuestions = {
       "options": [
         "To mark a pedestrian-only street",
         "To indicate a toll collection point",
-        "Correct Answer: Option (B)",
+        "",
         "To indicate an area that must never be blocked, even in heavy traffic"
       ],
       "answer": 0,
@@ -15121,7 +15121,7 @@ const jangyanQuestions = {
         "Wait before entering the box junction until it is certain the exit can be cleared completely",
         "Enter and stop inside the box junction if needed, since traffic is moving slowly",
         "Sound the horn repeatedly to clear the junction",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A driver should never enter a box junction unless their exit is clear enough to complete the crossing without stopping inside it, even if the entry point looks momentarily clear.",
@@ -15135,7 +15135,7 @@ const jangyanQuestions = {
         "To mark where a vehicle must come to a complete halt at a signal or stop sign",
         "To indicate a speed bump ahead",
         "To show the boundary of a parking zone",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A stop line is a thick white line marking where a vehicle must come to a complete halt at a signal-controlled junction or stop sign.",
@@ -15147,7 +15147,7 @@ const jangyanQuestions = {
       "question": "What does the term 'Intersection' refer to in traffic terminology?\nA one-way road",
       "options": [
         "A vehicle inspection checkpoint",
-        "Correct Answer: Option (B)",
+        "",
         "A point where two or more roads cross or meet",
         "A pedestrian-only zone"
       ],
@@ -15163,7 +15163,7 @@ const jangyanQuestions = {
         "100 km/h",
         "80 km/h",
         "60 km/h",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 0,
       "explanation": "The national default speed limit for motorcycles on a 4-lane divided road is 80 km/h, the same as on expressways where permitted.",
@@ -15176,7 +15176,7 @@ const jangyanQuestions = {
       "options": [
         "Overtake as quickly as possible regardless of visibility",
         "Sound the horn continuously throughout the overtaking manoeuvre",
-        "Correct Answer: Option (B)",
+        "",
         "Signal, ensure the road ahead is clear, and not exceed the speed limit while overtaking"
       ],
       "answer": 1,
@@ -15191,7 +15191,7 @@ const jangyanQuestions = {
         "Flash headlights repeatedly to signal disapproval",
         "Maintain speed or slow slightly, without obstructing the overtaking vehicle",
         "Move fully into the opposite lane to give more space",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A driver being overtaken should not speed up or obstruct the overtaking vehicle; maintaining a steady or slightly reduced speed allows the manoeuvre to be completed safely.",
@@ -15204,7 +15204,7 @@ const jangyanQuestions = {
       "options": [
         "To replace the need for traffic signals entirely",
         "To guide vehicle position and behaviour directly on the road surface",
-        "Correct Answer: Option (B)",
+        "",
         "To indicate the age of the road"
       ],
       "answer": 3,
@@ -15218,7 +15218,7 @@ const jangyanQuestions = {
       "options": [
         "No action is required at a give way line",
         "Only two-wheelers must observe it",
-        "Correct Answer: Option (B)",
+        "",
         "Yielding to traffic on the main road, with a full stop not always mandatory"
       ],
       "answer": 0,
@@ -15232,7 +15232,7 @@ const jangyanQuestions = {
       "options": [
         "Buses (M2/M3)",
         "Motorcycles",
-        "Correct Answer: Option (C)",
+        "",
         "Three-wheeled vehicles"
       ],
       "answer": 1,
@@ -15247,7 +15247,7 @@ const jangyanQuestions = {
         "Ensuring the pillion passenger also wears a helmet and that only one pillion is carried",
         "Pillion riders may sit sideways for comfort",
         "Pillion passengers do not need any safety gear",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A two-wheeler rider must ensure the pillion passenger wears a helmet and that only one pillion passenger is carried, as carrying more is unsafe and illegal.",
@@ -15259,7 +15259,7 @@ const jangyanQuestions = {
       "question": "A driver is approaching a signal-controlled intersection just as the light turns yellow, and they are already too close to stop safely without risking a rear-end collision.\nWhat is the safest course of action?\nSlam the brakes regardless of the vehicle behind",
       "options": [
         "Reverse away from the intersection",
-        "Correct Answer: Option (B)",
+        "",
         "Continue through the intersection at a steady speed, since stopping abruptly would be more dangerous",
         "Swerve onto the footpath to avoid the intersection"
       ],
@@ -15274,7 +15274,7 @@ const jangyanQuestions = {
       "options": [
         "Proceed at maximum possible speed",
         "Yield only to two-wheelers",
-        "Correct Answer: Option (A)",
+        "",
         "Stop and wait for pedestrians"
       ],
       "answer": 0,
@@ -15288,7 +15288,7 @@ const jangyanQuestions = {
       "options": [
         "The Motor Vehicles Act, 1988",
         "The Right to Information Act",
-        "Correct Answer: Option (B)",
+        "",
         "The Consumer Protection Act"
       ],
       "answer": 1,
@@ -15300,7 +15300,7 @@ const jangyanQuestions = {
       "id": 93,
       "question": "What is the national default speed limit for cars on 'other roads' (non-highway, non-municipal) under MoRTH's 2018 notification?\n50 km/h",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "60 km/h",
         "90 km/h",
         "70 km/h"
@@ -15315,7 +15315,7 @@ const jangyanQuestions = {
       "question": "What is the correct sequence of colours in a standard traffic signal from top to bottom?\nGreen, Yellow, Red",
       "options": [
         "Red, Yellow, Green",
-        "Correct Answer: Option (B)",
+        "",
         "Red, Green, Yellow",
         "Yellow, Red, Green"
       ],
@@ -15329,7 +15329,7 @@ const jangyanQuestions = {
       "question": "A three-wheeler and a car are both travelling on a 4-lane divided highway. Based on national default speed limits, which statement is accurate?\nBoth vehicles share the same speed limit of 100 km/h",
       "options": [
         "Three-wheelers are not permitted on 4-lane divided highways at all",
-        "Correct Answer: Option (B)",
+        "",
         "The car's limit (100 km/h) is double the three-wheeler's limit (50 km/h)",
         "The three-wheeler has a higher limit than the car"
       ],
@@ -15344,7 +15344,7 @@ const jangyanQuestions = {
       "options": [
         "Only slow down if the pedestrian is a child",
         "Drive around the pedestrian without stopping",
-        "Correct Answer: Option (B)",
+        "",
         "Stop and allow the pedestrian to cross, since pedestrians have the right of way there"
       ],
       "answer": 1,
@@ -15359,7 +15359,7 @@ const jangyanQuestions = {
         "To indicate a school zone",
         "To guide traffic safely around a hazard or central island using arrow-shaped patterns",
         "To mark reserved parking for emergency vehicles",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Chevron markings are arrow-shaped patterns used to guide traffic safely around a hazard, curve, or central island.",
@@ -15370,7 +15370,7 @@ const jangyanQuestions = {
       "id": 98,
       "question": "Which of these actions is prohibited when a 'No Entry' sign is displayed?\nParking near the sign",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Using a horn near the sign",
         "Entering that specific direction of the road with any vehicle",
         "Walking past the sign as a pedestrian"
@@ -15386,7 +15386,7 @@ const jangyanQuestions = {
       "options": [
         "Stop completely until the other lane is empty",
         "Sound the horn continuously while merging",
-        "Correct Answer: Option (B)",
+        "",
         "Signal early, check mirrors and blind spots, and merge smoothly when safe"
       ],
       "answer": 0,
@@ -15400,7 +15400,7 @@ const jangyanQuestions = {
       "options": [
         "Follow the compulsory-ahead instruction first, then find the next legal point to turn left",
         "Turn left only if no traffic police officer is visible",
-        "Correct Answer: Option (B)",
+        "",
         "Reverse back before reaching the sign"
       ],
       "answer": 1,
@@ -15412,7 +15412,7 @@ const jangyanQuestions = {
       "id": 101,
       "question": "How many core categories of traffic signs exist under IRC standards in India?\nTwo",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Five",
         "Four",
         "Three"
@@ -15427,7 +15427,7 @@ const jangyanQuestions = {
       "question": "What shape is a 'Give Way' sign in India?\nCircle",
       "options": [
         "Octagon",
-        "Correct Answer: Option (B)",
+        "",
         "Inverted triangle",
         "Rectangle"
       ],
@@ -15441,7 +15441,7 @@ const jangyanQuestions = {
       "question": "What colour is the 'No Entry' sign in India?\nSolid red circle with a white horizontal bar",
       "options": [
         "Blue circle with a white arrow",
-        "Correct Answer: Option (A)",
+        "",
         "Yellow triangle with a black symbol",
         "Green rectangle with white text"
       ],
@@ -15456,7 +15456,7 @@ const jangyanQuestions = {
       "options": [
         "About 20",
         "About 100",
-        "Correct Answer: Option (C)",
+        "",
         "About 40"
       ],
       "answer": 1,
@@ -15469,7 +15469,7 @@ const jangyanQuestions = {
       "question": "A driver sees a blue circular sign with a white left-pointing arrow near a median. What is the correct interpretation?\nIt is an informatory sign with no binding force",
       "options": [
         "Vehicles must pass to the left of the sign or median — a mandatory instruction",
-        "Correct Answer: Option (B)",
+        "",
         "It indicates a parking area to the left",
         "It marks a pedestrian crossing zone"
       ],
@@ -15482,7 +15482,7 @@ const jangyanQuestions = {
       "id": 106,
       "question": "What is the standard colour and shape combination for a cautionary road sign?\nBlue rectangle",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "White triangle with a red border, apex up",
         "Red circle",
         "Green octagon"
@@ -15497,7 +15497,7 @@ const jangyanQuestions = {
       "question": "What does the 'Men at Work' cautionary sign indicate?\nA permanent construction site with no traffic impact",
       "options": [
         "A pedestrian-only zone",
-        "Correct Answer: Option (B)",
+        "",
         "Roadwork or construction activity ahead",
         "A school zone"
       ],
@@ -15510,7 +15510,7 @@ const jangyanQuestions = {
       "id": 108,
       "question": "What is the correct colour combination for a kilometre stone marking a National Highway?\nGreen top, white base",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Black top, white base",
         "Orange top, white base",
         "Yellow top, white base"
@@ -15524,7 +15524,7 @@ const jangyanQuestions = {
       "id": 109,
       "question": "A traveller notices the kilometre stone beside the road has a green top instead of yellow. What should they conclude, and what practical action follows?\nThey are on a National Highway and should expect a 120 km/h limit",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The colour has no practical significance",
         "They are on a rural PMGSY road with no speed limit",
         "They are on a State Highway, maintained by the state PWD, and should adjust their speed expectation to the lower state highway limit"
@@ -15540,7 +15540,7 @@ const jangyanQuestions = {
       "options": [
         "Green",
         "Red",
-        "Correct Answer: Option (B)",
+        "",
         "Yellow"
       ],
       "answer": 3,
@@ -15555,7 +15555,7 @@ const jangyanQuestions = {
         "Purely decorative information",
         "A toll collection point",
         "A cautionary warning of a hazard ahead",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Triangular signs, with a red border and apex pointing up, represent cautionary warnings alerting drivers to hazards ahead.",
@@ -15566,7 +15566,7 @@ const jangyanQuestions = {
       "id": 112,
       "question": "What is the shape of most mandatory (regulatory) signs in India, aside from Stop and Give Way?\nTriangle",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Rectangle",
         "Pentagon",
         "Circle"
@@ -15580,7 +15580,7 @@ const jangyanQuestions = {
       "id": 113,
       "question": "What does a 'No Parking' sign (single diagonal bar) allow, unlike a 'No Stopping' sign?\nNothing — both signs mean the same thing",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A brief stop to drop off or pick up passengers, if the driver stays with the vehicle",
         "Overnight parking only",
         "Parking for commercial vehicles only"
@@ -15594,7 +15594,7 @@ const jangyanQuestions = {
       "id": 114,
       "question": "Which body is responsible for standardising road sign design in India?\nBureau of Indian Standards (BIS)",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "National Highways Authority of India (NHAI) alone",
         "Indian Roads Congress (IRC)",
         "Reserve Bank of India (RBI)"
@@ -15610,7 +15610,7 @@ const jangyanQuestions = {
       "options": [
         "Stop regardless of either signal and wait for police",
         "Follow the flagger's live signal, as it reflects the current, real-time situation and overrides the static sign",
-        "Correct Answer: Option (B)",
+        "",
         "Ignore both and proceed based on personal judgment only"
       ],
       "answer": 0,
@@ -15622,7 +15622,7 @@ const jangyanQuestions = {
       "id": 116,
       "question": "What is the purpose of a 'Route Marker' sign on a highway?\nTo indicate nearby fuel stations",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To mark a school zone",
         "To indicate a toll booth ahead",
         "To show the highway number the driver is currently travelling on"
@@ -15639,7 +15639,7 @@ const jangyanQuestions = {
         "They rely solely on GPS with no physical signs",
         "They have introduced numbered exits and international-style green guide signage",
         "They only use blue rectangular signs",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Newer access-controlled expressways have introduced numbered exits and international-style green guide signage, a step up from older highway signage conventions.",
@@ -15651,7 +15651,7 @@ const jangyanQuestions = {
       "question": "What does a hand signal of an arm raised with the palm facing oncoming traffic typically mean, when given by a traffic police officer?\nGo",
       "options": [
         "Stop",
-        "Correct Answer: Option (C)",
+        "",
         "Slow down",
         "Turn right"
       ],
@@ -15666,7 +15666,7 @@ const jangyanQuestions = {
       "options": [
         "Wave both arms overhead",
         "Extend an arm downward with the palm facing back to indicate slowing or stopping",
-        "Correct Answer: Option (B)",
+        "",
         "Continue riding without any signal, relying on other road users to notice"
       ],
       "answer": 0,
@@ -15680,7 +15680,7 @@ const jangyanQuestions = {
       "options": [
         "A temporary construction warning",
         "A mandatory speed limit",
-        "Correct Answer: Option (B)",
+        "",
         "An informatory sign, such as a hospital or petrol pump"
       ],
       "answer": 1,
@@ -15693,7 +15693,7 @@ const jangyanQuestions = {
       "question": "What is a 'Supplementary Plate' in relation to road signs?\nA spare number plate for a vehicle",
       "options": [
         "A smaller text board fitted below a main sign to add detail, like distance or timing",
-        "Correct Answer: Option (B)",
+        "",
         "A type of mandatory sign",
         "A licence plate used only on highways"
       ],
@@ -15706,7 +15706,7 @@ const jangyanQuestions = {
       "id": 122,
       "question": "Which of these signs is an example of a mandatory (regulatory) sign?\nSchool Ahead",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Hospital sign",
         "Speed Limit sign",
         "Petrol Pump sign"
@@ -15722,7 +15722,7 @@ const jangyanQuestions = {
       "options": [
         "No parking allowed; placed near toll booths",
         "No entry for two-wheelers; placed on highways",
-        "Correct Answer: Option (A)",
+        "",
         "No U-turn allowed; placed at intersections"
       ],
       "answer": 0,
@@ -15734,7 +15734,7 @@ const jangyanQuestions = {
       "id": 124,
       "question": "What is the correct interpretation of a road marking showing diagonal stripes in a hatched pattern?\nA pedestrian crossing zone",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A designated cycling lane",
         "An area that must not be entered by vehicles, often separating traffic flows or marking a merge zone",
         "A temporary parking zone"
@@ -15749,7 +15749,7 @@ const jangyanQuestions = {
       "question": "A learner driver mixes up 'No Entry' and 'One Way' signs during a test. What is the clearest distinction between the two?\nThey mean exactly the same thing",
       "options": [
         "No Entry closes a specific direction completely; One Way means the road remains open, but only in one direction",
-        "Correct Answer: Option (B)",
+        "",
         "One Way applies only to two-wheelers",
         "No Entry applies only at night"
       ],
@@ -15764,7 +15764,7 @@ const jangyanQuestions = {
       "options": [
         "To indicate a toll plaza ahead",
         "To create vibration and sound alerting drowsy or distracted drivers",
-        "Correct Answer: Option (B)",
+        "",
         "To mark a pedestrian crossing"
       ],
       "answer": 3,
@@ -15778,7 +15778,7 @@ const jangyanQuestions = {
       "options": [
         "A National Highway route marker",
         "A permanent Speed Limit sign",
-        "Correct Answer: Option (B)",
+        "",
         "A 'Road Closed' or 'Diversion' board near construction"
       ],
       "answer": 0,
@@ -15792,7 +15792,7 @@ const jangyanQuestions = {
       "options": [
         "Orange or red, often with reflective strips",
         "Black and white only",
-        "Correct Answer: Option (B)",
+        "",
         "Pastel green"
       ],
       "answer": 1,
@@ -15804,7 +15804,7 @@ const jangyanQuestions = {
       "id": 129,
       "question": "What is a 'Guide Sign' another name for?\nA mandatory sign",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "An informatory sign",
         "A temporary sign",
         "A cautionary sign"
@@ -15820,7 +15820,7 @@ const jangyanQuestions = {
       "options": [
         "Treat it as a Stop sign, since the octagon shape alone is enough to identify it, and stop completely",
         "Proceed at normal speed since the sign cannot be read",
-        "Correct Answer: Option (B)",
+        "",
         "Treat it as a Give Way sign, since colour cannot be confirmed"
       ],
       "answer": 3,
@@ -15835,7 +15835,7 @@ const jangyanQuestions = {
         "A railway crossing ahead",
         "A steep descent ahead",
         "A school is nearby and children may be crossing",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "The School Ahead cautionary sign warns drivers that a school is nearby and children may cross the road unpredictably.",
@@ -15849,7 +15849,7 @@ const jangyanQuestions = {
         "Circle",
         "Inverted triangle",
         "Rectangle",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 1,
       "explanation": "Informatory signs are rectangular, using blue backgrounds on city roads and green backgrounds on highways.",
@@ -15860,7 +15860,7 @@ const jangyanQuestions = {
       "id": 133,
       "question": "What does a 'Pedestrians Prohibited' sign indicate?\nPedestrians must cross only at marked points",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Pedestrians may not use that stretch of road at all",
         "Only elderly pedestrians are restricted",
         "Pedestrians must wear reflective gear"
@@ -15875,7 +15875,7 @@ const jangyanQuestions = {
       "question": "What is the correct colour for a kilometre stone on a rural or village road, often under the PMGSY scheme?\nYellow top, white base",
       "options": [
         "Orange top, white base",
-        "Correct Answer: Option (C)",
+        "",
         "Green top, white base",
         "Black top, white base"
       ],
@@ -15889,7 +15889,7 @@ const jangyanQuestions = {
       "question": "A driver on a district road notices a black-topped kilometre stone, then later a stretch with an orange-topped one. What does this transition most likely indicate?\nNo change in road authority or type",
       "options": [
         "A transition from a National Highway to an expressway",
-        "Correct Answer: Option (B)",
+        "",
         "A transition from a district/city road to a rural or PMGSY village road",
         "A malfunctioning or incorrectly installed marker"
       ],
@@ -15904,7 +15904,7 @@ const jangyanQuestions = {
       "options": [
         "A dedicated cycle lane or track",
         "A pedestrian crossing",
-        "Correct Answer: Option (B)",
+        "",
         "A bus-only lane"
       ],
       "answer": 1,
@@ -15917,7 +15917,7 @@ const jangyanQuestions = {
       "question": "What is the main function of 'Directional Arrows' painted on a carriageway?\nTo indicate the age of the road surface",
       "options": [
         "To show permitted lane movements, such as straight, turn, or merge",
-        "Correct Answer: Option (B)",
+        "",
         "To mark pedestrian zones only",
         "To indicate speed limits"
       ],
@@ -15932,7 +15932,7 @@ const jangyanQuestions = {
       "options": [
         "Both arms crossed overhead",
         "Arm extended, palm down, moved forward",
-        "Correct Answer: Option (B)",
+        "",
         "Palm down, moved up and down repeatedly"
       ],
       "answer": 3,
@@ -15946,7 +15946,7 @@ const jangyanQuestions = {
       "options": [
         "A yellow triangular warning sign",
         "A red octagonal Stop sign",
-        "Correct Answer: Option (B)",
+        "",
         "A blue square informatory sign with a bed and red cross symbol"
       ],
       "answer": 0,
@@ -15961,7 +15961,7 @@ const jangyanQuestions = {
         "An upcoming zebra crossing where pedestrians have absolute right of way",
         "A temporary construction detour",
         "A restricted zone for pedestrians only, banning vehicles entirely",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The pedestrian symbol combined with alternating white stripes (the zebra crossing pattern) signals an upcoming pedestrian crossing where pedestrians have absolute right of way, and drivers\nmust be prepared to stop.",
@@ -15975,7 +15975,7 @@ const jangyanQuestions = {
         "To provide directions, distances, and facility information",
         "To warn of an immediate hazard",
         "To indicate mandatory speed limits",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Informatory signs provide directions, distances, and facility information, helping drivers navigate rather than enforcing a legal restriction.",
@@ -15987,7 +15987,7 @@ const jangyanQuestions = {
       "question": "What does the 'Compulsory Ahead' sign (blue circle, white arrow) require a driver to do?\nTurn left only",
       "options": [
         "Give way to all oncoming traffic",
-        "Correct Answer: Option (B)",
+        "",
         "Travel only in the direction shown by the arrow",
         "Stop and wait for further instructions"
       ],
@@ -16002,7 +16002,7 @@ const jangyanQuestions = {
       "options": [
         "It sets vehicle insurance premiums",
         "It regulates driving licence fees",
-        "Correct Answer: Option (B)",
+        "",
         "It is the Code of Practice for Road Signs in India"
       ],
       "answer": 0,
@@ -16017,7 +16017,7 @@ const jangyanQuestions = {
         "A prohibited zone for livestock transport vehicles",
         "A farming zone with no traffic",
         "Animals may be crossing or present on the road",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The Cattle cautionary sign warns drivers that animals may be crossing or present on the road ahead, common in rural areas.",
@@ -16028,7 +16028,7 @@ const jangyanQuestions = {
       "id": 145,
       "question": "A construction zone has cones channelling traffic into a single lane, a 'Men at Work' sign, and a diversion board — but no human flagger is present. How should a\ndriver proceed?\nFollow the static signage and markings carefully, since no flagger is present to override them",
       "options": [
-        "Correct Answer: Option (A)",
+        "",
         "Proceed at normal highway speed since work zones without flaggers are not legally binding",
         "Ignore all signage since no flagger is present to enforce it",
         "Wait indefinitely until a flagger appears"
@@ -16044,7 +16044,7 @@ const jangyanQuestions = {
       "options": [
         "Triangle",
         "Pentagon",
-        "Correct Answer: Option (B)",
+        "",
         "Rectangle"
       ],
       "answer": 3,
@@ -16058,7 +16058,7 @@ const jangyanQuestions = {
       "options": [
         "Only two-wheelers may use that road",
         "The road is closed to all vehicles",
-        "Correct Answer: Option (B)",
+        "",
         "Vehicles exceeding the stated dimension may not proceed"
       ],
       "answer": 0,
@@ -16073,7 +16073,7 @@ const jangyanQuestions = {
         "A water-crossing service ahead",
         "A fuel station ahead",
         "A railway station ahead",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A Ferry sign indicates a water-crossing service ahead, informing drivers of an alternative crossing method where roads do not continue directly.",
@@ -16084,7 +16084,7 @@ const jangyanQuestions = {
       "id": 149,
       "question": "What does a triangular sign with a zigzag or curved arrow typically represent?\nA speed limit change",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A no-overtaking zone",
         "A school zone",
         "A hairpin bend or series of curves ahead"
@@ -16098,7 +16098,7 @@ const jangyanQuestions = {
       "id": 150,
       "question": "A driver sees both a 'No Parking' sign (blue circle, single diagonal bar) and, a little further along, a 'No Stopping' sign (blue circle, double diagonal bar) on the same\nstretch of road. What should the driver conclude about this stretch?\nBoth signs are redundant and mean the same thing",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only commercial vehicles are affected by either sign",
         "The road transitions from an area allowing brief stops to a stricter zone where no halt is permitted at all",
         "The second sign cancels the first, so stopping is allowed everywhere"
@@ -16113,7 +16113,7 @@ const jangyanQuestions = {
       "question": "What is the core principle of 'Defensive Driving'?\nDriving as fast as traffic allows",
       "options": [
         "Only driving during daylight hours",
-        "Correct Answer: Option (B)",
+        "",
         "Following the vehicle ahead as closely as possible",
         "Assuming other road users may make mistakes and keeping a safety margin"
       ],
@@ -16126,7 +16126,7 @@ const jangyanQuestions = {
       "id": 152,
       "question": "What does the 'Scan' step in the Scan–Predict–Decide–Act cycle involve?\nAccelerating past hazards quickly",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only checking the rearview mirror once per trip",
         "Continuously checking the road and mirrors for hazards",
         "Ignoring peripheral traffic"
@@ -16143,7 +16143,7 @@ const jangyanQuestions = {
         "To avoid dazzling the oncoming driver and causing glare-related accidents",
         "To improve fuel efficiency",
         "Because it is only a courtesy, not a rule",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Dipping headlights avoids dazzling an oncoming driver, whose vision could otherwise be temporarily impaired, increasing accident risk — it is also a legal requirement under CMVR rules.",
@@ -16156,7 +16156,7 @@ const jangyanQuestions = {
       "options": [
         "Slow down and look toward the left edge of their lane rather than staring back",
         "Stop the vehicle immediately in the middle of the road",
-        "Correct Answer: Option (B)",
+        "",
         "Close their eyes briefly"
       ],
       "answer": 3,
@@ -16171,7 +16171,7 @@ const jangyanQuestions = {
         "Stop immediately in the current lane with headlights off",
         "Continue at normal speed since fog usually clears quickly",
         "Switch to fog lamps or low beam, slow down significantly, increase following distance, and pull over safely with hazard lights if visibility remains near zero",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "In sudden dense fog, high beam worsens visibility by reflecting off fog droplets; the correct response is fog lamps or low beam, reduced speed, increased following distance, and pulling over\nsafely if visibility remains near zero.",
@@ -16184,7 +16184,7 @@ const jangyanQuestions = {
       "options": [
         "A loss of tyre grip on a wet road due to a layer of water",
         "A vehicle skidding on ice",
-        "Correct Answer: Option (B)",
+        "",
         "A brake failure during heavy rain"
       ],
       "answer": 1,
@@ -16197,7 +16197,7 @@ const jangyanQuestions = {
       "question": "What is the recommended minimum following distance in good daylight conditions, according to Indian road safety guidance?\nHalf a second",
       "options": [
         "Two seconds",
-        "Correct Answer: Option (C)",
+        "",
         "Five seconds",
         "One second"
       ],
@@ -16212,7 +16212,7 @@ const jangyanQuestions = {
       "options": [
         "A speed-restricted zone for heavy vehicles",
         "The large blind spot areas around a truck where other vehicles vanish from the driver's view",
-        "Correct Answer: Option (B)",
+        "",
         "A designated truck parking area"
       ],
       "answer": 3,
@@ -16225,7 +16225,7 @@ const jangyanQuestions = {
       "question": "A car has been travelling alongside a large truck for some time without overtaking or dropping back. Based on blind spot awareness principles, what risk does this\ncreate, and what is the correct action?\nNo risk exists as long as the car stays in its own lane",
       "options": [
         "The truck driver is always responsible for spotting the car regardless of position",
-        "Correct Answer: Option (B)",
+        "",
         "Lingering beside a truck is safer than overtaking or dropping back",
         "The car may be sitting in the truck's blind spot, invisible to the truck driver; the correct action is to either overtake promptly or drop back out of the blind spot"
       ],
@@ -16238,7 +16238,7 @@ const jangyanQuestions = {
       "id": 160,
       "question": "What does 'Tailgating' mean in driving terminology?\nLoading cargo in the boot of a vehicle",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Driving with the tailgate open",
         "Following another vehicle too closely for safe stopping",
         "Reversing into a parking spot"
@@ -16255,7 +16255,7 @@ const jangyanQuestions = {
         "The time a signal stays green",
         "The time a driver takes to notice and begin responding to a hazard",
         "The time taken to fill fuel",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Reaction time is the time a driver takes to notice a hazard and begin responding to it, a key factor in overall stopping distance.",
@@ -16266,7 +16266,7 @@ const jangyanQuestions = {
       "id": 162,
       "question": "What is the primary risk associated with night driving?\nIncreased fuel consumption",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Reduced tyre pressure",
         "Reduced visibility, headlight glare, and driver fatigue",
         "Higher toll charges"
@@ -16281,7 +16281,7 @@ const jangyanQuestions = {
       "question": "What is the correct action for a driver approaching a vehicle stopped ahead at a construction zone, when a flagger signals them to proceed but a static sign said\n'Stop'?\nAlways follow the static sign over the flagger",
       "options": [
         "Stop regardless and wait for police",
-        "Correct Answer: Option (B)",
+        "",
         "Proceed only if no other vehicles are visible",
         "Follow the flagger's live signal, since it reflects the current situation"
       ],
@@ -16294,7 +16294,7 @@ const jangyanQuestions = {
       "id": 164,
       "question": "What should a driver do before overtaking on a highway?\nOnly check the side mirror",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Sound the horn and overtake immediately",
         "Ensure the road ahead is visible far enough to complete the manoeuvre and return safely",
         "Overtake only if travelling below the speed limit"
@@ -16308,7 +16308,7 @@ const jangyanQuestions = {
       "id": 165,
       "question": "A driver is turning left at a city intersection. Just as they begin the turn, they notice a two-wheeler approaching from behind on their left side. What is the safest course\nof action?\nContinue the turn immediately since they had already signalled",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Turn right instead to avoid the two-wheeler entirely",
         "Speed up to complete the turn before the two-wheeler arrives",
         "Check the left mirror and blind spot carefully and yield to the two-wheeler before completing the turn"
@@ -16323,7 +16323,7 @@ const jangyanQuestions = {
       "question": "What is the purpose of the 'Predict' step in defensive driving?\nTo predict fuel consumption for a trip",
       "options": [
         "To anticipate what other road users might do next",
-        "Correct Answer: Option (B)",
+        "",
         "To predict weather conditions before starting a journey",
         "To estimate arrival time only"
       ],
@@ -16338,7 +16338,7 @@ const jangyanQuestions = {
       "options": [
         "A dashboard warning light",
         "Temporary loss of vision caused by a bright light, such as an oncoming high beam",
-        "Correct Answer: Option (B)",
+        "",
         "A type of headlight bulb"
       ],
       "answer": 0,
@@ -16350,7 +16350,7 @@ const jangyanQuestions = {
       "id": 168,
       "question": "According to MoRTH data, what percentage of India's 2023 road deaths was linked to overspeeding?\n35%",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "85%",
         "50%",
         "68%"
@@ -16367,7 +16367,7 @@ const jangyanQuestions = {
         "Pull over at the next safe location and rest, since fatigue impairs reaction time similarly to other impairments",
         "Open the windows and turn up music to stay alert while continuing to drive",
         "Continue driving since two hours is within a safe limit regardless of symptoms",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "Fatigue significantly impairs reaction time and judgement; the correct response to drowsiness is to pull over and rest rather than attempt to push through it.",
@@ -16380,7 +16380,7 @@ const jangyanQuestions = {
       "options": [
         "Reaction distance plus braking distance",
         "The distance to the nearest fuel station",
-        "Correct Answer: Option (B)",
+        "",
         "Only the reaction distance"
       ],
       "answer": 3,
@@ -16394,7 +16394,7 @@ const jangyanQuestions = {
       "options": [
         "A type of road surface material",
         "A government road-widening scheme",
-        "Correct Answer: Option (B)",
+        "",
         "Aggressive or hostile driver behaviour triggered by frustration or conflict"
       ],
       "answer": 0,
@@ -16409,7 +16409,7 @@ const jangyanQuestions = {
         "Higher vehicle speed",
         "New tyres",
         "A recently serviced vehicle",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Higher vehicle speed increases both the distance covered during reaction time and the distance needed to brake, extending total stopping distance.",
@@ -16423,7 +16423,7 @@ const jangyanQuestions = {
         "Only overtake trucks, never cars",
         "Avoid overtaking more than one vehicle at a time unless the road is clearly wide and empty",
         "Always overtake from the left side only",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Overtaking more than one vehicle at a time significantly increases risk and should be avoided unless the road is clearly wide and empty.",
@@ -16436,7 +16436,7 @@ const jangyanQuestions = {
       "options": [
         "To improve fuel efficiency",
         "To maximise the area covered beyond the vehicle's own edge, reducing blind spots",
-        "Correct Answer: Option (B)",
+        "",
         "To comply with vehicle registration rules only"
       ],
       "answer": 3,
@@ -16450,7 +16450,7 @@ const jangyanQuestions = {
       "options": [
         "Move fully into the opposing lane to assist the overtaking vehicle",
         "Brake sharply to let the vehicle pass more quickly",
-        "Correct Answer: Option (B)",
+        "",
         "Maintain a steady or slightly reduced speed and avoid obstructing the manoeuvre, since interfering increases collision risk"
       ],
       "answer": 0,
@@ -16464,7 +16464,7 @@ const jangyanQuestions = {
       "options": [
         "Make U-turns only where explicitly permitted, with clear visibility in both directions",
         "U-turns are never permitted under any circumstance",
-        "Correct Answer: Option (B)",
+        "",
         "Only permitted for two-wheelers"
       ],
       "answer": 1,
@@ -16479,7 +16479,7 @@ const jangyanQuestions = {
         "Take a break roughly every two hours on long journeys",
         "Breaks are only necessary for commercial drivers",
         "Only take breaks after six hours of continuous driving",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "It is recommended to take a break roughly every two hours on long highway journeys to counter the effects of monotony and fatigue.",
@@ -16492,7 +16492,7 @@ const jangyanQuestions = {
       "options": [
         "Keep to the left except when overtaking, using the rightmost lane only for overtaking",
         "Lane choice does not matter on highways",
-        "Correct Answer: Option (B)",
+        "",
         "Always stay in the leftmost lane regardless of speed"
       ],
       "answer": 3,
@@ -16506,7 +16506,7 @@ const jangyanQuestions = {
       "options": [
         "Follow the vehicle ahead as closely as possible to prevent others from merging",
         "Use the horn continuously while approaching",
-        "Correct Answer: Option (B)",
+        "",
         "Approach with extra caution, reduced speed, and heightened awareness of unpredictable lane changes"
       ],
       "answer": 0,
@@ -16520,7 +16520,7 @@ const jangyanQuestions = {
       "options": [
         "Hydroplaning, where tyres lose contact with the road surface",
         "Faster braking response",
-        "Correct Answer: Option (B)",
+        "",
         "Improved tyre grip"
       ],
       "answer": 1,
@@ -16532,7 +16532,7 @@ const jangyanQuestions = {
       "id": 181,
       "question": "What does the 'Act' step in the Scan–Predict–Decide–Act cycle involve?\nIgnoring the identified hazard",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only acting after a collision occurs",
         "Waiting indefinitely without any action",
         "Acting smoothly and in good time based on the decided response"
@@ -16547,7 +16547,7 @@ const jangyanQuestions = {
       "question": "What is 'Following Distance'?\nThe distance a vehicle travels in one day",
       "options": [
         "The total length of a vehicle",
-        "Correct Answer: Option (B)",
+        "",
         "The gap maintained between your vehicle and the one ahead",
         "The distance to the nearest highway exit"
       ],
@@ -16561,7 +16561,7 @@ const jangyanQuestions = {
       "question": "What is the correct use of high beam headlights?\nAlways keep high beam on at night for maximum visibility",
       "options": [
         "Use high beam only in fog for better visibility",
-        "Correct Answer: Option (B)",
+        "",
         "High beam should never be used under any circumstance",
         "Use high beam only when no oncoming traffic is present, dipping for approaching vehicles"
       ],
@@ -16577,7 +16577,7 @@ const jangyanQuestions = {
         "Removing a helmet speeds up medical treatment in every case",
         "Helmets have no effect on neck stability",
         "The helmet helps stabilise the neck, and removing it may risk worsening a spinal injury",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A helmet helps stabilise the neck of a conscious rider; removing it carelessly could worsen a potential spinal injury, so it should generally be left in place.",
@@ -16589,7 +16589,7 @@ const jangyanQuestions = {
       "question": "A driver is approaching a school zone where children may be present, but no reduced speed limit sign is currently visible due to a missing sign. What is the\nappropriate driving behaviour?\nMaintain the general road speed limit since no specific sign is visible",
       "options": [
         "Ignore the school zone entirely since it is not marked",
-        "Correct Answer: Option (B)",
+        "",
         "Only slow down if children are physically visible on the road",
         "Voluntarily reduce speed and increase alertness, since children may still be present regardless of missing signage"
       ],
@@ -16603,7 +16603,7 @@ const jangyanQuestions = {
       "question": "What is the safest response to being cut off suddenly by another vehicle?\nImmediately retaliate by cutting the other vehicle off in return",
       "options": [
         "Flash headlights repeatedly in anger",
-        "Correct Answer: Option (B)",
+        "",
         "Brake smoothly and increase following distance rather than reacting aggressively",
         "Accelerate to close the gap and prevent the merge"
       ],
@@ -16619,7 +16619,7 @@ const jangyanQuestions = {
         "City roads always have higher speed limits than highways",
         "Highways require no attention to lane discipline",
         "Highways involve higher speeds and long monotonous stretches, while city roads involve dense mixed traffic and frequent stops",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Highways involve higher legal speeds and long monotonous stretches that can dull attention, while city roads involve dense, mixed traffic with frequent stop-start conditions requiring patience.",
@@ -16630,7 +16630,7 @@ const jangyanQuestions = {
       "id": 188,
       "question": "What is the safest driving etiquette when a vehicle wants to merge into your lane from a service road?\nSpeed up to close the gap and prevent merging",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Merging vehicles have no right to be accommodated",
         "Allow the merging vehicle a fair gap rather than closing it deliberately",
         "Always force merging vehicles to wait indefinitely"
@@ -16645,7 +16645,7 @@ const jangyanQuestions = {
       "question": "MoRTH data shows highways account for a disproportionately large share of accidents and fatalities relative to their length. What is the most likely underlying reason,\nbased on principles covered in this series?\nHighways have poorly maintained surfaces compared to city roads",
       "options": [
         "Highway drivers are statistically less experienced than city drivers",
-        "Correct Answer: Option (B)",
+        "",
         "Highways have significantly more traffic police than city roads",
         "Higher permitted speeds on highways increase the severity of any collision that occurs, even if the frequency of minor incidents is lower than in cities"
       ],
@@ -16659,7 +16659,7 @@ const jangyanQuestions = {
       "question": "What does 'No-Zone' awareness primarily help prevent?\nVehicle theft",
       "options": [
         "Collisions caused by driving in another vehicle's blind spot, especially near trucks and buses",
-        "Correct Answer: Option (B)",
+        "",
         "Engine overheating",
         "Fuel wastage"
       ],
@@ -16674,7 +16674,7 @@ const jangyanQuestions = {
       "options": [
         "Only text at traffic signals",
         "Phone use is safe as long as speed is below 40 km/h",
-        "Correct Answer: Option (B)",
+        "",
         "Avoid handling the phone entirely; use voice guidance or pull over safely if needed"
       ],
       "answer": 0,
@@ -16688,7 +16688,7 @@ const jangyanQuestions = {
       "options": [
         "A vehicle maintenance schedule",
         "A formal driving test conducted by RTOs",
-        "Correct Answer: Option (B)",
+        "",
         "Courteous behaviour, such as using indicators and dipping headlights, that goes beyond strict legal requirements"
       ],
       "answer": 1,
@@ -16703,7 +16703,7 @@ const jangyanQuestions = {
         "Signal early, check mirrors and blind spots, and merge smoothly well before the lane ends",
         "Increase speed dramatically to merge ahead of other vehicles",
         "Stop completely until the other lane clears fully",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Safe merging involves signalling early, checking mirrors and blind spots, and merging smoothly well before the lane physically ends, avoiding last-moment manoeuvres.",
@@ -16714,7 +16714,7 @@ const jangyanQuestions = {
       "id": 194,
       "question": "What is the recommended tyre and lighting check before a long highway drive?\nNo check is necessary if the vehicle is relatively new",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Checks are only necessary for commercial vehicles",
         "Check tyre pressure, tread depth, and confirm all lights are functioning correctly",
         "Only check the fuel gauge before departure"
@@ -16731,7 +16731,7 @@ const jangyanQuestions = {
         "Accelerate to power through the water",
         "Ease off the accelerator, avoid sudden braking or sharp steering, and allow the tyres to regain contact with the road",
         "Turn off the engine immediately while still moving",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "During hydroplaning, sudden braking or sharp steering can worsen loss of control; the safer response is to ease off the accelerator and avoid abrupt inputs, allowing the tyres to regain grip.",
@@ -16742,7 +16742,7 @@ const jangyanQuestions = {
       "id": 196,
       "question": "What is the safest approach for a driver feeling road rage building up during a traffic dispute?\nEscalate the situation to assert authority",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Follow the other driver to continue the argument",
         "Block the other vehicle's path to force a resolution",
         "Stay calm, avoid confrontation, and disengage from the situation safely"
@@ -16757,7 +16757,7 @@ const jangyanQuestions = {
       "question": "What is the primary reason city driving requires more patience than speed?\nCity roads always have higher speed limits",
       "options": [
         "City roads are generally safer than highways in every respect",
-        "Correct Answer: Option (B)",
+        "",
         "Patience has no real safety benefit in cities",
         "Dense traffic, frequent stops, and pedestrians or two-wheelers appearing unpredictably require careful, patient driving"
       ],
@@ -16771,7 +16771,7 @@ const jangyanQuestions = {
       "question": "What is the correct interpretation of the 'Decide' step in defensive driving?\nDeciding the vehicle's final destination",
       "options": [
         "Choosing the safest response after scanning and predicting potential hazards",
-        "Correct Answer: Option (B)",
+        "",
         "Deciding fuel type before a trip",
         "Deciding which vehicle to purchase"
       ],
@@ -16785,7 +16785,7 @@ const jangyanQuestions = {
       "question": "A driver has adjusted their mirrors correctly and checks them regularly, yet still nearly changes lanes into another vehicle. What additional safety step, beyond mirror\nchecks, is essential before every lane change?\nNo additional step is needed if mirrors are correctly adjusted",
       "options": [
         "Relying solely on the vehicle's indicator sound",
-        "Correct Answer: Option (B)",
+        "",
         "A quick shoulder check to cover the blind spot mirrors cannot show",
         "Assuming other drivers will always avoid a lane change if unsafe"
       ],
@@ -16801,7 +16801,7 @@ const jangyanQuestions = {
         "Only use indicators at night",
         "Indicators are optional on empty roads",
         "Use them consistently before every turn or lane change, as a courtesy and a rule",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Indicators should be used consistently before every turn or lane change, both as a legal requirement and as a courtesy that helps other road users anticipate your movement.",
@@ -16815,7 +16815,7 @@ const jangyanQuestions = {
         "AIS-145",
         "IS 17017",
         "IS 1077",
-        "Correct Answer: Option (A)"
+        ""
       ],
       "answer": 2,
       "explanation": "A legal protective helmet in India must conform to BIS standard IS 4151, confirmed by a genuine embossed ISI mark and licence number.",
@@ -16828,7 +16828,7 @@ const jangyanQuestions = {
       "options": [
         "Section 129",
         "Section 185",
-        "Correct Answer: Option (B)",
+        "",
         "Section 146"
       ],
       "answer": 3,
@@ -16841,7 +16841,7 @@ const jangyanQuestions = {
       "question": "By approximately how much does a genuine ISI helmet reduce the risk of fatal head injury?\nAbout 10%",
       "options": [
         "About 90%",
-        "Correct Answer: Option (C)",
+        "",
         "About 42%",
         "About 25%"
       ],
@@ -16857,7 +16857,7 @@ const jangyanQuestions = {
         "In all seats, front and rear",
         "Only by the driver",
         "Only in vehicles manufactured after 2020",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "CMVR Rule 138(3) makes seatbelts mandatory for the driver and every passenger, front or rear.",
@@ -16871,7 +16871,7 @@ const jangyanQuestions = {
         "A forward-facing seat with a five-point harness is required for a child of this age and weight, not being held on a lap",
         "Only children over 4 years require any restraint at all",
         "The child should be in the front seat instead",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Under CMVR Rule 138, a child in the 15-month to 4-year, up to ~18kg range requires a forward-facing seat with a five-point harness in the rear seat — being held on a lap does not meet this\nlegal or safety requirement.",
@@ -16884,7 +16884,7 @@ const jangyanQuestions = {
       "options": [
         "A BIS certification confirming a product meets a specified Indian Standard",
         "A driving licence category",
-        "Correct Answer: Option (B)",
+        "",
         "A type of traffic signal"
       ],
       "answer": 3,
@@ -16897,7 +16897,7 @@ const jangyanQuestions = {
       "question": "What is the primary function of an airbag in a vehicle?\nTo replace the need for a seatbelt entirely",
       "options": [
         "To improve fuel efficiency",
-        "Correct Answer: Option (B)",
+        "",
         "To inflate rapidly and cushion an occupant during a collision, working together with a fastened seatbelt",
         "To prevent tyre punctures"
       ],
@@ -16912,7 +16912,7 @@ const jangyanQuestions = {
       "options": [
         "0.8 mm",
         "1.6 mm",
-        "Correct Answer: Option (B)",
+        "",
         "2.5 mm"
       ],
       "answer": 1,
@@ -16924,7 +16924,7 @@ const jangyanQuestions = {
       "id": 209,
       "question": "A vehicle has both a fastened seatbelt and functioning airbags, yet the occupant suffers more severe injuries than expected in a moderate collision. Investigators find\nthe seatbelt was worn incorrectly, positioned across the stomach rather than the hips. What does this scenario best illustrate?\nAirbags alone are always sufficient regardless of seatbelt positioning",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The vehicle's airbags must have malfunctioned",
         "Seatbelts have no real safety function when airbags are present",
         "Correct seatbelt positioning matters because both seatbelts and airbags are designed to work together as a coordinated system"
@@ -16939,7 +16939,7 @@ const jangyanQuestions = {
       "question": "What is the minimum tyre tread depth required for cars and other motor vehicles (not two/three-wheelers)?\n0.8 mm",
       "options": [
         "3.2 mm",
-        "Correct Answer: Option (B)",
+        "",
         "1.6 mm",
         "2.4 mm"
       ],
@@ -16953,7 +16953,7 @@ const jangyanQuestions = {
       "question": "What does a 'PUC Certificate' confirm about a vehicle?\nThat the vehicle has valid insurance",
       "options": [
         "That the vehicle has passed a fitness test",
-        "Correct Answer: Option (B)",
+        "",
         "That the vehicle's emissions are within permitted limits",
         "That the vehicle's registration is up to date"
       ],
@@ -16966,7 +16966,7 @@ const jangyanQuestions = {
       "id": 212,
       "question": "What is the minimum age to hold a licence for a car or geared two-wheeler in India?\n16 years",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "20 years",
         "18 years",
         "21 years"
@@ -16983,7 +16983,7 @@ const jangyanQuestions = {
         "After 5 years",
         "After 15 years from initial registration",
         "Fitness tests are not required for private vehicles",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "Private vehicles do not require a fitness certificate until 15 years from initial registration, after which it must be renewed every 5 years.",
@@ -16994,7 +16994,7 @@ const jangyanQuestions = {
       "id": 214,
       "question": "How often must commercial vehicles undergo a fitness test once they are up to 8 years old?\nEvery year",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Every 2 years",
         "Only once, at registration",
         "Every 5 years"
@@ -17009,7 +17009,7 @@ const jangyanQuestions = {
       "question": "A car owner's vehicle is 16 years old and has failed its fitness test twice under the Vehicle Scrappage Policy, 2021. What is the most likely consequence?\nNo consequence, as private vehicles are exempt from scrapping rules",
       "options": [
         "The owner must simply pay a small renewal fee to continue using it",
-        "Correct Answer: Option (B)",
+        "",
         "The vehicle may be classified as an End-of-Life Vehicle and lose its registration eligibility",
         "The vehicle automatically qualifies for a permanent registration extension"
       ],
@@ -17022,7 +17022,7 @@ const jangyanQuestions = {
       "id": 216,
       "question": "Which section of the Motor Vehicles Act makes third-party insurance compulsory?\nSection 129",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Section 161",
         "Section 146",
         "Section 185"
@@ -17036,7 +17036,7 @@ const jangyanQuestions = {
       "id": 217,
       "question": "What is the penalty for driving an uninsured vehicle for a first offence, under Section 196?\nNo penalty for a first offence",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Up to 3 months imprisonment and/or a ₹2,000 fine",
         "A flat fine of ₹10,000 only",
         "Immediate vehicle seizure with no fine"
@@ -17051,7 +17051,7 @@ const jangyanQuestions = {
       "question": "What is required for children aged 9 months to 4 years riding pillion on a two-wheeler, under the 2022 CMVR amendment?\nNo restraint is required at this age",
       "options": [
         "A crash helmet and a safety harness",
-        "Correct Answer: Option (B)",
+        "",
         "A separate child-sized motorcycle",
         "Only a seatbelt, as used in cars"
       ],
@@ -17066,7 +17066,7 @@ const jangyanQuestions = {
       "options": [
         "They must supply only one helmet per two-wheeler sold",
         "Helmets must be sold separately and are not the manufacturer's responsibility",
-        "Correct Answer: Option (B)",
+        "",
         "They must supply two BIS-certified helmets — one for the rider, one for the pillion — with every new two-wheeler sold"
       ],
       "answer": 0,
@@ -17078,7 +17078,7 @@ const jangyanQuestions = {
       "id": 220,
       "question": "What is a 'Child Restraint System (CRS)'?\nA toy fitted in the back seat",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A seatbelt reminder alarm",
         "A childproof lock on rear doors",
         "A certified seat designed to protect a child according to their age, weight, and height"
@@ -17092,7 +17092,7 @@ const jangyanQuestions = {
       "id": 221,
       "question": "What standard governs child restraint systems sold in India?\nAIS-072",
       "options": [
-        "Correct Answer: Option (A)",
+        "",
         "IS 4151",
         "AIS-145",
         "IS 17017"
@@ -17107,7 +17107,7 @@ const jangyanQuestions = {
       "question": "From what age can a child be seated in the front seat of a car, according to child restraint rules?\nAny age is permitted in the front seat",
       "options": [
         "From age 10 onwards",
-        "Correct Answer: Option (B)",
+        "",
         "Children under 135 cm in height are prohibited from the front seat, regardless of exact age",
         "From age 2 onwards"
       ],
@@ -17123,7 +17123,7 @@ const jangyanQuestions = {
         "January 2022",
         "January 2025",
         "July 2019",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A driver-side airbag became mandatory in India from July 2019, followed by a front-passenger airbag mandate from January 2022.",
@@ -17134,7 +17134,7 @@ const jangyanQuestions = {
       "id": 224,
       "question": "What standard governs occupant safety features like airbags and seatbelt reminders in India?\nAIS-072",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "IS 4151",
         "AIS-145",
         "BIS QCO"
@@ -17149,7 +17149,7 @@ const jangyanQuestions = {
       "question": "A used car buyer is comparing two 2021-model cars: one has only a driver airbag, and the other has both driver and front-passenger airbags. Based on India's airbag\nmandate timeline, what does this difference most likely reflect?\nA manufacturing defect in one of the cars",
       "options": [
         "The timing of production relative to the January 2022 front-passenger airbag mandate",
-        "Correct Answer: Option (B)",
+        "",
         "Random manufacturer choice unrelated to regulation",
         "An error in vehicle registration"
       ],
@@ -17163,7 +17163,7 @@ const jangyanQuestions = {
       "question": "What is 'Active Safety' in vehicle safety terminology?\nFeatures that protect occupants during a crash",
       "options": [
         "A government road safety campaign",
-        "Correct Answer: Option (B)",
+        "",
         "Features that help avoid a crash in the first place, such as brakes and tyres",
         "A type of insurance policy"
       ],
@@ -17178,7 +17178,7 @@ const jangyanQuestions = {
       "options": [
         "The vehicle's resale value",
         "The number of previous owners",
-        "Correct Answer: Option (B)",
+        "",
         "The PUC (Pollution Under Control) certificate"
       ],
       "answer": 0,
@@ -17193,7 +17193,7 @@ const jangyanQuestions = {
         "Insurance must be transferred within 14 days of the sale",
         "The vehicle must be repainted",
         "A new PUC certificate must be issued immediately",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Section 157 requires that a vehicle's insurance be transferred to the new owner within 14 days of its sale.",
@@ -17205,7 +17205,7 @@ const jangyanQuestions = {
       "question": "A vehicle owner sells their car but forgets to transfer the insurance within the legally required period. Two months later, the new owner is involved in an accident. What\ncomplication does this delay most likely create?\nNo complication, since insurance always transfers automatically",
       "options": [
         "The new owner cannot legally drive the vehicle at all until insurance is transferred, even locally",
-        "Correct Answer: Option (B)",
+        "",
         "The seller becomes permanently liable for all future accidents involving the vehicle",
         "Potential coverage and liability issues, since Section 157 requires transfer within 14 days of sale"
       ],
@@ -17218,7 +17218,7 @@ const jangyanQuestions = {
       "id": 230,
       "question": "What is a 'Fitness Certificate' in relation to a vehicle?\nA document proving a driver's physical fitness",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Official confirmation that a vehicle meets safety and emission standards for continued road use",
         "A certificate issued only to electric vehicles",
         "A gym membership discount for vehicle owners"
@@ -17235,7 +17235,7 @@ const jangyanQuestions = {
         "A vehicle's fuel efficiency rating",
         "Features that protect occupants once a crash is already happening, such as seatbelts and airbags",
         "A vehicle's resale value",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Passive safety refers to features that protect occupants once a crash is already occurring, such as seatbelts, airbags, and child restraint systems.",
@@ -17248,7 +17248,7 @@ const jangyanQuestions = {
       "options": [
         "Tread Wear Indicator",
         "Tyre Weight Instruction",
-        "Correct Answer: Option (B)",
+        "",
         "Traffic Warning Indicator"
       ],
       "answer": 1,
@@ -17261,7 +17261,7 @@ const jangyanQuestions = {
       "question": "Since when has an ISI mark been mandatory on tyres sold in India?\n1998",
       "options": [
         "2005",
-        "Correct Answer: Option (C)",
+        "",
         "2018",
         "2011"
       ],
@@ -17275,7 +17275,7 @@ const jangyanQuestions = {
       "question": "What documents should a driver be able to produce during a routine check, according to this series?\nOnly the driving licence",
       "options": [
         "Registration Certificate (RC), Driving Licence, Insurance Certificate, and PUC Certificate",
-        "Correct Answer: Option (B)",
+        "",
         "Only a government-issued photo ID",
         "Only proof of vehicle purchase"
       ],
@@ -17290,7 +17290,7 @@ const jangyanQuestions = {
       "options": [
         "Only driving licences can be shown digitally, not insurance",
         "No — DigiLocker and mParivahan documents are legally equivalent to physical originals under the Information Technology Act, 2000, and must be accepted",
-        "Correct Answer: Option (B)",
+        "",
         "Digital documents are valid only for two-wheelers"
       ],
       "answer": 0,
@@ -17302,7 +17302,7 @@ const jangyanQuestions = {
       "id": 236,
       "question": "What is the recommended action if a driver notices a dashboard warning light while driving?\nIgnore it if the vehicle still runs normally",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only address it during the next scheduled service, regardless of severity",
         "Address it promptly rather than ignoring it",
         "Disconnect the dashboard light manually"
@@ -17319,7 +17319,7 @@ const jangyanQuestions = {
         "Replace the tyre, since it has reached its minimum safe tread depth",
         "Rotate the tyre to the front instead of replacing it",
         "Only replace it if visible cracks are present",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Once a tyre's tread wears down to the level of the TWI bars, it has reached its minimum safe depth and should be replaced regardless of other visible condition.",
@@ -17330,7 +17330,7 @@ const jangyanQuestions = {
       "id": 238,
       "question": "What is the purpose of engaging a vehicle's handbrake fully when parking on a slope?\nTo improve fuel efficiency",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To prevent the vehicle from rolling unintentionally",
         "To charge the vehicle's battery",
         "To reduce tyre wear"
@@ -17346,7 +17346,7 @@ const jangyanQuestions = {
       "options": [
         "Only a safety risk, with no legal implication",
         "Both an active safety risk (worn brakes and tyres affecting crash avoidance) and a legal compliance risk (expired PUC)",
-        "Correct Answer: Option (B)",
+        "",
         "Neither a safety nor a legal risk, since none of these are urgent"
       ],
       "answer": 0,
@@ -17358,7 +17358,7 @@ const jangyanQuestions = {
       "id": 240,
       "question": "What is the purpose of a Registration Certificate (RC)?\nTo confirm a driver's identity only",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To confirm insurance coverage",
         "To legally identify a vehicle and its ownership record",
         "To confirm emission compliance"
@@ -17375,7 +17375,7 @@ const jangyanQuestions = {
         "2 years",
         "6 months",
         "1 year",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A Learner's Licence is valid for 6 months from the date of issue.",
@@ -17388,7 +17388,7 @@ const jangyanQuestions = {
       "options": [
         "A red triangle on the vehicle roof",
         "An 'L' sign, and drive accompanied by a full licence holder",
-        "Correct Answer: Option (B)",
+        "",
         "No specific sign is required"
       ],
       "answer": 3,
@@ -17401,7 +17401,7 @@ const jangyanQuestions = {
       "question": "What is the minimum age requirement for a Heavy Motor Vehicle (HMV) licence in India?\n16 years",
       "options": [
         "25 years",
-        "Correct Answer: Option (C)",
+        "",
         "20 years",
         "18 years"
       ],
@@ -17417,7 +17417,7 @@ const jangyanQuestions = {
         "To allow an Indian licence holder to drive in select countries abroad",
         "To replace the need for a domestic driving licence entirely",
         "To obtain a discount on vehicle insurance",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "An International Driving Permit allows an Indian licence holder to drive legally in select countries abroad, alongside their domestic licence.",
@@ -17428,7 +17428,7 @@ const jangyanQuestions = {
       "id": 245,
       "question": "A new driver holds a Learner's Licence issued 20 days ago and wants to take the permanent licence driving test immediately. Is this permitted?\nYes, the test can be taken at any time after receiving the Learner's Licence",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "No — a Learner's Licence must generally be held for at least 30 days before taking the permanent licence test",
         "Yes, but only if accompanied by a driving instructor during the test",
         "No, a Learner's Licence holder must wait a full year before testing"
@@ -17445,7 +17445,7 @@ const jangyanQuestions = {
         "₹2 lakh",
         "₹1 lakh",
         "₹50,000",
-        "Correct Answer: Option (D)"
+        ""
       ],
       "answer": 3,
       "explanation": "The 2019 amendment raised the minimum compensation for accidental death to ₹2 lakh, a significant increase from the earlier ₹25,000.",
@@ -17457,7 +17457,7 @@ const jangyanQuestions = {
       "question": "What is the fine range for wrong parking (Section 122) under recent penalty structures?\n₹100 – ₹200",
       "options": [
         "₹5,000 flat for all vehicles",
-        "Correct Answer: Option (B)",
+        "",
         "No fine, only a warning",
         "₹500 (light vehicle) – ₹1,500 (heavy vehicle), plus towing charges"
       ],
@@ -17473,7 +17473,7 @@ const jangyanQuestions = {
         "Filing traffic challans",
         "Booking driving test appointments",
         "Storing legally valid digital copies of documents like the DL, RC, and insurance certificate",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "DigiLocker is a government platform for storing legally valid digital copies of documents such as the driving licence, RC, insurance, and PUC certificate.",
@@ -17485,7 +17485,7 @@ const jangyanQuestions = {
       "question": "A rider is stopped for a routine check and has a valid licence, RC, and insurance, but their PUC certificate expired two weeks ago. Based on this series, what is the\nmost accurate consequence?\nNo consequence, since PUC is not a legal requirement",
       "options": [
         "The rider can be fined for not having a valid PUC certificate, since it must be renewed periodically to remain compliant",
-        "Correct Answer: Option (B)",
+        "",
         "The vehicle must be permanently deregistered",
         "Only commercial vehicles require a valid PUC certificate"
       ],
@@ -17499,7 +17499,7 @@ const jangyanQuestions = {
       "question": "What is the general rule regarding tyres on the same axle of a vehicle?\nThey can be of any size or type",
       "options": [
         "They should match in size and type",
-        "Correct Answer: Option (B)",
+        "",
         "Tyre matching is only relevant for commercial vehicles",
         "Only the front axle tyres need to match"
       ],
@@ -17515,7 +17515,7 @@ const jangyanQuestions = {
         "Straight ahead only",
         "Right, then left, then right again",
         "Left, then straight ahead",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Since traffic keeps to the left in India, the nearest lane of oncoming vehicles approaches from the right, so pedestrians should look right, then left, then right again before crossing.",
@@ -17526,7 +17526,7 @@ const jangyanQuestions = {
       "id": 252,
       "question": "At a zebra crossing, who generally has the right of way?\nVehicles turning left",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Two-wheelers only",
         "Pedestrians on or entering the crossing",
         "Whichever party arrives first"
@@ -17543,7 +17543,7 @@ const jangyanQuestions = {
         "About 17%",
         "About 50%",
         "About 35%",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Pedestrian fatalities account for over 17% of India's total road deaths annually, according to MoRTH data.",
@@ -17555,7 +17555,7 @@ const jangyanQuestions = {
       "question": "What landmark ruling did the Supreme Court make in June 2026 regarding footpaths?\nFootpaths are optional infrastructure for municipalities",
       "options": [
         "Footpaths must be removed from all national highways",
-        "Correct Answer: Option (B)",
+        "",
         "Safe, demarcated footpath access is a fundamental right under Article 21",
         "Only cyclists have a right to footpath access"
       ],
@@ -17571,7 +17571,7 @@ const jangyanQuestions = {
         "The pedestrian must always wait for all vehicles to pass regardless of the crossing",
         "The vehicle is violating the pedestrian's right of way, and Rule 8 of the Rules of the Road Regulations requires drivers to slow down at such crossings",
         "Zebra crossings only apply during daylight hours",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Rule 8 requires drivers to slow down when approaching a pedestrian or zebra crossing, and pedestrians on or entering the crossing have the right of way — the approaching vehicle is violating\nthis rule.",
@@ -17584,7 +17584,7 @@ const jangyanQuestions = {
       "options": [
         "Silver with black stripes",
         "Red with white stripes",
-        "Correct Answer: Option (B)",
+        "",
         "Golden yellow with a green horizontal stripe"
       ],
       "answer": 1,
@@ -17599,7 +17599,7 @@ const jangyanQuestions = {
         "80 km/h",
         "40 km/h",
         "60 km/h",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "School buses must carry a speed governor capped at 40 km/h, as required by Supreme Court safety guidelines.",
@@ -17611,7 +17611,7 @@ const jangyanQuestions = {
       "question": "What must a driver do at an unguarded ('unmanned') railway level crossing, under Section 131 of the Motor Vehicles Act?\nProceed without stopping if no train is visible",
       "options": [
         "Sound the horn continuously and cross immediately",
-        "Correct Answer: Option (B)",
+        "",
         "Stop the vehicle, and have someone check both directions on foot (or check personally if alone) before crossing",
         "Only stop if a barrier is physically present"
       ],
@@ -17625,7 +17625,7 @@ const jangyanQuestions = {
       "question": "A driver approaches a fully staffed ('manned') railway level crossing and assumes no personal caution is needed since it is staffed. Based on real incidents covered in\nthis series, why is this assumption risky?\nManned crossings are always completely safe with zero risk",
       "options": [
         "Manned crossings do not legally require any driver caution",
-        "Correct Answer: Option (B)",
+        "",
         "Only unmanned crossings pose any real risk",
         "Serious accidents have occurred even at fully staffed crossings, such as the July 2026 Murshidabad accident, showing personal vigilance is still essential"
       ],
@@ -17640,7 +17640,7 @@ const jangyanQuestions = {
       "options": [
         "Wait, Reverse, Detour",
         "Honk, Accelerate, Cross",
-        "Correct Answer: Option (B)",
+        "",
         "Stop, Look, Listen"
       ],
       "answer": 1,
@@ -17653,7 +17653,7 @@ const jangyanQuestions = {
       "question": "What must passengers do behind on a metro platform before a train arrives?\nStand as close to the edge as possible",
       "options": [
         "Wait near the train doors regardless of markings",
-        "Correct Answer: Option (B)",
+        "",
         "Sit on the platform floor",
         "Stand behind the marked yellow line until the train has fully stopped"
       ],
@@ -17667,7 +17667,7 @@ const jangyanQuestions = {
       "question": "What is a 'Passenger Emergency Alarm (PEA)' on a metro train meant for?\nRequesting a metro staff member for directions",
       "options": [
         "Reporting minor delays",
-        "Correct Answer: Option (B)",
+        "",
         "Genuine emergencies only, since misuse is a punishable offence",
         "General passenger comfort requests"
       ],
@@ -17683,7 +17683,7 @@ const jangyanQuestions = {
         "A ₹100 fine only",
         "Up to 4 years imprisonment and/or a ₹5,000 fine",
         "No specific penalty exists",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Carrying prohibited items like explosives or firearms into metro premises can attract up to 4 years imprisonment and a fine of ₹5,000, under the Metro Railway (Operation and Maintenance)\nAct, 2002.",
@@ -17694,7 +17694,7 @@ const jangyanQuestions = {
       "id": 264,
       "question": "What feature do many state transport departments now mandate in app-based cabs and autos for passenger safety?\nA built-in music system",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Complimentary bottled water",
         "A GPS-linked panic button connecting to a control room",
         "A digital fare calculator only"
@@ -17711,7 +17711,7 @@ const jangyanQuestions = {
         "Decline to board that vehicle and verify with the app or platform before proceeding",
         "Board and simply note the mismatch for later, without further action",
         "Confront the driver aggressively before boarding",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A registration mismatch is a genuine safety red flag; the safest response is to decline boarding and verify the correct vehicle through the app or platform before proceeding.",
@@ -17724,7 +17724,7 @@ const jangyanQuestions = {
       "options": [
         "No, it is not nationally mandated, but strongly recommended for safety",
         "Only mandatory on national highways",
-        "Correct Answer: Option (B)",
+        "",
         "Only mandatory for cyclists over 60 years old"
       ],
       "answer": 3,
@@ -17738,7 +17738,7 @@ const jangyanQuestions = {
       "options": [
         "Either direction is equally acceptable",
         "Only in designated cycling hours",
-        "Correct Answer: Option (B)",
+        "",
         "With the flow of traffic, never against it"
       ],
       "answer": 0,
@@ -17753,7 +17753,7 @@ const jangyanQuestions = {
         "Senior citizens",
         "Tourists",
         "Cyclists",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "In Kerala's pedestrian death data, nearly half of all recorded pedestrian deaths involved senior citizens, reflecting their higher vulnerability due to slower reaction time and mobility.",
@@ -17765,7 +17765,7 @@ const jangyanQuestions = {
       "question": "A city wants to reduce pedestrian fatalities among senior citizens near a busy market. Based on this series, which intervention most directly addresses their specific\nvulnerability?\nIncreasing the speed limit near the market for faster traffic flow",
       "options": [
         "Banning senior citizens from visiting the market",
-        "Correct Answer: Option (B)",
+        "",
         "Removing all footpaths to simplify road design",
         "Installing signal-controlled or guarded crossings and allowing extra crossing time near the market"
       ],
@@ -17780,7 +17780,7 @@ const jangyanQuestions = {
       "options": [
         "Helping visually impaired pedestrians navigate safely",
         "Indicating a bus-only lane",
-        "Correct Answer: Option (B)",
+        "",
         "Marking VIP parking zones"
       ],
       "answer": 3,
@@ -17795,7 +17795,7 @@ const jangyanQuestions = {
         "A type of railway level crossing",
         "An elevated pedestrian crossing structure over a road or railway track",
         "A pedestrian waiting shelter",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A Foot-Over-Bridge is an elevated pedestrian crossing structure built over a road or railway track, allowing safe crossing without conflicting with traffic.",
@@ -17806,7 +17806,7 @@ const jangyanQuestions = {
       "id": 272,
       "question": "What is the recommended action if you are running to catch a moving bus?\nRun alongside and jump on once matched in speed",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Ask the driver to slow down while running",
         "Only attempt this if wearing suitable footwear",
         "Let it go and wait for the next one, since running after a moving bus is a common cause of injury"
@@ -17821,7 +17821,7 @@ const jangyanQuestions = {
       "question": "What is 'Encroachment' in the context of footpaths?\nA government scheme to widen footpaths",
       "options": [
         "A tax levied on footpath users",
-        "Correct Answer: Option (B)",
+        "",
         "A type of pedestrian crossing signal",
         "Unauthorised occupation of public space, such as a footpath, by vendors or parked vehicles"
       ],
@@ -17835,7 +17835,7 @@ const jangyanQuestions = {
       "question": "What legal framework primarily governs safety and conduct rules across India's metro systems?\nThe Motor Vehicles Act, 1988",
       "options": [
         "The Information Technology Act, 2000",
-        "Correct Answer: Option (B)",
+        "",
         "The Metro Railway (Operation and Maintenance) Act, 2002",
         "The Indian Railways Act, 1989"
       ],
@@ -17850,7 +17850,7 @@ const jangyanQuestions = {
       "options": [
         "The obligation applies only to state governments, not municipal bodies",
         "The ruling applies only to newly constructed roads, not existing ones",
-        "Correct Answer: Option (B)",
+        "",
         "The municipal authority is obligated to ensure the footpath remains genuinely accessible, since safe footpath access is now a fundamental right"
       ],
       "answer": 0,
@@ -17865,7 +17865,7 @@ const jangyanQuestions = {
         "A point where a road crosses a railway track at the same level",
         "An elevated highway interchange",
         "A parking area near a railway station",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A level crossing is a point where a road crosses a railway track at the same level, which may be staffed ('manned') or unstaffed ('unmanned').",
@@ -17877,7 +17877,7 @@ const jangyanQuestions = {
       "question": "By when did Indian Railways eliminate all unmanned broad-gauge level crossings?\nApril 2010",
       "options": [
         "April 2015",
-        "Correct Answer: Option (C)",
+        "",
         "April 2023",
         "April 2019"
       ],
@@ -17890,7 +17890,7 @@ const jangyanQuestions = {
       "id": 278,
       "question": "According to NCRB data cited in this series, roughly how many railway crossing accidents were recorded in India between 2014 and 2024?\nAbout 2,500",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "About 10,000",
         "About 22,695",
         "About 50,000"
@@ -17906,7 +17906,7 @@ const jangyanQuestions = {
       "options": [
         "Staffed crossings should be converted back to unmanned status",
         "Even with unmanned crossings eliminated, driver vigilance and possibly further engineering measures remain necessary at staffed crossings too",
-        "Correct Answer: Option (B)",
+        "",
         "No further action is needed once unmanned crossings are eliminated"
       ],
       "answer": 0,
@@ -17918,7 +17918,7 @@ const jangyanQuestions = {
       "id": 280,
       "question": "What is 'Public Service Vehicle' a term for?\nAny government-owned vehicle",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A police patrol vehicle only",
         "A vehicle licensed to carry passengers for hire, such as a bus, taxi, or auto-rickshaw",
         "A vehicle used exclusively for emergency services"
@@ -17935,7 +17935,7 @@ const jangyanQuestions = {
         "Alight while the bus is still moving to save time",
         "Hold the handrail while boarding, moving inside, and alighting",
         "Board only from the rear door regardless of design",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Passengers should hold the handrail while boarding, moving inside, and alighting from a bus, to reduce the risk of falls.",
@@ -17946,7 +17946,7 @@ const jangyanQuestions = {
       "id": 282,
       "question": "Which seats on public transport are typically reserved for senior citizens, pregnant women, and persons with disabilities?\nSeats nearest the driver only",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Priority seats, often located near doors or the front of the vehicle",
         "No specific seats are reserved on Indian public transport",
         "Seats at the very back only"
@@ -17963,7 +17963,7 @@ const jangyanQuestions = {
         "Only check the fare estimate",
         "Pay the full fare in advance before boarding",
         "Verify that the vehicle registration number and driver details match what is shown in the app",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Passengers should verify that the vehicle registration number and driver details match what is shown in the app before boarding, especially at night.",
@@ -17974,7 +17974,7 @@ const jangyanQuestions = {
       "id": 284,
       "question": "What is required under newer state rules, such as Chandigarh's Motor Vehicle Aggregator Rules, 2025, before a driver can operate on a ride-sharing platform?\nNo specific requirement beyond owning a vehicle",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A minimum of 10 years of driving experience",
         "Ownership of at least two vehicles",
         "Driver verification and clearance of pending traffic challans"
@@ -17989,7 +17989,7 @@ const jangyanQuestions = {
       "question": "A commuter regularly walks to a bus stop along a road with no footpath, forcing them onto the carriageway. Based on the principles in this series, which two issues\ndoes this situation combine?\nOnly a personal inconvenience with no legal dimension",
       "options": [
         "A road safety risk for the pedestrian and a potential violation of their fundamental right to safe footpath access",
-        "Correct Answer: Option (B)",
+        "",
         "A vehicle registration issue and an insurance issue",
         "A cycling safety issue unrelated to pedestrians"
       ],
@@ -18004,7 +18004,7 @@ const jangyanQuestions = {
       "options": [
         "Using a mobile phone while crossing",
         "Using a marked crossing",
-        "Correct Answer: Option (B)",
+        "",
         "Making eye contact with drivers"
       ],
       "answer": 3,
@@ -18018,7 +18018,7 @@ const jangyanQuestions = {
       "options": [
         "Only the driver needs to be present, with no additional staff",
         "Attendants are required only for buses carrying fewer than 10 students",
-        "Correct Answer: Option (B)",
+        "",
         "A trained attendant should be present on school buses, alongside required safety equipment"
       ],
       "answer": 0,
@@ -18033,7 +18033,7 @@ const jangyanQuestions = {
         "Municipal bodies are legally barred from maintaining footpaths",
         "Footpaths are reserved exclusively for cyclists",
         "Encroachment by vendors, parked vehicles, and construction material",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Footpaths are frequently encroached upon by vendors, parked vehicles, and construction material, forcing pedestrians onto the carriageway despite footpaths technically existing.",
@@ -18044,7 +18044,7 @@ const jangyanQuestions = {
       "id": 289,
       "question": "A metro passenger presses the Passenger Emergency Alarm because they missed their intended stop and want the train to stop again. What is the correct assessment\nof this action?\nThis is an appropriate use of the alarm, since it caused personal inconvenience",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Missing a stop is legally classified as an emergency",
         "The alarm has no real consequence for non-emergency use",
         "This is a misuse of the alarm, since it is reserved for genuine emergencies and misuse is a punishable offence"
@@ -18059,7 +18059,7 @@ const jangyanQuestions = {
       "question": "What is the safe practice for cyclists riding at night?\nNo special precautions are needed if roads are well-lit",
       "options": [
         "Use reflective clothing and functioning lights",
-        "Correct Answer: Option (B)",
+        "",
         "Remove reflectors to reduce weight",
         "Ride only on footpaths at night"
       ],
@@ -18075,7 +18075,7 @@ const jangyanQuestions = {
         "Only professional drivers",
         "Only vehicle owners without insurance",
         "A road user with little or no protective shell around them during a crash, such as a pedestrian or cyclist",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A vulnerable road user is one with little or no protective shell during a crash, including pedestrians, cyclists, and groups like children and senior citizens.",
@@ -18089,7 +18089,7 @@ const jangyanQuestions = {
         "A hospital is nearby",
         "A railway crossing is nearby",
         "A school is nearby and children may cross unpredictably",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The 'School Ahead' cautionary sign warns drivers that a school is nearby and children may cross the road unpredictably, requiring reduced speed.",
@@ -18101,7 +18101,7 @@ const jangyanQuestions = {
       "question": "What is India's approximate share of global road fatalities, despite owning only about 1% of the world's registered vehicles?\nAbout 2%",
       "options": [
         "About 40%",
-        "Correct Answer: Option (B)",
+        "",
         "About 25%",
         "About 11%"
       ],
@@ -18116,7 +18116,7 @@ const jangyanQuestions = {
       "options": [
         "Traffic already inside the roundabout generally has priority over traffic entering it",
         "Only two-wheelers have priority in roundabouts",
-        "Correct Answer: Option (B)",
+        "",
         "Right of way does not apply to roundabouts"
       ],
       "answer": 3,
@@ -18129,7 +18129,7 @@ const jangyanQuestions = {
       "question": "A city is deciding between two safety investments: hiring more traffic police for general enforcement, or specifically training more crossing guards near schools during\narrival and dismissal times. Considering the vulnerability of children as road users, which choice most directly reduces child pedestrian risk?\nGeneral traffic police enforcement, since it covers a broader area",
       "options": [
         "Neither option has any measurable effect on child safety",
-        "Correct Answer: Option (B)",
+        "",
         "Crossing guards near schools during arrival and dismissal, since this directly targets the times and locations of highest child pedestrian risk",
         "Only infrastructure changes, not personnel, can improve child pedestrian safety"
       ],
@@ -18142,7 +18142,7 @@ const jangyanQuestions = {
       "id": 296,
       "question": "What is the purpose of a 'Give Way Line' near a main road junction?\nTo mark a permanent parking zone",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To indicate a mandatory full stop at all times",
         "To mark a pedestrian-only zone",
         "To require yielding to traffic on the main road, without always requiring a full stop"
@@ -18159,7 +18159,7 @@ const jangyanQuestions = {
         "Avoid allowing senior citizens to walk outside at all",
         "Identify and consistently use the nearest signal-controlled crossing or foot-over-bridge, even if it takes longer",
         "Encourage senior citizens to cross as quickly as possible to minimise exposure time",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Family members are advised to help identify and consistently use the nearest signal-controlled crossing or foot-over-bridge for senior citizens, even if it takes a little longer, rather than rushing\nacross busy roads.",
@@ -18170,7 +18170,7 @@ const jangyanQuestions = {
       "id": 298,
       "question": "What is the primary reason a flagger's live signal takes priority over a static sign at a construction or accident zone?\nFlaggers have no real legal authority",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Flaggers are only present at night",
         "A flagger's signal reflects the current, real-time situation, which a static sign cannot adjust to",
         "Static signs are always outdated by definition"
@@ -18186,7 +18186,7 @@ const jangyanQuestions = {
       "options": [
         "A guaranteed 100% elimination of pedestrian accidents",
         "An increase in accidents due to driver confusion",
-        "Correct Answer: Option (B)",
+        "",
         "A reduction in pedestrian accidents of up to around 30% at those locations, based on similar pilot results"
       ],
       "answer": 0,
@@ -18201,7 +18201,7 @@ const jangyanQuestions = {
         "Run diagonally to the nearest footpath, ignoring vehicles",
         "Stop and remain standing in the middle of the road",
         "Continue to the nearest safe point, since stopping mid-road creates a greater hazard",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "If a signal changes while a pedestrian is already partway across, continuing to the nearest safe point is generally safer than reversing or stopping in the middle of moving traffic.",
@@ -18215,7 +18215,7 @@ const jangyanQuestions = {
         "The first hour following a traumatic injury",
         "The final hour before a hospital closes",
         "The hour reserved for emergency vehicle testing",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "The Golden Hour is legally defined as the first hour following a traumatic injury, when prompt medical care offers the best chance of survival.",
@@ -18226,7 +18226,7 @@ const jangyanQuestions = {
       "id": 302,
       "question": "Which number is India's unified emergency helpline?\n100",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "112",
         "108",
         "1073"
@@ -18242,7 +18242,7 @@ const jangyanQuestions = {
       "options": [
         "Only on government-issued phones",
         "Only during daytime hours",
-        "Correct Answer: Option (B)",
+        "",
         "Yes, it can work without a SIM card and on a locked phone"
       ],
       "answer": 0,
@@ -18257,7 +18257,7 @@ const jangyanQuestions = {
         "Free treatment of up to ₹1.5 lakh for the first seven days at designated hospitals",
         "A cash reward of ₹1.5 lakh",
         "Free ambulance transport only, with no treatment coverage",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The Cashless Treatment Scheme, 2025 guarantees free treatment of up to ₹1.5 lakh for the first seven days after an accident, at designated hospitals.",
@@ -18271,7 +18271,7 @@ const jangyanQuestions = {
         "Yes, initial stabilisation at a non-designated hospital is covered, and the victim reached care within the required 24-hour window",
         "Coverage depends solely on the victim's nationality",
         "No, since more than 12 hours had passed",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "The scheme covers initial stabilisation even at a non-designated hospital, and since the victim reached care within 24 hours of the accident, they would qualify for coverage under the scheme's\nconditions.",
@@ -18282,7 +18282,7 @@ const jangyanQuestions = {
       "id": 306,
       "question": "What does the 'D' in the DRSABC first-aid framework stand for?\nDistance",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Danger",
         "Delay",
         "Direction"
@@ -18299,7 +18299,7 @@ const jangyanQuestions = {
         "50 compressions to 1 breath",
         "10 compressions to 5 breaths",
         "30 compressions to 2 breaths",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "The correct CPR ratio for an adult is 30 chest compressions followed by 2 rescue breaths, repeated as needed.",
@@ -18313,7 +18313,7 @@ const jangyanQuestions = {
         "Protection from harassment and repeated questioning for those who help accident victims",
         "Automatic immunity from all legal proceedings, regardless of circumstances",
         "Protection only for licensed medical professionals",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Good Samaritan guidelines protect bystanders who help accident victims from harassment, repeated questioning, and being compelled to disclose their identity.",
@@ -18325,7 +18325,7 @@ const jangyanQuestions = {
       "question": "A bystander wants to help an accident victim but hesitates, worried about being detained by police for questioning. Based on the legal framework established after\nSaveLIFE Foundation vs. Union of India (2016), is this concern justified?\nYes, and bystanders should generally avoid helping to prevent legal trouble",
       "options": [
         "Protection only applies if the police are already present at the scene",
-        "Correct Answer: Option (B)",
+        "",
         "Only doctors are protected from such concerns",
         "No — Good Samaritan guidelines specifically protect helpers from harassment and cannot compel them to disclose their identity"
       ],
@@ -18338,7 +18338,7 @@ const jangyanQuestions = {
       "id": 310,
       "question": "What is a 'Zero FIR'?\nAn FIR that cannot be filed under any circumstances",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "An FIR that can be filed at any police station, regardless of jurisdiction, and later transferred",
         "An FIR filed only for cases with zero injuries",
         "An FIR with no legal validity"
@@ -18353,7 +18353,7 @@ const jangyanQuestions = {
       "question": "What is 'e-DAR' in the context of road accidents?\nA type of emergency ambulance",
       "options": [
         "A private insurance company",
-        "Correct Answer: Option (B)",
+        "",
         "A driving licence renewal portal",
         "MoRTH's electronic Detailed Accident Report system, a standardised digital accident record"
       ],
@@ -18369,7 +18369,7 @@ const jangyanQuestions = {
         "Handling third-party compensation claims arising from motor vehicle accidents",
         "Renewing vehicle registration",
         "Conducting vehicle fitness tests",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "MACT is a specialised tribunal that handles third-party compensation claims arising from motor vehicle accidents.",
@@ -18380,7 +18380,7 @@ const jangyanQuestions = {
       "id": 313,
       "question": "What is 'No-Fault Liability' compensation under Section 140 of the Motor Vehicles Act?\nCompensation only available after a lengthy court trial",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Interim compensation available without first having to prove who was at fault",
         "A type of vehicle insurance premium discount",
         "Compensation only for vehicle damage, not injury"
@@ -18397,7 +18397,7 @@ const jangyanQuestions = {
         "₹50,000",
         "₹1 lakh",
         "₹2 lakh",
-        "Correct Answer: Option (D)"
+        ""
       ],
       "answer": 3,
       "explanation": "The Solatium Fund provides ₹2 lakh for death in hit-and-run cases occurring on or after 1 April 2022, under Section 161 of the Motor Vehicles Act.",
@@ -18410,7 +18410,7 @@ const jangyanQuestions = {
       "options": [
         "The Cashless Treatment Scheme payment has no relationship to the Solatium Fund claim",
         "The ₹1.5 lakh already paid under the Golden Hour scheme will be deducted from the final ₹2 lakh Solatium payout",
-        "Correct Answer: Option (B)",
+        "",
         "They must return the ₹1.5 lakh before filing any Solatium claim"
       ],
       "answer": 0,
@@ -18422,7 +18422,7 @@ const jangyanQuestions = {
       "id": 316,
       "question": "Who processes a Solatium Fund claim for a hit-and-run accident?\nThe vehicle's insurance company directly",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The Ministry of Finance",
         "The victim's employer",
         "The Claims Inquiry Officer (CIO), typically the officer in charge of the relevant police station"
@@ -18439,7 +18439,7 @@ const jangyanQuestions = {
         "Remove it immediately regardless of the rider's condition",
         "Replace it with a different helmet",
         "Loosen the strap only, without full removal",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A helmet should not be removed from a conscious rider, since it helps stabilise the neck; removing it carelessly could worsen a potential spinal injury.",
@@ -18450,7 +18450,7 @@ const jangyanQuestions = {
       "id": 318,
       "question": "What is the appropriate first-aid response to severe bleeding from a limb wound?\nApply a tourniquet immediately as the first response in all cases",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Apply firm, direct pressure with a clean cloth, elevating the limb if no fracture is suspected",
         "Leave the wound uncovered to allow air exposure",
         "Wash the wound thoroughly with water before doing anything else"
@@ -18467,7 +18467,7 @@ const jangyanQuestions = {
         "Sit them upright immediately",
         "Place them in the recovery position to keep the airway clear",
         "Move them to a standing position to check for injuries",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "An unconscious but breathing victim, without suspected spinal injury, should be placed in the recovery position to help keep the airway clear and reduce the risk of choking.",
@@ -18478,7 +18478,7 @@ const jangyanQuestions = {
       "id": 320,
       "question": "What is the recommended first step when arriving at an accident scene, before helping any victim?\nImmediately move the victim to safety regardless of surroundings",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Call the victim's family first",
         "Take photographs before doing anything else",
         "Check that the scene itself is safe to approach — traffic, fire, fuel leaks"
@@ -18493,7 +18493,7 @@ const jangyanQuestions = {
       "question": "What is the 'Rahveer' scheme designed to encourage?\nFaster ambulance response times only",
       "options": [
         "Hospitals to reduce treatment costs",
-        "Correct Answer: Option (B)",
+        "",
         "Vehicle owners to buy better insurance",
         "Good Samaritans helping accident victims within the golden hour, rewarded with ₹25,000"
       ],
@@ -18506,7 +18506,7 @@ const jangyanQuestions = {
       "id": 322,
       "question": "What historic case established that hospitals cannot refuse emergency treatment to accident victims?\nS. Rajaseekaran vs. Union of India",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Vishaka vs. State of Rajasthan",
         "Parmanand Katara vs. Union of India",
         "SaveLIFE Foundation vs. Union of India"
@@ -18521,7 +18521,7 @@ const jangyanQuestions = {
       "question": "What ruling did the Supreme Court make in S. Rajaseekaran vs. Union of India (2025)?\nThat road accidents should not be reported to police",
       "options": [
         "That all vehicles must carry first-aid kits by law",
-        "Correct Answer: Option (B)",
+        "",
         "That hospitals may charge accident victims in advance",
         "That timely trauma care during the golden hour is part of the fundamental right to life under Article 21"
       ],
@@ -18537,7 +18537,7 @@ const jangyanQuestions = {
         "A court order is required before any documents can be submitted",
         "Only the vehicle's registration certificate",
         "FIR copy, medical records, and identity proof",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A Solatium Fund claim typically requires the FIR copy, medical records, and identity proof, submitted to the Claims Inquiry Officer.",
@@ -18551,7 +18551,7 @@ const jangyanQuestions = {
         "Generally no — accepting Solatium Fund compensation typically means the family cannot also pursue a separate MACT claim for a higher amount",
         "No, neither claim is ever possible for hit-and-run cases",
         "Yes, but only if the vehicle is later identified",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Accepting Solatium Fund compensation generally precludes also pursuing a separate MACT claim for a higher amount, since the two are largely mutually exclusive paths.",
@@ -18563,7 +18563,7 @@ const jangyanQuestions = {
       "question": "What items should a basic roadside emergency kit include?\nOnly a spare tyre",
       "options": [
         "A first-aid kit, torch, warning triangle, basic tools, water, and emergency numbers",
-        "Correct Answer: Option (B)",
+        "",
         "Only a mobile phone charger",
         "Only a fire extinguisher"
       ],
@@ -18578,7 +18578,7 @@ const jangyanQuestions = {
       "options": [
         "1091",
         "1033",
-        "Correct Answer: Option (C)",
+        "",
         "108"
       ],
       "answer": 0,
@@ -18590,7 +18590,7 @@ const jangyanQuestions = {
       "id": 328,
       "question": "What does Section 134 of the Motor Vehicles Act require of a driver involved in an accident?\nTo leave the scene immediately to avoid liability",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To only inform their insurance company",
         "To pay compensation directly at the scene",
         "To give information and render reasonable assistance to the injured"
@@ -18605,7 +18605,7 @@ const jangyanQuestions = {
       "question": "A road accident victim's family wants to know why the government introduced the Cashless Treatment Scheme so long after the Golden Hour provision was first\nwritten into law. Based on this series, what directly triggered its actual implementation?\nA routine annual budget allocation with no specific trigger",
       "options": [
         "The Supreme Court's 2025 ruling in S. Rajaseekaran vs. Union of India, which directed the government to implement the scheme by a set deadline",
-        "Correct Answer: Option (B)",
+        "",
         "A private hospital lobbying campaign",
         "An international treaty obligation"
       ],
@@ -18618,7 +18618,7 @@ const jangyanQuestions = {
       "id": 330,
       "question": "What is the correct way to open a suspected unconscious victim's airway if a spinal injury is possible?\nTilt the head back fully as with a standard airway check",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Use a jaw thrust rather than a head tilt",
         "Turn the victim onto their stomach immediately",
         "Do not attempt to open the airway under any circumstance"
@@ -18634,7 +18634,7 @@ const jangyanQuestions = {
       "options": [
         "Only the vehicle's registration number",
         "Only the time of day",
-        "Correct Answer: Option (B)",
+        "",
         "Exact location, number of people injured, and their apparent condition"
       ],
       "answer": 0,
@@ -18646,7 +18646,7 @@ const jangyanQuestions = {
       "id": 332,
       "question": "What is the recommended action before touching or moving an accident victim, if you have access to gloves?\nGloves are unnecessary and can be skipped",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only use gloves if the victim appears unwell",
         "Gloves should only be used by medical professionals",
         "Wash hands or use gloves if available, to reduce infection risk for both helper and victim"
@@ -18661,7 +18661,7 @@ const jangyanQuestions = {
       "question": "What is the typical timeframe within which a hospital must be paid after a cashless treatment claim is approved, under the 2025 scheme?\nWithin 24 hours",
       "options": [
         "Within 10 days",
-        "Correct Answer: Option (B)",
+        "",
         "Within 30 days",
         "Within 90 days"
       ],
@@ -18675,7 +18675,7 @@ const jangyanQuestions = {
       "question": "What is the recommended maximum compression depth during adult CPR?\n1–2 cm",
       "options": [
         "15 cm or more",
-        "Correct Answer: Option (B)",
+        "",
         "5–6 cm",
         "10–12 cm"
       ],
@@ -18689,7 +18689,7 @@ const jangyanQuestions = {
       "question": "A bystander performing CPR on an unresponsive accident victim is unsure whether to continue after a few minutes without a response. Based on standard first-aid\nguidance, what is the correct approach?\nStop immediately after one minute if there is no visible improvement",
       "options": [
         "Stop only if the bystander feels the person is beyond help",
-        "Correct Answer: Option (B)",
+        "",
         "CPR should only be attempted for exactly 30 seconds",
         "Continue CPR until professional help arrives, the person shows signs of life, or the bystander is physically unable to continue"
       ],
@@ -18705,7 +18705,7 @@ const jangyanQuestions = {
         "National Highways Authority of India",
         "Ministry of Home Affairs",
         "Indian Red Cross Society",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The Indian Red Cross Society publishes the Indian First Aid Manual, a key reference for basic first-aid guidance in India.",
@@ -18719,7 +18719,7 @@ const jangyanQuestions = {
         "Pull over safely, switch on hazard lights, and wait rather than continuing to drive",
         "Follow the vehicle ahead as closely as possible for guidance",
         "Switch to high beam and proceed cautiously",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "If visibility drops to near zero, the safest response is to pull over safely, switch on hazard lights, and wait rather than continuing to drive, reducing the risk of a collision.",
@@ -18730,7 +18730,7 @@ const jangyanQuestions = {
       "id": 338,
       "question": "What is the primary purpose of collecting witness contact details at an accident scene?\nTo assign blame immediately at the scene",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To support later reporting, insurance claims, and legal processes",
         "Witness details are not useful for any purpose",
         "To determine the exact speed of vehicles involved"
@@ -18746,7 +18746,7 @@ const jangyanQuestions = {
       "options": [
         "No compensation is available if the vehicle cannot be traced",
         "The Solatium Fund, which compensates hit-and-run victims without requiring the vehicle to be identified",
-        "Correct Answer: Option (B)",
+        "",
         "Only private insurance can address this situation"
       ],
       "answer": 0,
@@ -18758,7 +18758,7 @@ const jangyanQuestions = {
       "id": 340,
       "question": "What is the correct approach if you are unsure whether an accident victim has a spinal injury?\nMove them to a more comfortable position immediately",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only worry about spinal injury if the person is unconscious",
         "Assume a spinal injury is possible and avoid unnecessary movement until professional help arrives",
         "Sit the person upright to check for pain"
@@ -18775,7 +18775,7 @@ const jangyanQuestions = {
         "Emergency Registration and Safety Service",
         "Emergency Response Support System",
         "Electronic Rescue Signal System",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "ERSS stands for Emergency Response Support System, the Ministry of Home Affairs initiative behind India's unified 112 emergency number.",
@@ -18788,7 +18788,7 @@ const jangyanQuestions = {
       "options": [
         "Take a photo and continue without further involvement",
         "Stop safely if possible, call 112, and help if it is safe to do so",
-        "Correct Answer: Option (B)",
+        "",
         "Only stop if requested by another driver"
       ],
       "answer": 3,
@@ -18803,7 +18803,7 @@ const jangyanQuestions = {
         "A traffic police officer at the scene of an accident",
         "A bystander who voluntarily helps an accident victim, protected by law from harassment",
         "An insurance agent processing a claim",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A Good Samaritan is any bystander who voluntarily helps an accident victim, and is legally protected from harassment under Good Samaritan guidelines.",
@@ -18816,7 +18816,7 @@ const jangyanQuestions = {
       "options": [
         "Railway crossings do not require any driver reaction at all",
         "Reaction time has no relevance to railway crossing safety",
-        "Correct Answer: Option (B)",
+        "",
         "Trains travelling at 100–120 km/h require far more distance to stop or for a driver to safely judge their speed and distance"
       ],
       "answer": 1,
@@ -18829,7 +18829,7 @@ const jangyanQuestions = {
       "question": "A witness to an accident wants to help but does not know first aid and is worried about doing more harm than good. Based on this series, what is the most appropriate\naction they can still take?\nDo nothing at all, since only trained professionals should ever help",
       "options": [
         "Call 112 immediately, ensure scene safety, and provide comfort and reassurance to the victim while waiting for trained help, without attempting unfamiliar medical procedures",
-        "Correct Answer: Option (B)",
+        "",
         "Attempt full CPR regardless of training, since any action is better than none",
         "Move the victim to a hospital themselves without waiting for an ambulance"
       ],
@@ -18843,7 +18843,7 @@ const jangyanQuestions = {
       "question": "What is the correct action if an accident victim's bleeding does not stop with direct pressure?\nRemove the pressure and try a different, unrelated technique",
       "options": [
         "Maintain firm pressure, consider elevating the limb, and use a tourniquet only as a last resort for severe limb bleeding",
-        "Correct Answer: Option (B)",
+        "",
         "Apply ice directly to the open wound",
         "Wait several minutes before trying any further action"
       ],
@@ -18858,7 +18858,7 @@ const jangyanQuestions = {
       "options": [
         "Conducting vehicle fitness tests",
         "Investigating traffic violations",
-        "Correct Answer: Option (B)",
+        "",
         "Implementing the scheme through an online Transaction Management System linked to e-DAR"
       ],
       "answer": 0,
@@ -18870,7 +18870,7 @@ const jangyanQuestions = {
       "id": 348,
       "question": "What is the recommended response if you are dazzled by an oncoming vehicle's headlights while responding to an emergency at night?\nStare directly at the light to adjust faster",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Close your eyes briefly while continuing to drive",
         "Flash your own headlights repeatedly in response",
         "Slow down and look toward the left edge of your lane until it passes"
@@ -18885,7 +18885,7 @@ const jangyanQuestions = {
       "question": "A road safety educator is designing a short public awareness message about emergency preparedness. Based on the key themes of this series, which single message\nwould most effectively summarise the combined value of the golden hour concept and Good Samaritan protections?\nEmergency response is solely the government's responsibility",
       "options": [
         "Acting quickly and helping without hesitation genuinely saves lives, and the law protects those who do",
-        "Correct Answer: Option (B)",
+        "",
         "Only trained medical professionals should ever respond to accidents",
         "Emergency numbers should only be used for very serious accidents"
       ],
@@ -18899,7 +18899,7 @@ const jangyanQuestions = {
       "question": "What is the correct first action if you find yourself involved in a road accident and are not seriously injured?\nImmediately leave the scene to avoid conflict",
       "options": [
         "Ensure safety, check on other involved parties, and call emergency services if needed",
-        "Correct Answer: Option (B)",
+        "",
         "Wait for someone else to take charge of the situation",
         "Negotiate compensation directly with the other driver before involving police"
       ],
@@ -18913,7 +18913,7 @@ const jangyanQuestions = {
       "question": "When did the Motor Vehicles Act, 1988 come into effect?\n1 January 1988",
       "options": [
         "1 September 2019",
-        "Correct Answer: Option (B)",
+        "",
         "1 April 2020",
         "1 July 1989"
       ],
@@ -18926,7 +18926,7 @@ const jangyanQuestions = {
       "id": 352,
       "question": "When did the major Motor Vehicles (Amendment) Act, 2019 come into force?\n1 July 1989",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "1 April 2021",
         "1 January 2018",
         "1 September 2019"
@@ -18943,7 +18943,7 @@ const jangyanQuestions = {
         "A violation that can be settled by paying a fine, without a court appearance",
         "An offence only applicable to commercial vehicles",
         "An offence that can never be resolved",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A compoundable offence, such as speeding or wrong parking, can be settled by paying a fine, often online, without needing a court appearance.",
@@ -18956,7 +18956,7 @@ const jangyanQuestions = {
       "options": [
         "Drunk driving above the legal limit",
         "Wrong parking",
-        "Correct Answer: Option (C)",
+        "",
         "Signal jumping with no injury"
       ],
       "answer": 3,
@@ -18969,7 +18969,7 @@ const jangyanQuestions = {
       "question": "A driver receives two separate challans in the same month: one for wrong parking and one for drunk driving above the legal limit. What is the key procedural difference\nin how these two must be resolved?\nBoth can be settled online with a simple fine payment",
       "options": [
         "Both must go through a magistrate court regardless of severity",
-        "Correct Answer: Option (B)",
+        "",
         "The wrong parking challan can typically be settled with a fine, while the drunk driving charge is non-compoundable and must go through a magistrate court",
         "Neither offence can be resolved without a Lok Adalat"
       ],
@@ -18982,7 +18982,7 @@ const jangyanQuestions = {
       "id": 356,
       "question": "What does 'HSRP' stand for?\nHighway Speed Regulation Plate",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Heavy Service Route Permit",
         "Highway Safety Reporting Portal",
         "High Security Registration Plate"
@@ -18996,7 +18996,7 @@ const jangyanQuestions = {
       "id": 357,
       "question": "What feature makes an HSRP tamper-resistant and machine-readable?\nA simple painted number with no special features",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A magnetic strip similar to a bank card",
         "A QR code printed on paper",
         "A chromium hologram and a laser-etched unique identification number"
@@ -19011,7 +19011,7 @@ const jangyanQuestions = {
       "question": "Since when must all newly registered vehicles in India be fitted with an HSRP?\nSince 2010",
       "options": [
         "Since April 2019",
-        "Correct Answer: Option (B)",
+        "",
         "Since 2025",
         "Since 2022"
       ],
@@ -19026,7 +19026,7 @@ const jangyanQuestions = {
       "options": [
         "HSRP is optional and can be skipped indefinitely",
         "Retrofit an HSRP through the RTO or an authorised dealer, since older vehicles must also comply",
-        "Correct Answer: Option (B)",
+        "",
         "The vehicle must be scrapped immediately"
       ],
       "answer": 0,
@@ -19040,7 +19040,7 @@ const jangyanQuestions = {
       "options": [
         "A digitally issued traffic fine, generated by a camera or handheld device",
         "A type of driving licence",
-        "Correct Answer: Option (B)",
+        "",
         "A vehicle insurance document"
       ],
       "answer": 1,
@@ -19055,7 +19055,7 @@ const jangyanQuestions = {
         "uidai.gov.in",
         "echallan.parivahan.gov.in",
         "incometax.gov.in",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Every e-challan flows into the central database hosted at echallan.parivahan.gov.in, part of the Parivahan Sewa system.",
@@ -19067,7 +19067,7 @@ const jangyanQuestions = {
       "question": "What is a 'Virtual Court' in the context of traffic offences?\nA court that only handles criminal cases",
       "options": [
         "An online court that resolves many traffic challans without requiring a physical appearance",
-        "Correct Answer: Option (B)",
+        "",
         "A private arbitration service",
         "A court exclusively for commercial vehicle disputes"
       ],
@@ -19083,7 +19083,7 @@ const jangyanQuestions = {
         "1–2 years",
         "5 years",
         "60–90 days",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "An unresolved e-challan is generally transferred to a state's Virtual Court after roughly 60–90 days.",
@@ -19096,7 +19096,7 @@ const jangyanQuestions = {
       "options": [
         "A 'people's court' offering reduced, final settlements for pending challans",
         "An online-only portal with no legal authority",
-        "Correct Answer: Option (B)",
+        "",
         "A special police unit"
       ],
       "answer": 1,
@@ -19108,7 +19108,7 @@ const jangyanQuestions = {
       "id": 365,
       "question": "A vehicle owner has multiple pending challans accumulated over two years and wants the fastest, most cost-effective resolution, accepting that the decision will be\nfinal. Which option best fits this goal?\nIgnoring the challans indefinitely",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "Attending a Lok Adalat, which offers reduced settlements, understanding the decision cannot be appealed",
         "Waiting for the challans to expire automatically",
         "Filing a fresh case in a regular magistrate court"
@@ -19123,7 +19123,7 @@ const jangyanQuestions = {
       "question": "Under Section 3 of the Motor Vehicles Act, what is required to drive a motor vehicle in India?\nA valid PUC certificate only",
       "options": [
         "A valid driving licence",
-        "Correct Answer: Option (B)",
+        "",
         "Only vehicle registration",
         "Only vehicle insurance"
       ],
@@ -19139,7 +19139,7 @@ const jangyanQuestions = {
         "Driving licence categories",
         "The summons procedure for unresolved traffic prosecutions",
         "Insurance premium calculation",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Section 208 governs the summons procedure used when an unresolved traffic matter proceeds to a magistrate court after remaining unresolved through earlier stages.",
@@ -19153,7 +19153,7 @@ const jangyanQuestions = {
         "100 mg per 100 ml of blood",
         "50 mg per 100 ml of blood",
         "30 mg per 100 ml of blood",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Section 185 sets the legal blood alcohol limit at 30 mg per 100 ml of blood; driving above this limit is a punishable, non-compoundable offence.",
@@ -19165,7 +19165,7 @@ const jangyanQuestions = {
       "question": "A driver is stopped and found with a blood alcohol level slightly above the legal 30 mg per 100 ml limit for the first time. Based on Section 185 penalties, what is the\ncorrect expected consequence?\nA fine of ₹15,000 and/or up to 2 years imprisonment, since it is a repeat offence",
       "options": [
         "A fine of ₹10,000 and/or up to 6 months imprisonment, as this is a first offence",
-        "Correct Answer: Option (B)",
+        "",
         "No penalty applies for a first-time minor violation",
         "Only a verbal warning, with no fine or imprisonment"
       ],
@@ -19179,7 +19179,7 @@ const jangyanQuestions = {
       "question": "What is the penalty for driving without a valid driving licence, under the 2019 amendment?\n₹500",
       "options": [
         "₹1,000",
-        "Correct Answer: Option (C)",
+        "",
         "₹5,000",
         "₹10,000"
       ],
@@ -19193,7 +19193,7 @@ const jangyanQuestions = {
       "question": "What is Section 199A of the Motor Vehicles Act primarily concerned with?\nVehicle emission standards",
       "options": [
         "Third-party insurance requirements",
-        "Correct Answer: Option (B)",
+        "",
         "Responsibility of guardians/owners for offences committed by juvenile drivers",
         "Traffic signal standardisation"
       ],
@@ -19209,7 +19209,7 @@ const jangyanQuestions = {
         "₹25,000",
         "₹50,000",
         "₹5,000",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 1,
       "explanation": "Under Section 199A, the guardian or vehicle owner can be fined ₹25,000, and the vehicle's registration may also be cancelled.",
@@ -19223,7 +19223,7 @@ const jangyanQuestions = {
         "25 years",
         "21 years",
         "30 years",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "A juvenile who drives and commits an offence is barred from obtaining a driving licence until the age of 25, reflecting the seriousness of underage driving.",
@@ -19236,7 +19236,7 @@ const jangyanQuestions = {
       "options": [
         "Documents valid only for two-wheelers",
         "Physical original documents, under the Information Technology Act, 2000",
-        "Correct Answer: Option (B)",
+        "",
         "Temporary documents valid for 30 days only"
       ],
       "answer": 3,
@@ -19251,7 +19251,7 @@ const jangyanQuestions = {
         "No one, since it was a minor violation",
         "The parent, as the vehicle owner or guardian, who can be fined ₹25,000 and risk registration cancellation",
         "The traffic police officer who issued the challan",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Under Section 199A, the parent, as the vehicle owner or guardian who enabled the juvenile's driving, bears the primary legal and financial consequence — a ₹25,000 fine and possible\nregistration cancellation — regardless of how minor the violation seemed.",
@@ -19265,7 +19265,7 @@ const jangyanQuestions = {
         "A medical certificate required only for commercial drivers",
         "A gym membership document",
         "Official confirmation that a vehicle meets safety and emission standards for continued road use",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A Fitness Certificate officially confirms that a vehicle meets safety and emission standards for continued use on public roads.",
@@ -19277,7 +19277,7 @@ const jangyanQuestions = {
       "question": "What is the penalty range for driving without insurance under Section 196, for a first offence?\nNo penalty for a first offence",
       "options": [
         "Up to 3 months imprisonment and/or ₹2,000",
-        "Correct Answer: Option (B)",
+        "",
         "A flat ₹10,000 fine only",
         "Immediate permanent licence cancellation"
       ],
@@ -19292,7 +19292,7 @@ const jangyanQuestions = {
       "options": [
         "Only insurance companies",
         "Primarily RTO officials, though enforcement can overlap with traffic police",
-        "Correct Answer: Option (B)",
+        "",
         "Only municipal corporations"
       ],
       "answer": 3,
@@ -19306,7 +19306,7 @@ const jangyanQuestions = {
       "options": [
         "The driver should immediately drive away without any interaction",
         "The driver may politely ask to see identification first, and may reasonably decline to hand over documents if it cannot be shown",
-        "Correct Answer: Option (B)",
+        "",
         "The driver must call 112 before responding to any officer"
       ],
       "answer": 0,
@@ -19318,7 +19318,7 @@ const jangyanQuestions = {
       "id": 380,
       "question": "What is required for a challan to be issued during a traffic stop?\nA verbal statement is sufficient with no documentation",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "No formal process is required by law",
         "Only a magistrate can issue any challan",
         "A proper challan book or e-challan device; if confiscated, a receipt should be provided for any document taken"
@@ -19332,7 +19332,7 @@ const jangyanQuestions = {
       "id": 381,
       "question": "What is the primary purpose of the Motor Vehicles Act, 1988?\nTo regulate only commercial vehicle permits",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "To set fuel prices nationally",
         "To regulate only railway transport",
         "To govern licensing, registration, insurance, traffic conduct, and penalties for road transport"
@@ -19348,7 +19348,7 @@ const jangyanQuestions = {
       "options": [
         "The Consumer Protection Act",
         "The Motor Vehicles Act, 1988",
-        "Correct Answer: Option (B)",
+        "",
         "The Right to Information Act"
       ],
       "answer": 3,
@@ -19363,7 +19363,7 @@ const jangyanQuestions = {
         "Only inspectors can issue any traffic fine",
         "Officers below a certain rank are often limited in the amount they can personally collect, with larger fines requiring more senior or formal processing",
         "Rank has no bearing on fine collection authority",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "As a general principle, officers below a certain rank are often limited in the amount they can personally collect on the spot, with larger fines requiring a more senior officer or formal processing.",
@@ -19374,7 +19374,7 @@ const jangyanQuestions = {
       "id": 384,
       "question": "What can happen if a driver's documents are confiscated without a receipt being issued?\nThis is standard, expected procedure with no issue",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The driver automatically loses their licence permanently",
         "This is a departure from expected procedure, and the driver is entitled to request a receipt",
         "No documents can legally be confiscated under any circumstance"
@@ -19389,7 +19389,7 @@ const jangyanQuestions = {
       "question": "A driver wants to contest an e-challan they believe was wrongly issued due to a misread number plate by an ANPR camera. What is the most effective first step, based\non this series?\nIgnore the challan and hope it is automatically cancelled",
       "options": [
         "Gather supporting evidence such as photos or GPS data, and contest it through the Parivahan Sewa portal or the issuing authority",
-        "Correct Answer: Option (B)",
+        "",
         "Pay the fine immediately without contesting, since ANPR cameras are never wrong",
         "Wait for the challan to reach a magistrate court before taking any action"
       ],
@@ -19404,7 +19404,7 @@ const jangyanQuestions = {
       "options": [
         "NALSA coordinates the Lok Adalat scheme, offering reduced settlements for pending challans",
         "NALSA manufactures HSRP plates",
-        "Correct Answer: Option (B)",
+        "",
         "NALSA sets national speed limits"
       ],
       "answer": 3,
@@ -19419,7 +19419,7 @@ const jangyanQuestions = {
         "PUC enforcement is stricter than insurance enforcement in all states",
         "PUC checks are primarily an RTO function, while insurance and licence checks are more directly within general traffic police authority",
         "Neither is enforced during routine stops",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "PUC certificate checks are primarily considered an RTO function, while documents like insurance and licence are more directly and commonly checked by general traffic police during routine\nstops.",
@@ -19433,7 +19433,7 @@ const jangyanQuestions = {
         "Only written consent forms can authorise such a test",
         "Breathalyser tests are illegal in India",
         "A driver is generally expected to cooperate with a lawfully conducted test performed in their presence",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "A driver is generally expected to cooperate with a breathalyser test lawfully conducted in their presence; refusing without valid reason is unlikely to help and may complicate the situation\nfurther.",
@@ -19444,7 +19444,7 @@ const jangyanQuestions = {
       "id": 389,
       "question": "A vehicle owner's registration is at risk of cancellation after their child, a minor, was caught driving the family car and committing a traffic offence. The owner argues\nthey were unaware the child had taken the vehicle. Based on Section 199A's framing, how is this defence likely to be treated?\nIt will automatically absolve the owner of all responsibility",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Section 199A is generally framed around vehicle owner/guardian responsibility regardless of awareness, so this defence is unlikely to fully absolve the owner",
         "It has no bearing on the case either way",
         "The child will be held solely and fully responsible instead"
@@ -19459,7 +19459,7 @@ const jangyanQuestions = {
       "question": "What is the correct definition of 'ANPR' in the context of traffic enforcement?\nA type of vehicle insurance",
       "options": [
         "A pollution testing device",
-        "Correct Answer: Option (B)",
+        "",
         "Automatic Number Plate Recognition, a camera-based system for vehicle identification",
         "A national driving licence registry"
       ],
@@ -19475,7 +19475,7 @@ const jangyanQuestions = {
         "Cancel the insurance permanently",
         "Transfer the insurance to the new owner within 14 days of sale, under Section 157",
         "Insurance transfer is optional and can be done anytime",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Section 157 requires that a vehicle's insurance be transferred to the new owner within 14 days of its sale.",
@@ -19488,7 +19488,7 @@ const jangyanQuestions = {
       "options": [
         "Section 147",
         "Section 161",
-        "Correct Answer: Option (C)",
+        "",
         "Section 146"
       ],
       "answer": 1,
@@ -19503,7 +19503,7 @@ const jangyanQuestions = {
         "₹500 – ₹1,000",
         "Up to ₹10,000",
         "No penalty applies to commercial vehicles",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "Driving without a valid fitness certificate can bring a fine of up to ₹10,000 for commercial vehicles, higher than the ₹2,000–₹5,000 range for private vehicles.",
@@ -19515,7 +19515,7 @@ const jangyanQuestions = {
       "question": "What is the primary function of Section 149 of the Motor Vehicles Act?\nSetting speed limits",
       "options": [
         "Obliging insurers to compensate third-party victims",
-        "Correct Answer: Option (B)",
+        "",
         "Setting vehicle emission standards",
         "Regulating driving licence categories"
       ],
@@ -19530,7 +19530,7 @@ const jangyanQuestions = {
       "options": [
         "Only a warning is possible, since insurance lapses are never penalised",
         "The vehicle will be permanently deregistered immediately",
-        "Correct Answer: Option (B)",
+        "",
         "The driver can be penalised under Section 196 for driving an uninsured vehicle, since intent is not a defence to the compliance requirement"
       ],
       "answer": 0,
@@ -19542,7 +19542,7 @@ const jangyanQuestions = {
       "id": 396,
       "question": "What is the primary legal basis for mandatory FASTag use on Indian national highways?\nThe Information Technology Act, 2000",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The Motor Vehicles Act, 1939",
         "The Indian Penal Code",
         "The National Highway Fee (Determination of Rates and Collection) Rules, 2008"
@@ -19557,7 +19557,7 @@ const jangyanQuestions = {
       "question": "What consequence can a designated authority or contractor face for non-compliant road lighting infrastructure, following the Supreme Court's 2025 directive?\nNo consequence applies to authorities or contractors",
       "options": [
         "Only a public apology is required",
-        "Correct Answer: Option (B)",
+        "",
         "Automatic imprisonment for all involved officials",
         "A separate penalty of up to ₹1 lakh, distinct from fines on individual drivers"
       ],
@@ -19571,7 +19571,7 @@ const jangyanQuestions = {
       "question": "What is the correct sequence when an e-challan remains unresolved for an extended period?\nIt is immediately dismissed after 30 days",
       "options": [
         "It typically moves from issuance to a Virtual Court, and then potentially to a magistrate court summons under Section 208",
-        "Correct Answer: Option (B)",
+        "",
         "It has no further consequence after the initial notice",
         "It is transferred directly to a Lok Adalat with no other steps"
       ],
@@ -19586,7 +19586,7 @@ const jangyanQuestions = {
       "options": [
         "Assume all fines are identical nationwide with no variation",
         "Check with the state transport department or the official Parivahan portal, since exact fine amounts can vary by state and are periodically revised",
-        "Correct Answer: Option (B)",
+        "",
         "Only a lawyer can provide this information"
       ],
       "answer": 0,
@@ -19601,7 +19601,7 @@ const jangyanQuestions = {
         "To handle only vehicle registration disputes",
         "To replace all traffic police with automated systems",
         "To process minor traffic violations digitally, reducing the need for physical court appearances",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The Supreme Court e-Committee's Virtual Courts initiative processes minor traffic violations digitally, significantly reducing the need for physical court appearances for such cases.",
@@ -19612,7 +19612,7 @@ const jangyanQuestions = {
       "id": 401,
       "question": "Since when has FASTag been mandatory for cars and larger vehicles on Indian national highways?\n15 February 2018",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "15 February 2021",
         "1 January 2022",
         "1 April 2023"
@@ -19626,7 +19626,7 @@ const jangyanQuestions = {
       "id": 402,
       "question": "What happens if a vehicle does not have a working FASTag at a toll plaza?\nThe vehicle is turned away",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The vehicle is charged double the standard toll",
         "The vehicle receives a warning only, with no charge",
         "No toll is charged at all"
@@ -19642,7 +19642,7 @@ const jangyanQuestions = {
       "options": [
         "FASTags from being recharged more than once",
         "A single FASTag from being reused or linked across multiple vehicles",
-        "Correct Answer: Option (B)",
+        "",
         "Two-wheelers from using FASTag"
       ],
       "answer": 0,
@@ -19656,7 +19656,7 @@ const jangyanQuestions = {
       "options": [
         "A GPS-based vehicle theft tracker",
         "A new type of driving licence verification",
-        "Correct Answer: Option (B)",
+        "",
         "Satellite-based tolling that could remove the need for physical toll booths"
       ],
       "answer": 1,
@@ -19671,7 +19671,7 @@ const jangyanQuestions = {
         "A permanent ban from using that toll plaza in the future",
         "A toll waiver if the wait exceeds 10 seconds, per NHAI guidelines, though the vehicle would still likely be charged the double-toll rate for the insufficient FASTag balance",
         "No toll charge at all under any circumstance",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "NHAI guidelines state that if a vehicle waits longer than 10 seconds at a toll booth, the toll is waived — but this addresses queue delays, not the separate double-toll charge that applies for an\ninsufficient or non-functional FASTag.",
@@ -19683,7 +19683,7 @@ const jangyanQuestions = {
       "question": "Are dashcams legal to use in private vehicles in India?\nNo, they are banned nationwide",
       "options": [
         "Yes, there is no specific law prohibiting their use",
-        "Correct Answer: Option (B)",
+        "",
         "Only in commercial vehicles",
         "Only with special police permission"
       ],
@@ -19698,7 +19698,7 @@ const jangyanQuestions = {
       "options": [
         "The Information Technology Act, 2000, exclusively",
         "Section 63 of the Bharatiya Sakshya Adhiniyam, 2023",
-        "Correct Answer: Option (B)",
+        "",
         "The Motor Vehicles Act, 1988"
       ],
       "answer": 0,
@@ -19710,7 +19710,7 @@ const jangyanQuestions = {
       "id": 408,
       "question": "What condition must generally be met for dashcam footage to be treated as valid evidence in court?\nNo conditions apply; any footage is automatically valid",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "The footage must be printed on paper before submission",
         "Only footage recorded by police vehicles is valid",
         "The device must have been functioning properly during regular use, accompanied by a certificate confirming this"
@@ -19725,7 +19725,7 @@ const jangyanQuestions = {
       "question": "A driver wants to use dashcam footage to dispute a wrongly issued challan but only has a fragment of video with no accompanying certificate. What is the likely\noutcome regarding its admissibility?\nIt will be automatically accepted as valid evidence regardless of certification",
       "options": [
         "It may face admissibility challenges without the required certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023",
-        "Correct Answer: Option (B)",
+        "",
         "Fragmented footage is always inadmissible regardless of certification",
         "Certification is never required for any digital evidence"
       ],
@@ -19738,7 +19738,7 @@ const jangyanQuestions = {
       "id": 410,
       "question": "What standard governs battery safety for electric two- and three-wheelers in India?\nAIS-038",
       "options": [
-        "Correct Answer: Option (C)",
+        "",
         "AIS-156",
         "AIS-145",
         "IS 4151"
@@ -19755,7 +19755,7 @@ const jangyanQuestions = {
         "IS 17017",
         "AIS-138",
         "AIS-038 (Revision 2)",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 0,
       "explanation": "AIS-038 (Revision 2) covers battery safety for M and N category vehicles, including electric cars and larger vehicles.",
@@ -19766,7 +19766,7 @@ const jangyanQuestions = {
       "id": 412,
       "question": "What event directly triggered India's tightened EV battery safety standards in 2022?\nA rise in fuel prices",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A new international trade agreement",
         "A series of electric two-wheeler fire incidents",
         "A sudden increase in EV exports"
@@ -19780,7 +19780,7 @@ const jangyanQuestions = {
       "id": 413,
       "question": "What does an 'IP67' rating indicate about an EV battery pack?\nIt is fireproof under all conditions",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "It is protected against dust ingress and can withstand temporary submersion in water",
         "It has a 67% charge efficiency rating",
         "It can operate only in humid climates"
@@ -19796,7 +19796,7 @@ const jangyanQuestions = {
       "options": [
         "A government subsidy scheme for EV buyers",
         "The electronics that monitor and protect an EV battery pack",
-        "Correct Answer: Option (B)",
+        "",
         "A type of charging cable"
       ],
       "answer": 3,
@@ -19809,7 +19809,7 @@ const jangyanQuestions = {
       "question": "An EV owner notices their battery feels unusually warm immediately after using a third-party, non-manufacturer-approved charger. Based on EV safety guidance in this\nseries, what is the most appropriate response?\nContinue using the same charger, since warmth is always normal after charging",
       "options": [
         "Charge the vehicle for a longer period to 'balance out' the warmth",
-        "Correct Answer: Option (B)",
+        "",
         "Ignore it, since third-party chargers are always equally safe",
         "Stop using that charger immediately, switch to the manufacturer-approved charger, and have the battery inspected if the warmth persists or seems excessive"
       ],
@@ -19825,7 +19825,7 @@ const jangyanQuestions = {
         "Leave the vehicle charging indefinitely, even after it is full",
         "Charge the vehicle even when the battery is very hot from recent use",
         "Use only the manufacturer-approved charger and cable",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The safest EV charging practice is to use only the manufacturer-approved charger and cable, avoiding generic or modified alternatives.",
@@ -19839,7 +19839,7 @@ const jangyanQuestions = {
         "A toll collection technology",
         "A system that adjusts signal timing in real time based on actual traffic conditions",
         "A speed limit enforcement camera only",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "An Adaptive Traffic Control System adjusts traffic signal timing in real time based on actual traffic conditions, rather than following a fixed schedule.",
@@ -19852,7 +19852,7 @@ const jangyanQuestions = {
       "options": [
         "Kolkata",
         "Bengaluru",
-        "Correct Answer: Option (B)",
+        "",
         "Chennai"
       ],
       "answer": 3,
@@ -19867,7 +19867,7 @@ const jangyanQuestions = {
         "Removing all traffic signals in favour of manual control only",
         "Increasing the number of physical traffic police at each intersection instead",
         "The ability to dynamically adjust signal timing based on real-time traffic density, similar to an Adaptive Traffic Control System",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Bengaluru's system demonstrates that dynamically adjusting signal timing based on real-time traffic density (an Adaptive Traffic Control System) is the core capability that helps reduce\ncongestion at busy intersections.",
@@ -19881,7 +19881,7 @@ const jangyanQuestions = {
         "Mount the phone loosely on the dashboard for easy access",
         "Frequently glance at the screen for reassurance while driving",
         "Set the route before driving and rely on voice guidance rather than looking at the screen while moving",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The safe practice is to set the route before starting to drive and rely on voice guidance, avoiding screen interaction while the vehicle is moving.",
@@ -19893,7 +19893,7 @@ const jangyanQuestions = {
       "question": "What should a driver do if a GPS app's instruction conflicts with a visible road sign, such as a 'No U-Turn' sign?\nAlways follow the GPS app, since it is more current",
       "options": [
         "Follow the visible road sign, since apps do not always reflect the latest road rules or closures",
-        "Correct Answer: Option (B)",
+        "",
         "Ignore both and choose an alternate route immediately",
         "Stop the vehicle and wait for the app to update"
       ],
@@ -19906,7 +19906,7 @@ const jangyanQuestions = {
       "id": 422,
       "question": "What are DigiLocker and mParivahan documents legally equivalent to?\nDraft copies with no legal standing",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Physical original documents, under the Information Technology Act, 2000",
         "Documents valid only for two-wheelers",
         "Temporary permits valid for 7 days"
@@ -19921,7 +19921,7 @@ const jangyanQuestions = {
       "question": "What safety feature is increasingly mandated in app-based cabs and autos by state transport departments?\nA built-in entertainment system",
       "options": [
         "A minimum vehicle age requirement of 20 years",
-        "Correct Answer: Option (B)",
+        "",
         "A GPS-linked panic button connecting to a control room",
         "A dedicated luggage compartment"
       ],
@@ -19934,7 +19934,7 @@ const jangyanQuestions = {
       "id": 424,
       "question": "A ride-sharing passenger boards a cab at night, and the driver's photo in the app does not match the person driving. What is the most appropriate immediate action?\nContinue the ride, assuming it is a minor app error",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Confront the driver aggressively during the ride",
         "Ignore the mismatch since panic buttons only work for accidents, not this situation",
         "End the ride as soon as safely possible and report the discrepancy through the app or a safety helpline"
@@ -19948,7 +19948,7 @@ const jangyanQuestions = {
       "id": 425,
       "question": "What does 'ITMS' stand for in the context of smart traffic systems?\nIndian Traffic Management Society",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Intelligent Traffic Management System",
         "Integrated Toll Management Scheme",
         "International Transport Monitoring Standard"
@@ -19964,7 +19964,7 @@ const jangyanQuestions = {
       "options": [
         "AI is used only for vehicle manufacturing, not traffic management",
         "AI supports detection, monitoring, and enforcement, while final decisions remain with human authorities",
-        "Correct Answer: Option (B)",
+        "",
         "AI has no current role in Indian traffic management"
       ],
       "answer": 3,
@@ -19978,7 +19978,7 @@ const jangyanQuestions = {
       "options": [
         "A new toll collection system for Delhi",
         "A national commitment to zero preventable road fatalities, aligned with the UN Decade of Action",
-        "Correct Answer: Option (B)",
+        "",
         "A vehicle scrappage mandate for Delhi only"
       ],
       "answer": 0,
@@ -19990,7 +19990,7 @@ const jangyanQuestions = {
       "id": 428,
       "question": "A policymaker wants to justify continued investment in both AI-based traffic enforcement and traditional human traffic police, rather than choosing one over the other.\nBased on this series, what is the strongest justification?\nAI systems are prone to frequent failure and cannot be trusted at all",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Human traffic police are becoming entirely obsolete and should be phased out",
         "AI tools support detection and monitoring effectively, but final enforcement decisions and judgment calls still require human oversight",
         "Neither AI nor human police meaningfully contribute to road safety"
@@ -20007,7 +20007,7 @@ const jangyanQuestions = {
         "Speed limit enforcement",
         "Automatic toll deduction without the vehicle needing to stop",
         "Vehicle theft prevention exclusively",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "RFID (Radio Frequency Identification) technology enables FASTag's automatic toll deduction, allowing vehicles to pass through toll plazas without stopping.",
@@ -20018,7 +20018,7 @@ const jangyanQuestions = {
       "id": 430,
       "question": "What is a 'Green Corridor' in traffic management terminology?\nA road reserved exclusively for electric vehicles",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A road closed permanently for environmental reasons",
         "A route where signals are coordinated to give continuous priority, often for emergency vehicles",
         "A designated cycling-only route"
@@ -20035,7 +20035,7 @@ const jangyanQuestions = {
         "To track the vehicle's GPS location",
         "To calculate toll charges",
         "To monitor and protect the battery pack from unsafe conditions",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A Battery Management System monitors and protects an EV's battery pack, helping detect and prevent unsafe conditions such as overheating.",
@@ -20049,7 +20049,7 @@ const jangyanQuestions = {
         "Charge only using fast-charging mode after a hot ride",
         "Charging temperature has no safety relevance",
         "Let the battery cool before charging",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "It is recommended to let an EV battery cool after a long, hot ride before charging, reducing thermal stress on the battery.",
@@ -20063,7 +20063,7 @@ const jangyanQuestions = {
         "Collecting vehicle registration fees",
         "Serving as a city's central traffic monitoring and command hub",
         "Manufacturing traffic signals",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "An Integrated Command and Control Centre (ICCC) serves as a city's central hub for monitoring and managing traffic through connected sensors and cameras.",
@@ -20075,7 +20075,7 @@ const jangyanQuestions = {
       "question": "What is a key advantage of GNSS-based (satellite) tolling over traditional toll booths?\nIt requires more physical infrastructure than toll booths",
       "options": [
         "It could eventually enable barrier-free, distance-based toll collection without physical booths",
-        "Correct Answer: Option (B)",
+        "",
         "It eliminates the need for any vehicle identification",
         "It only works for two-wheelers"
       ],
@@ -20089,7 +20089,7 @@ const jangyanQuestions = {
       "question": "A logistics company wants to reduce toll-related delays for its fleet across multiple states. Considering the trajectory of Indian tolling technology described in this\nseries, which upcoming development is most directly relevant to this goal?\nA return to manual, cash-only toll booths",
       "options": [
         "A ban on commercial vehicles using national highways",
-        "Correct Answer: Option (B)",
+        "",
         "Mandatory manual toll payment for all commercial fleets",
         "The phased rollout of GNSS-based satellite tolling, which could reduce or eliminate stops at physical toll booths"
       ],
@@ -20102,7 +20102,7 @@ const jangyanQuestions = {
       "id": 436,
       "question": "What is the safest response if a GPS navigation app suggests a route that appears to lead into a closed or restricted road?\nFollow the app regardless of visible signage",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Reverse immediately without checking surroundings",
         "Continue driving and assume the closure is temporary and irrelevant",
         "Trust visible road signs and closures over the app's suggested route"
@@ -20119,7 +20119,7 @@ const jangyanQuestions = {
         "Section 184 of the Motor Vehicles Act, covering dangerous or distracted driving generally",
         "The Information Technology Act, 2000, exclusively",
         "Only state-specific municipal bylaws apply",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Section 184 of the Motor Vehicles Act covers dangerous driving generally, which includes distraction caused by improper phone or GPS use while driving.",
@@ -20132,7 +20132,7 @@ const jangyanQuestions = {
       "options": [
         "It can shift or fall while driving, creating a distraction or obstruction",
         "It only affects the device's battery life",
-        "Correct Answer: Option (B)",
+        "",
         "It has no safety relevance at all"
       ],
       "answer": 3,
@@ -20147,7 +20147,7 @@ const jangyanQuestions = {
         "Full replacement of the need for any traffic police in the city",
         "More consistent detection and automatic e-challan generation for red-light violations, supporting but not replacing human enforcement",
         "No measurable benefit, since AI cameras cannot detect violations accurately",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "AI-based ANPR and violation-detection cameras realistically provide more consistent detection and automatic e-challan generation, supporting human enforcement rather than completely\nreplacing or eliminating violations citywide.",
@@ -20161,7 +20161,7 @@ const jangyanQuestions = {
         "Choose apps that pull from official or well-established data sources, and keep them updated",
         "Only use apps that require no internet connection",
         "Avoid all mobility apps for safety reasons",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "It is recommended to choose smart mobility apps that pull from official or well-established data sources and to keep them updated, ensuring the safety information relied upon is current.",
@@ -20175,7 +20175,7 @@ const jangyanQuestions = {
         "Neither is currently mandatory",
         "Driver airbag from July 2019; front-passenger airbag from January 2022",
         "Both became mandatory in 2025",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A driver-side airbag became mandatory from July 2019, followed by a front-passenger airbag mandate from January 2022, part of a phased approach under AIS-145.",
@@ -20187,7 +20187,7 @@ const jangyanQuestions = {
       "question": "What is the primary purpose of AIS-145 as a standard?\nVehicle emission control",
       "options": [
         "Occupant safety features like airbags and seatbelt reminders",
-        "Correct Answer: Option (B)",
+        "",
         "Vehicle registration procedures",
         "Tyre manufacturing quality"
       ],
@@ -20201,7 +20201,7 @@ const jangyanQuestions = {
       "question": "What is the core idea behind the statement that 'technology multiplies habits, it doesn't replace them'?\nTechnology always improves safety regardless of user behaviour",
       "options": [
         "Technology has no real effect on road safety outcomes",
-        "Correct Answer: Option (B)",
+        "",
         "The outcome of using technology depends heavily on the existing habits and judgment of the user",
         "Only new drivers are affected by this principle"
       ],
@@ -20217,7 +20217,7 @@ const jangyanQuestions = {
         "Manufacturer-approved chargers are designed to work safely with the vehicle's specific battery and BMS, reducing fire and malfunction risk",
         "Generic chargers charge faster in all cases",
         "There is no safety difference between the two types",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Manufacturer-approved chargers are specifically designed to work safely with a vehicle's battery and Battery Management System, reducing the risk of fire or malfunction compared to generic\nalternatives.",
@@ -20231,7 +20231,7 @@ const jangyanQuestions = {
         "They are all mandatory only for commercial vehicles",
         "They each represent modern technology that can improve safety and convenience, but only when combined with correct user practices and appropriate regulation",
         "They all exist purely for revenue generation with no safety purpose",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "FASTag, dashcams, EV battery standards, and AI traffic systems each illustrate how modern technology can improve safety and convenience, but only when paired with correct user practices,\nproper maintenance, and appropriate regulatory standards.",
@@ -20244,7 +20244,7 @@ const jangyanQuestions = {
       "options": [
         "Only monitor it, with no immediate action needed",
         "Stop using or charging it immediately and have it inspected before further use",
-        "Correct Answer: Option (B)",
+        "",
         "Charge it fully to 'reset' the battery"
       ],
       "answer": 3,
@@ -20257,7 +20257,7 @@ const jangyanQuestions = {
       "question": "What was one key finding that prompted stricter EV battery safety standards regarding thermal events?\nEV batteries never posed any fire risk previously",
       "options": [
         "EV batteries required no testing at all before 2022",
-        "Correct Answer: Option (B)",
+        "",
         "A need for audio-visual warnings and thermal propagation testing to contain a single cell's failure",
         "Only imported EVs required safety testing"
       ],
@@ -20270,7 +20270,7 @@ const jangyanQuestions = {
       "id": 448,
       "question": "What is the main advantage of AI-assisted analytics in a city's Integrated Command and Control Centre?\nThey eliminate the need for any traffic data collection",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "They are used only for billing purposes",
         "They replace the need for CCTV cameras entirely",
         "They help spot incidents faster and support rerouting decisions using real-time data"
@@ -20285,7 +20285,7 @@ const jangyanQuestions = {
       "question": "A driver relies entirely on a navigation app's estimated arrival time to justify speeding, arguing the app 'expects' a certain average speed. Based on the principle that\ntechnology multiplies existing habits, what is the flaw in this reasoning?\nThe reasoning is entirely valid, since apps account for speeding as a default expectation",
       "options": [
         "Speeding is safe as long as a navigation app suggests a similar pace",
-        "Correct Answer: Option (B)",
+        "",
         "Navigation apps are always inaccurate and should never be trusted for timing",
         "The app's estimate is based on typical legal travel conditions, not an endorsement of speeding; the driver is using the technology to justify an already risky habit rather than the technology\ncausing the risk"
       ],
@@ -20298,7 +20298,7 @@ const jangyanQuestions = {
       "id": 450,
       "question": "What is the recommended action regarding smart mobility and navigation apps to ensure safety information stays accurate?\nNever update apps, to avoid losing saved data",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Keep apps updated regularly for the latest map and safety data",
         "Only update apps once a year, regardless of prompts",
         "Updates are unnecessary once an app is installed"
@@ -20315,7 +20315,7 @@ const jangyanQuestions = {
         "Only a professional driver with a commercial licence",
         "A road user who consistently combines legal compliance, safety habits, and courtesy toward others",
         "Someone who only follows rules when observed by police",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "A Responsible Road Citizen consistently combines legal compliance, personal safety habits, courtesy toward others, and awareness of their wider impact, on every trip.",
@@ -20326,7 +20326,7 @@ const jangyanQuestions = {
       "id": 452,
       "question": "Why are checklists considered useful even for experienced drivers?\nBecause experienced drivers need more supervision than beginners",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Because checklists are legally required for all drivers",
         "Because memory and confidence are unreliable under routine, repeated pressure",
         "Because they replace the need for a driving licence"
@@ -20343,7 +20343,7 @@ const jangyanQuestions = {
         "Valid documents, correctly worn safety gear, adjusted mirrors, sufficient fuel or charge, and a checked route",
         "Only checking the vehicle's exterior paint condition",
         "Only checking tyre pressure",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "A daily pre-drive checklist should include valid documents, correctly worn safety gear, adjusted mirrors, sufficient fuel or charge, and a checked route.",
@@ -20354,7 +20354,7 @@ const jangyanQuestions = {
       "id": 454,
       "question": "How often is it recommended to perform a deeper vehicle inspection, beyond the quick daily check?\nOnce every few years",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "At least monthly",
         "Only before an annual fitness test",
         "Only when a problem is already visible"
@@ -20369,7 +20369,7 @@ const jangyanQuestions = {
       "question": "A driver believes that since they already completed all ten modules of this road safety series, they no longer need to consciously follow checklists. What is the flaw in\nthis reasoning, based on the purpose of this capstone module?\nThere is no flaw; completing the series is sufficient on its own",
       "options": [
         "Checklists are only useful for people who have not studied road safety",
-        "Correct Answer: Option (B)",
+        "",
         "Knowing something and consistently applying it under real-world pressure are different things, which is exactly the gap checklists are designed to close",
         "This module exists only to repeat previously covered information with no new value"
       ],
@@ -20385,7 +20385,7 @@ const jangyanQuestions = {
         "A type of vehicle insurance discount",
         "A government subsidy for fuel-efficient cars",
         "Driving techniques that reduce fuel consumption and emissions",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Eco-driving refers to driving techniques — such as smooth acceleration and avoiding unnecessary idling — that reduce fuel consumption and emissions.",
@@ -20397,7 +20397,7 @@ const jangyanQuestions = {
       "question": "Since when have all new vehicles in India been required to meet Bharat Stage VI (BS-VI) emission norms?\nApril 2015",
       "options": [
         "April 2020",
-        "Correct Answer: Option (B)",
+        "",
         "April 2023",
         "April 2025"
       ],
@@ -20411,7 +20411,7 @@ const jangyanQuestions = {
       "question": "By approximately how much can idling engines at traffic signals raise localised pollution levels, according to a 2019 CRRI study?\nLess than 1%",
       "options": [
         "Around 90%",
-        "Correct Answer: Option (B)",
+        "",
         "Around 9% or more",
         "Around 50%"
       ],
@@ -20426,7 +20426,7 @@ const jangyanQuestions = {
       "options": [
         "Only government regulation, not voluntary habits, can ever reduce pollution",
         "Small, individually adopted habits, when encouraged at scale, can produce measurable, city-wide impact",
-        "Correct Answer: Option (B)",
+        "",
         "The campaign's results were coincidental and unrelated to driver behaviour"
       ],
       "answer": 0,
@@ -20441,7 +20441,7 @@ const jangyanQuestions = {
         "Switching off the engine has no real benefit",
         "Rev the engine to stay ready to move",
         "Switch off the engine if the wait is expected to be long",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Switching off the engine at long expected halts reduces unnecessary idling emissions and is a simple, effective eco-driving habit.",
@@ -20452,7 +20452,7 @@ const jangyanQuestions = {
       "id": 461,
       "question": "What does 'Public Responsibility' mean in the context of road safety?\nOnly the government's duty to build roads",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Recognising that your driving choices affect other road users, not only yourself",
         "A legal requirement to report every minor traffic violation witnessed",
         "Responsibility that applies only to commercial drivers"
@@ -20466,7 +20466,7 @@ const jangyanQuestions = {
       "id": 462,
       "question": "What is 'Road Etiquette'?\nThe strict legal minimum required by traffic law",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Courteous behaviour that goes beyond what the law strictly requires",
         "A government-mandated driving course",
         "A formal test conducted before receiving a licence"
@@ -20481,7 +20481,7 @@ const jangyanQuestions = {
       "question": "What is the recommended action if you notice a pothole or broken traffic signal on your regular route?\nIgnore it, assuming someone else will report it",
       "options": [
         "Only report it if it has already caused an accident",
-        "Correct Answer: Option (B)",
+        "",
         "Post about it on social media only, without formal reporting",
         "Report it to the local municipal or traffic authority"
       ],
@@ -20497,7 +20497,7 @@ const jangyanQuestions = {
         "Overspeeding, tailgating, unsafe overtaking, and skipping safety gear",
         "Driving too slowly in the correct lane",
         "Checking mirrors too often",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Overspeeding, tailgating, unsafe overtaking, driving fatigued, and skipping safety gear are highlighted as a connected pattern of common, high-impact driving mistakes.",
@@ -20509,7 +20509,7 @@ const jangyanQuestions = {
       "question": "A driver treats road safety as something that only matters on long-distance trips, not on short, familiar routes. Based on statistics covered across this series, why is\nthis belief risky?\nBecause most serious crashes happen on long-distance highway trips only",
       "options": [
         "Because most serious crashes happen on short, familiar routes close to home, not distant unfamiliar journeys",
-        "Correct Answer: Option (B)",
+        "",
         "Because short trips are legally exempt from traffic rules",
         "Because vehicles are mechanically safer on long trips than short ones"
       ],
@@ -20523,7 +20523,7 @@ const jangyanQuestions = {
       "question": "What should every driver know regarding emergency preparedness, according to this capstone module?\nOnly professional drivers need emergency preparedness knowledge",
       "options": [
         "Basic DRSABC first aid, key emergency numbers, and having a stocked roadside emergency kit",
-        "Correct Answer: Option (B)",
+        "",
         "Only long-distance drivers need to prepare for emergencies",
         "Emergency preparedness is unnecessary if a vehicle is new"
       ],
@@ -20537,7 +20537,7 @@ const jangyanQuestions = {
       "question": "What is the recommended approach to building multiple new road safety habits at once?\nChange every habit simultaneously for fastest results",
       "options": [
         "Habits cannot realistically be changed once established",
-        "Correct Answer: Option (B)",
+        "",
         "Build one habit at a time, letting it become automatic before adding the next",
         "Only focus on habits related to vehicle maintenance"
       ],
@@ -20552,7 +20552,7 @@ const jangyanQuestions = {
       "options": [
         "Vehicle maintenance is relevant only for commercial vehicles",
         "Only passive safety features require maintenance",
-        "Correct Answer: Option (B)",
+        "",
         "Regular maintenance keeps active safety systems, like brakes and tyres, working effectively when needed most"
       ],
       "answer": 1,
@@ -20564,7 +20564,7 @@ const jangyanQuestions = {
       "id": 469,
       "question": "A driver has excellent knowledge of traffic rules, road signs, and emergency response, but frequently skips their pre-drive vehicle check because they 'know' their car\nis fine. What gap does this scenario best illustrate?\nNo real gap exists, since knowledge alone guarantees safety",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "A gap that has no real safety consequence",
         "A gap that only affects new or inexperienced drivers",
         "A gap between theoretical knowledge and the consistent, repeatable habit of applying it, which this capstone module specifically addresses"
@@ -20578,7 +20578,7 @@ const jangyanQuestions = {
       "id": 470,
       "question": "What is the recommended response to a friend who dismisses wearing a seatbelt for a short, five-minute drive?\nAgree with them, since short drives are genuinely low-risk",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Say nothing, since it is a personal choice with no real risk",
         "Encourage them to buckle up anyway, since most serious crashes happen on short, familiar routes",
         "Only encourage seatbelt use on highways"
@@ -20593,7 +20593,7 @@ const jangyanQuestions = {
       "question": "What is one practical step recommended for staying prepared for roadside emergencies?\nAvoid saving emergency numbers to reduce phone clutter",
       "options": [
         "Rely solely on other drivers to call for help if needed",
-        "Correct Answer: Option (B)",
+        "",
         "Emergency preparedness is only relevant for long-distance travel",
         "Save key emergency numbers, such as 112 and 1033, in your phone"
       ],
@@ -20606,7 +20606,7 @@ const jangyanQuestions = {
       "id": 472,
       "question": "What is the correct approach to vehicle maintenance, according to this module?\nTreat it only as repair after something breaks",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only perform maintenance when required for a fitness test",
         "Maintenance is unnecessary for vehicles under five years old",
         "Treat it as prevention, not just repair after something breaks"
@@ -20623,7 +20623,7 @@ const jangyanQuestions = {
         "1,68,491",
         "1,72,890",
         "1,90,000",
-        "Correct Answer: Option (C)"
+        ""
       ],
       "answer": 2,
       "explanation": "India recorded 1,72,890 road deaths in 2023, the highest ever recorded in a single year, according to MoRTH.",
@@ -20636,7 +20636,7 @@ const jangyanQuestions = {
       "options": [
         "This applies only to professional drivers",
         "Consistent application through habit, not just awareness, is what actually prevents accidents in daily life",
-        "Correct Answer: Option (B)",
+        "",
         "Habits are less important than raw knowledge"
       ],
       "answer": 3,
@@ -20651,7 +20651,7 @@ const jangyanQuestions = {
         "pollution\nOnly one of the two approaches can be effective at a time",
         "Neither approach has any real effect on vehicle emissions",
         "BS-VI addresses vehicle-level emission standards, while the awareness campaign addresses driver behaviour (like idling), together covering both technology and habit-based causes of",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "BS-VI standards address emissions at the vehicle technology level, while an anti-idling campaign addresses driver behaviour — together, they cover both the technological and habitual\ncontributors to vehicle pollution.",
@@ -20664,7 +20664,7 @@ const jangyanQuestions = {
       "options": [
         "Use them consistently as a courtesy, not only when legally required",
         "Indicators are optional on quiet roads",
-        "Correct Answer: Option (B)",
+        "",
         "Only use indicators when turning left, not right"
       ],
       "answer": 1,
@@ -20679,7 +20679,7 @@ const jangyanQuestions = {
         "Avoid connecting new habits to existing routines",
         "Pair a new safety habit with an existing routine, such as checking mirrors right after fastening a seatbelt",
         "Only rely on willpower with no supporting structure",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "Pairing a new safety habit with an existing routine — such as checking mirrors immediately after fastening a seatbelt — is a practical way to help the new habit become automatic.",
@@ -20692,7 +20692,7 @@ const jangyanQuestions = {
       "options": [
         "Model good habits consistently, since younger or newer road users often learn by observation",
         "Only formal lectures are effective for teaching safety habits",
-        "Correct Answer: Option (B)",
+        "",
         "Safety habits cannot be taught by example"
       ],
       "answer": 3,
@@ -20707,7 +20707,7 @@ const jangyanQuestions = {
         "Only legal compliance, with no broader social dimension",
         "Personal convenience, prioritised over any external impact",
         "Public and environmental responsibility — recognising that individual choices affect the wider community and environment, not just oneself",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Reporting hazards, helping accident victims, and reducing unnecessary emissions all reflect the theme of public and environmental responsibility — recognising that individual choices have an\nimpact beyond the individual themselves.",
@@ -20718,7 +20718,7 @@ const jangyanQuestions = {
       "id": 480,
       "question": "What is the recommended frequency for refreshing a roadside emergency kit and checking medical supply expiry dates?\nNever, once assembled",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Only once, at the time of vehicle purchase",
         "Periodically, to ensure supplies remain usable and complete",
         "Only after an emergency has already occurred"
@@ -20735,7 +20735,7 @@ const jangyanQuestions = {
         "To serve only as a reference for professional drivers",
         "To consolidate the single most important habit from each earlier module into one practical, repeatable checklist",
         "To introduce entirely new legal requirements",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "The Final Road Safety Checklist consolidates the single most important habit from each earlier module in this series into one practical, repeatable checklist.",
@@ -20746,7 +20746,7 @@ const jangyanQuestions = {
       "id": 482,
       "question": "What is the recommended approach to emergency numbers, according to this module?\nMemorise them only, without saving them anywhere",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Save key emergency numbers in your phone, since memory alone can fail under stress",
         "Only professional drivers need to know emergency numbers",
         "Emergency numbers change too often to be worth saving"
@@ -20762,7 +20762,7 @@ const jangyanQuestions = {
       "options": [
         "Only long highway trips require safety gear",
         "Safety gear should be worn on every trip, regardless of distance, since risk does not disappear on short trips",
-        "Correct Answer: Option (B)",
+        "",
         "Safety gear requirements apply only to two-wheelers"
       ],
       "answer": 0,
@@ -20774,7 +20774,7 @@ const jangyanQuestions = {
       "id": 484,
       "question": "According to this module, what is the relationship between courtesy-based road etiquette and actual safety outcomes?\nEtiquette is purely social and has no real safety impact",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Etiquette matters only in formal driving tests",
         "Courteous behaviours, like dipping headlights and signalling, directly help prevent real accidents",
         "Etiquette and safety are entirely separate, unrelated concepts"
@@ -20788,7 +20788,7 @@ const jangyanQuestions = {
       "id": 485,
       "question": "A newly licensed driver wants to become a responsible road citizen but feels overwhelmed trying to remember everything from all ten modules of this series at once.\nWhat approach does this capstone module recommend?\nAttempt to memorise and apply every single rule perfectly from day one",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Start with the consolidated Final Road Safety Checklist and build habits gradually, one at a time, rather than trying to master everything immediately",
         "Give up on applying the material until formally retested",
         "Focus only on the legal minimum required to avoid fines"
@@ -20803,7 +20803,7 @@ const jangyanQuestions = {
       "question": "What is the recommended action regarding dashboard warning lights, as reinforced in this module?\nIgnore them if the vehicle still seems to run normally",
       "options": [
         "Dashboard warning lights are purely decorative",
-        "Correct Answer: Option (B)",
+        "",
         "Address them promptly rather than ignoring them",
         "Only address them during the annual fitness test"
       ],
@@ -20819,7 +20819,7 @@ const jangyanQuestions = {
         "Preparedness is the sole responsibility of emergency services, not individual citizens",
         "Preparedness means having tools, knowledge, and a plan ready before an emergency occurs, not scrambling to prepare after one begins",
         "Preparedness only applies to commercial vehicle operators",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "Preparedness, as framed in this module, means having tools, knowledge, and a plan ready before an emergency occurs, rather than trying to prepare only once an emergency has already\nbegun.",
@@ -20833,7 +20833,7 @@ const jangyanQuestions = {
         "Supportive encouragement helps sustain positive habit-building, aligning with the module's public responsibility theme",
         "Criticism is always more effective at changing behaviour",
         "This guidance applies only to professional driving instructors",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Encouraging rather than criticising others reflects the module's public responsibility theme, recognising that supportive attitudes help sustain positive habit-building across the wider road-user\ncommunity.",
@@ -20845,7 +20845,7 @@ const jangyanQuestions = {
       "question": "A transport authority wants to design a public campaign inspired by this capstone module's core message. Which tagline best captures its central theme?\n'Perfect driving is the only acceptable standard'",
       "options": [
         "'Only new drivers need to worry about road safety habits'",
-        "Correct Answer: Option (B)",
+        "",
         "'Road safety is solely the government's responsibility'",
         "'Small, consistent habits — checked and repeated daily — are what actually keep roads safe'"
       ],
@@ -20859,7 +20859,7 @@ const jangyanQuestions = {
       "question": "What is the recommended action if a driver notices they are close to a habit becoming 'automatic', such as always dipping headlights unprompted?\nStop practising it once it feels automatic, since the goal has been reached",
       "options": [
         "Revert to inconsistent practice to test if the habit was truly learned",
-        "Correct Answer: Option (B)",
+        "",
         "Continue the habit consistently and consider adding the next habit to build upon it",
         "Automatic habits no longer need any attention at all"
       ],
@@ -20873,7 +20873,7 @@ const jangyanQuestions = {
       "question": "What does this module suggest is the real 'destination' of the entire \nPassing a final examination",
       "options": [
         "Memorising every legal section number precisely",
-        "Correct Answer: Option (B)",
+        "",
         "Achieving a perfect driving record with zero errors",
         "The daily, repeated choice to put safety first, for oneself and others sharing the road"
       ],
@@ -20889,7 +20889,7 @@ const jangyanQuestions = {
         "Starting with one habit at a time and letting it become automatic before adding another",
         "Waiting until a serious incident occurs before making any changes",
         "Relying entirely on vehicle technology instead of personal habits",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "The suggested first step is to start with one habit at a time, letting it become automatic before adding the next, building a sustainable foundation gradually.",
@@ -20903,7 +20903,7 @@ const jangyanQuestions = {
         "Only a clean traffic violation record, regardless of other behaviour",
         "Legal compliance, personal safety habits, courtesy toward others, and awareness of wider impact, combined consistently",
         "Only advanced driving skill, regardless of courtesy or legal compliance",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 2,
       "explanation": "This module identifies a responsible road user as one who consistently combines legal compliance, personal safety habits, courtesy toward others, and awareness of their wider impact — not\nany single factor alone.",
@@ -20915,7 +20915,7 @@ const jangyanQuestions = {
       "question": "Why does this capstone module deliberately avoid introducing many new legal provisions?\nBecause legal provisions are unimportant to road safety",
       "options": [
         "Because it is designed to consolidate and apply the legal framework already covered in detail across the earlier modules of this series",
-        "Correct Answer: Option (B)",
+        "",
         "Because this module is intended only for legal professionals",
         "Because legal provisions change too frequently to be included"
       ],
@@ -20930,7 +20930,7 @@ const jangyanQuestions = {
       "options": [
         "Because the module contains no genuinely useful content",
         "Because effectively using a consolidated checklist requires first understanding the reasoning and detail behind each individual habit, which the earlier modules provide",
-        "Correct Answer: Option (B)",
+        "",
         "Because it was simply the next available topic in sequence, with no deliberate ordering"
       ],
       "answer": 0,
@@ -20945,7 +20945,7 @@ const jangyanQuestions = {
         "Unusual noises are rarely worth investigating",
         "Only investigate unusual noises if the vehicle is under warranty",
         "Investigate and address it promptly, rather than waiting for a complete breakdown",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Investigating and addressing early signs of vehicle trouble promptly, rather than waiting for a complete breakdown, reflects the preventive approach to vehicle maintenance emphasised in this\nmodule.",
@@ -20956,7 +20956,7 @@ const jangyanQuestions = {
       "id": 497,
       "question": "What is the suggested value of revisiting this series' checklists periodically, rather than reading them only once?\nThere is no additional value in revisiting them",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Revisiting checklists is only useful for new drivers",
         "Checklists become outdated after a single reading",
         "Periodic review helps reinforce habits and catch any drift back into old, less safe patterns"
@@ -20970,7 +20970,7 @@ const jangyanQuestions = {
       "id": 498,
       "question": "How does this module frame the relationship between individual actions and collective road safety outcomes?\nIndividual actions are insignificant compared to government policy alone",
       "options": [
-        "Correct Answer: Option (B)",
+        "",
         "Collective outcomes are entirely disconnected from individual behaviour",
         "Individual habits, multiplied across many road users, create measurable, real civic impact",
         "Only large-scale infrastructure projects can meaningfully affect road safety"
@@ -20987,7 +20987,7 @@ const jangyanQuestions = {
         "The learner will be legally qualified to work as a traffic police officer",
         "The learner will no longer need to follow any traffic rules, having completed the series",
         "The learner will have both the knowledge and the consistent habits needed to protect themselves and others as informed, responsible road citizens",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 0,
       "explanation": "The series as a whole, culminating in this capstone module, is intended to leave learners with both the knowledge and the consistent, repeatable habits needed to protect themselves and\nothers as genuinely informed, responsible road citizens.",
@@ -21001,7 +21001,7 @@ const jangyanQuestions = {
         "To rely entirely on future technology rather than personal habits",
         "To only apply these lessons during long-distance travel",
         "To stay alert, stay disciplined, and treat safety as a daily, repeated choice",
-        "Correct Answer: Option (B)"
+        ""
       ],
       "answer": 1,
       "explanation": "Official JanGyan verified citizen concept.",

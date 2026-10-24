@@ -440,6 +440,35 @@ class _CertificateDialog extends StatefulWidget {
 class _CertificateDialogState extends State<_CertificateDialog> {
   final GlobalKey _certKey = GlobalKey();
   bool _isDownloading = false;
+  late String _serialNumber;
+
+  @override
+  void initState() {
+    super.initState();
+    final rawId = widget.attempt.attemptId.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '');
+    final shortId = rawId.length >= 8
+        ? rawId.substring(0, 8).toUpperCase()
+        : 'CERT${DateTime.now().millisecondsSinceEpoch % 1000000}';
+    _serialNumber = 'JGYN-${widget.attempt.timestamp.year}-$shortId';
+
+    // Auto-record certificate holder into Cloud Firestore 'certificates' collection
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final auth = Provider.of<AuthService>(context, listen: false);
+      final email = auth.currentUser?.email ?? 'citizen@jangyan.in';
+      CertificateSaver.recordCertificate(
+        serialNumber: _serialNumber,
+        citizenName: widget.citizenName,
+        citizenEmail: email,
+        categoryTitle: widget.attempt.categoryTitle,
+        categoryId: widget.attempt.categoryId,
+        score: widget.attempt.score,
+        totalQuestions: widget.attempt.totalQuestions,
+        accuracy: widget.attempt.accuracy,
+        attemptId: widget.attempt.attemptId,
+      );
+    });
+  }
 
   Future<Uint8List?> _captureCertificate() async {
     try {
@@ -465,6 +494,7 @@ class _CertificateDialogState extends State<_CertificateDialog> {
       final savedPath = await CertificateSaver.saveCertificate(
         pngBytes: pngBytes,
         title: widget.attempt.categoryTitle,
+        serialNumber: _serialNumber,
       );
 
       if (mounted) {
@@ -479,7 +509,7 @@ class _CertificateDialogState extends State<_CertificateDialog> {
                   child: Text(
                     savedPath != null
                         ? 'Certificate saved to Downloads: ${savedPath.split(RegExp(r"[/\\]")).last}'
-                        : 'Certificate downloaded successfully!',
+                        : 'Certificate downloaded successfully! (Serial: $_serialNumber)',
                     style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
@@ -514,6 +544,7 @@ class _CertificateDialogState extends State<_CertificateDialog> {
         await CertificateSaver.shareCertificate(
           pngBytes: pngBytes,
           title: widget.attempt.categoryTitle,
+          serialNumber: _serialNumber,
         );
       }
     } finally {
@@ -523,9 +554,6 @@ class _CertificateDialogState extends State<_CertificateDialog> {
 
   @override
   Widget build(BuildContext context) {
-    final certId = widget.attempt.attemptId.length >= 8
-        ? widget.attempt.attemptId.substring(0, 8).toUpperCase()
-        : 'JG${DateTime.now().millisecondsSinceEpoch % 100000}';
     final dateStr =
         '${widget.attempt.timestamp.day.toString().padLeft(2, '0')}/${widget.attempt.timestamp.month.toString().padLeft(2, '0')}/${widget.attempt.timestamp.year}';
 
@@ -707,11 +735,12 @@ class _CertificateDialogState extends State<_CertificateDialog> {
                                   ),
                                 ),
                                 Text(
-                                  'ID: JAN-GYAN-$certId',
+                                  'SERIAL NO: $_serialNumber',
                                   style: const TextStyle(
                                     fontSize: 9,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppColors.success,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: 0.5,
+                                    color: Color(0xFFB45309),
                                   ),
                                 ),
                               ],

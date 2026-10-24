@@ -6,6 +6,8 @@ import '../services/auth_service.dart';
 import '../services/data_repository.dart';
 import '../services/firebase_service.dart';
 
+import '../services/certificate_saver.dart';
+
 class AdminScreen extends StatefulWidget {
   const AdminScreen({super.key});
 
@@ -22,7 +24,7 @@ class _AdminScreenState extends State<AdminScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -79,6 +81,7 @@ class _AdminScreenState extends State<AdminScreen>
             Tab(text: '6 Domains'),
             Tab(text: 'Question Bank'),
             Tab(text: 'Citizen Feedback'),
+            Tab(text: 'Certificate Holders'),
           ],
         ),
       ),
@@ -309,8 +312,258 @@ class _AdminScreenState extends State<AdminScreen>
 
           // Tab 4: Citizen Feedback
           _buildFeedbackTab(),
+
+          // Tab 5: Certificate Holders
+          _buildCertificateHoldersTab(),
         ],
       ),
+    );
+  }
+
+  Widget _buildCertificateHoldersTab() {
+    return FutureBuilder<List<Map<String, dynamic>>>(
+      future: CertificateSaver.getCertificateHolders(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+
+        final holders = snapshot.data ?? [];
+
+        return RefreshIndicator(
+          onRefresh: () async {
+            setState(() {});
+          },
+          child: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              // Firestore Info Banner
+              Container(
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.primaryTint,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: AppColors.primary.withValues(alpha: 0.25),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.cloud_done_rounded,
+                      color: AppColors.primary,
+                      size: 26,
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Firebase Cloud Firestore: certificates',
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.primaryDark,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            'Total Verified Certificate Holders: ${holders.length}',
+                            style: const TextStyle(
+                              fontSize: 11,
+                              color: AppColors.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+
+              if (holders.isEmpty)
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 40),
+                    child: Column(
+                      children: const [
+                        Icon(
+                          Icons.workspace_premium_outlined,
+                          size: 48,
+                          color: AppColors.textMuted,
+                        ),
+                        SizedBox(height: 12),
+                        Text(
+                          'No certificates issued yet.',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.textPrimary,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          'When a citizen completes an assessment and generates a certificate, their record will automatically appear here and in Firebase Console.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: AppColors.textSecondary,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              else
+                ...holders.map((holder) {
+                  final name = holder['citizenName'] as String? ?? 'Citizen';
+                  final email = holder['citizenEmail'] as String? ?? 'N/A';
+                  final serial = holder['serialNumber'] as String? ?? 'N/A';
+                  final domain = holder['categoryTitle'] as String? ?? 'Assessment';
+                  final score = holder['score'] ?? 0;
+                  final total = holder['totalQuestions'] ?? 0;
+                  final accuracy = holder['accuracy'];
+                  final accStr = accuracy != null
+                      ? '${(accuracy as num).toStringAsFixed(1)}%'
+                      : '';
+                  final issuedAt = holder['issuedAt'] as String? ?? '';
+                  String dateDisplay = '';
+                  if (issuedAt.isNotEmpty) {
+                    try {
+                      final dt = DateTime.parse(issuedAt);
+                      dateDisplay = '${dt.day}/${dt.month}/${dt.year} ${dt.hour}:${dt.minute.toString().padLeft(2, '0')}';
+                    } catch (_) {
+                      dateDisplay = issuedAt;
+                    }
+                  }
+
+                  return Card(
+                    margin: const EdgeInsets.only(bottom: 12),
+                    child: Padding(
+                      padding: const EdgeInsets.all(14),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: const Color(0xFFFEF3C7),
+                                child: const Icon(
+                                  Icons.workspace_premium,
+                                  color: Color(0xFFD97706),
+                                  size: 22,
+                                ),
+                              ),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      name,
+                                      style: const TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
+                                        color: AppColors.textPrimary,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 2),
+                                    Row(
+                                      children: [
+                                        const Icon(
+                                          Icons.email_outlined,
+                                          size: 13,
+                                          color: AppColors.textSecondary,
+                                        ),
+                                        const SizedBox(width: 4),
+                                        Expanded(
+                                          child: Text(
+                                            email,
+                                            style: const TextStyle(
+                                              fontSize: 12,
+                                              color: AppColors.primary,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFEF3C7),
+                                  borderRadius: BorderRadius.circular(6),
+                                  border: Border.all(
+                                    color: const Color(0xFFF59E0B),
+                                  ),
+                                ),
+                                child: Text(
+                                  serial,
+                                  style: const TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF92400E),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          const Divider(height: 1, color: AppColors.border),
+                          const SizedBox(height: 8),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  'Domain: $domain',
+                                  style: const TextStyle(
+                                    fontSize: 11,
+                                    color: AppColors.textSecondary,
+                                  ),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              Text(
+                                'Score: $score/$total ($accStr)',
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.success,
+                                ),
+                              ),
+                            ],
+                          ),
+                          if (dateDisplay.isNotEmpty) ...[
+                            const SizedBox(height: 4),
+                            Text(
+                              'Issued: $dateDisplay',
+                              style: const TextStyle(
+                                fontSize: 10,
+                                color: AppColors.textMuted,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  );
+                }),
+            ],
+          ),
+        );
+      },
     );
   }
 

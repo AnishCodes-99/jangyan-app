@@ -149,7 +149,7 @@
       "options": [
         "Foreign affairs",
         "Defence",
-        "Currency✅ Correct Answer: Option B",
+        "Currency",
         "Police"
       ],
       "answer": 3,
@@ -163,7 +163,7 @@
       "options": [
         "Defence",
         "Local government",
-        "Agriculture✅ Correct Answer: Option C",
+        "Agriculture",
         "Public health"
       ],
       "answer": 0,
@@ -500,7 +500,7 @@
         "Articles 163 and 164",
         "Articles 124 and 214",
         "Articles 74 and 75",
-        "Article 1✅ Correct Answer: Option B"
+        "Article 1"
       ],
       "answer": 0,
       "explanation": "Articles 163 and 164 establish the State Council of Ministers, headed by the Chief Minister.",
@@ -724,7 +724,7 @@
         "12",
         "16",
         "10",
-        "8✅ Correct Answer: Option B"
+        "8"
       ],
       "answer": 0,
       "explanation": "Aadhaar is a 12-digit random identity number based on demographic and biometric data.",
@@ -836,7 +836,7 @@
         "A Learner's Licence",
         "A PAN card",
         "A Voter ID",
-        "A passport✅ Correct Answer: Option B"
+        "A passport"
       ],
       "answer": 0,
       "explanation": "Applicants must first hold a Learner's Licence and pass a road test before receiving a Permanent Driving Licence.",
@@ -861,7 +861,7 @@
       "id": 62,
       "question": "Within how many days should a birth typically be registered for free registration?",
       "options": [
-        "6 months✅ Correct Answer: Option B",
+        "6 months",
         "1 year",
         "21 days",
         "90 days"
@@ -959,7 +959,7 @@
       "id": 69,
       "question": "Which of these is classified under \"Civil Registration\" documents?",
       "options": [
-        "DigiLocker✅ Correct Answer: Option B",
+        "DigiLocker",
         "Birth Certificate, Death Certificate, Marriage Certificate",
         "Ration Card only",
         "Aadhaar, PAN, Voter ID"
@@ -1045,7 +1045,7 @@
       "options": [
         "Aadhaar card",
         "Ration card",
-        "PAN card✅ Correct Answer: Option B",
+        "PAN card",
         "Driving Licence"
       ],
       "answer": 3,
@@ -1071,7 +1071,7 @@
       "id": 77,
       "question": "What percentage of India's adult population is estimated to be enrolled in Aadhaar?",
       "options": [
-        "About 10%✅ Correct Answer: Option B",
+        "About 10%",
         "About 99%",
         "About 25%",
         "About 50%"
@@ -1493,7 +1493,7 @@
       "options": [
         "Section 43A",
         "Section 66C",
-        "Section 72✅ Correct Answer: Option B",
+        "Section 72",
         "Section 3A"
       ],
       "answer": 3,
@@ -1855,7 +1855,7 @@
       "id": 133,
       "question": "Which government platform would be most appropriate for tracking the status of a passport application?",
       "options": [
-        "DigiLocker✅ Correct Answer: Option B",
+        "DigiLocker",
         "Passport Seva",
         "MyGov",
         "UMANG exclusively"
@@ -2107,7 +2107,7 @@
       "id": 151,
       "question": "Which part of the Constitution contains the Fundamental Rights?",
       "options": [
-        "Part IVA✅ Correct Answer: Option B",
+        "Part IVA",
         "Part IV",
         "Part II",
         "Part III"
@@ -2123,7 +2123,7 @@
       "options": [
         "Part IVA",
         "Part III",
-        "Part V✅ Correct Answer: Option C",
+        "Part V",
         "Part IV"
       ],
       "answer": 0,
@@ -2152,7 +2152,7 @@
         "20",
         "6",
         "11",
-        "3✅ Correct Answer: Option B"
+        "3"
       ],
       "answer": 2,
       "explanation": "Article 51A lists 11 Fundamental Duties, with the 11th added later by the 86th Constitutional Amendment in 2002.",
@@ -2208,7 +2208,7 @@
         "90 days",
         "7 days",
         "30 days",
-        "1 year✅ Correct Answer: Option B"
+        "1 year"
       ],
       "answer": 2,
       "explanation": "The Right to Information Act, 2005, requires public authorities to respond to requests within 30 days.",
@@ -2306,7 +2306,7 @@
         "NHRC",
         "NCPCR (National Commission for Protection of Child Rights)",
         "NCW",
-        "CCPA✅ Correct Answer: Option A"
+        "CCPA"
       ],
       "answer": 1,
       "explanation": "NCPCR, established in 2007, focuses specifically on protecting the rights of children in India.",
@@ -2318,7 +2318,7 @@
       "question": "Under the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, senior citizens are defined as those aged:",
       "options": [
         "50 and above",
-        "65 and above✅ Correct Answer: Option B",
+        "65 and above",
         "60 and above",
         "70 and above"
       ],
@@ -2402,7 +2402,7 @@
       "question": "How many RTI applications have reportedly been filed in India since the Act came into force in 2005?",
       "options": [
         "Over 2.5 crore",
-        "Exactly 1 lakh✅ Correct Answer: Option B",
+        "Exactly 1 lakh",
         "About 500",
         "About 10,000"
       ],
@@ -2948,7 +2948,7 @@
       "question": "Approximately how many loans has PM Mudra Yojana sanctioned since its 2015 launch?",
       "options": [
         "About 1,000",
-        "Exactly 1 lakh✅ Correct Answer: Option B",
+        "Exactly 1 lakh",
         "About 500,000",
         "Over 52 crore, worth more than ₹32 lakh crore"
       ],
@@ -3507,7 +3507,7 @@
       "id": 251,
       "question": "Who typically supplies electricity to homes in India?",
       "options": [
-        "UIDAI✅ Correct Answer: Option B",
+        "UIDAI",
         "The Election Commission",
         "The Ministry of External Affairs",
         "State-run or private Distribution Companies (Discoms)"
@@ -3537,7 +3537,7 @@
       "options": [
         "1 July 2015",
         "15 August 2019",
-        "26 July 2014✅ Correct Answer: Option A",
+        "26 July 2014",
         "23 November 2017"
       ],
       "answer": 1,
@@ -3549,7 +3549,7 @@
       "id": 254,
       "question": "Approximately what percentage of rural India had tap water coverage by late 2025?",
       "options": [
-        "About 50%✅ Correct Answer: Option B",
+        "About 50%",
         "About 10%",
         "Over 81%",
         "About 30%"
@@ -3594,7 +3594,7 @@
         "About 500",
         "Over 1.64 lakh",
         "About 1,000",
-        "About 10,000✅ Correct Answer: Option B"
+        "About 10,000"
       ],
       "answer": 1,
       "explanation": "India Post operates over 1.64 lakh post offices, making it one of the most extensive postal networks in the world.",
@@ -3619,7 +3619,7 @@
       "id": 259,
       "question": "Which portal/app is used to book Indian Railways tickets?",
       "options": [
-        "MyGov✅ Correct Answer: Option A",
+        "MyGov",
         "UMANG exclusively",
         "DigiLocker",
         "IRCTC"
@@ -3788,7 +3788,7 @@
       "question": "Priya's family recently moved to a new city and is unsure who manages their new home's water/sewage connection.\nWhich authority should they approach?",
       "options": [
         "The central government exclusively",
-        "IRCTC✅ Correct Answer: Option B",
+        "IRCTC",
         "The Election Commission",
         "Their local Municipal Corporation"
       ],
@@ -4209,7 +4209,7 @@
       "options": [
         "108",
         "112",
-        "1930✅ Correct Answer: Option B",
+        "1930",
         "100"
       ],
       "answer": 1,
@@ -4224,7 +4224,7 @@
         "23 November 2017",
         "1 July 2015",
         "19 February 2019",
-        "26 July 2014✅ Correct Answer: Option A"
+        "26 July 2014"
       ],
       "answer": 2,
       "explanation": "The Emergency Response Support System (ERSS-112) was launched on 19 February 2019 by the Ministry of Home Affairs.",
@@ -4292,7 +4292,7 @@
       "question": "What is the dedicated helpline number for CHILDLINE?",
       "options": [
         "181",
-        "112✅ Correct Answer: Option B",
+        "112",
         "1930",
         "1098"
       ],
@@ -4307,7 +4307,7 @@
       "options": [
         "181",
         "1930",
-        "108✅ Correct Answer: Option C",
+        "108",
         "1098"
       ],
       "answer": 0,
@@ -4319,7 +4319,7 @@
       "id": 309,
       "question": "Which number is India's dedicated financial cybercrime helpline?",
       "options": [
-        "101✅ Correct Answer: Option B",
+        "101",
         "1930",
         "108",
         "112"
@@ -4348,7 +4348,7 @@
       "question": "Which department operates CPGRAMS?",
       "options": [
         "Ministry of External Affairs",
-        "UIDAI✅ Correct Answer: Option A",
+        "UIDAI",
         "Election Commission of India",
         "Department of Administrative Reforms and Public Grievances (DARPG)"
       ],
@@ -4377,7 +4377,7 @@
       "options": [
         "1 year",
         "21 days",
-        "90 days✅ Correct Answer: Option A",
+        "90 days",
         "6 months"
       ],
       "answer": 1,
@@ -4403,7 +4403,7 @@
       "id": 315,
       "question": "Which body coordinates national disaster response in India?",
       "options": [
-        "RBI✅ Correct Answer: Option A",
+        "RBI",
         "Election Commission of India",
         "UIDAI",
         "National Disaster Management Authority (NDMA)"
@@ -4431,7 +4431,7 @@
       "id": 317,
       "question": "Which of these is the correct number for police services (before full integration into 112)?",
       "options": [
-        "1090✅ Correct Answer: Option A",
+        "1090",
         "100",
         "101",
         "108"
@@ -4448,7 +4448,7 @@
         "108",
         "100",
         "101",
-        "181✅ Correct Answer: Option B"
+        "181"
       ],
       "answer": 2,
       "explanation": "101 was the traditional fire emergency number, now also accessible through the unified 112 system.",
@@ -4459,7 +4459,7 @@
       "id": 319,
       "question": "Which of these numbers is commonly used for ambulance/medical emergencies in many states?",
       "options": [
-        "1098✅ Correct Answer: Option C",
+        "1098",
         "100",
         "101",
         "108"
@@ -4586,7 +4586,7 @@
       "question": "Which of these best reflects the correct total grievances redressed on CPGRAMS between 2019 and 2024?",
       "options": [
         "Over 1.15 crore",
-        "About 500✅ Correct Answer: Option A",
+        "About 500",
         "Exactly 50,000",
         "About 1,000"
       ],
@@ -4923,7 +4923,7 @@
       "options": [
         "17,792",
         "About 1,000",
-        "About 500✅ Correct Answer: Option B",
+        "About 500",
         "About 100"
       ],
       "answer": 0,
@@ -4993,7 +4993,7 @@
       "options": [
         "19 February 2019",
         "12 November 2021",
-        "26 July 2014✅ Correct Answer: Option A",
+        "26 July 2014",
         "1 April 2026"
       ],
       "answer": 1,
@@ -5050,7 +5050,7 @@
         "1 year",
         "30 days",
         "90 days",
-        "7 days✅ Correct Answer: Option A"
+        "7 days"
       ],
       "answer": 1,
       "explanation": "If a bank or NBFC doesn't respond within 30 days, or the response is unsatisfactory, the customer can escalate to the RBI\nOmbudsman.",
@@ -5076,7 +5076,7 @@
       "question": "What is the toll-free contact centre number for the RBI Ombudsman Scheme?",
       "options": [
         "1098",
-        "181✅ Correct Answer: Option B",
+        "181",
         "1930",
         "14448"
       ],
@@ -5607,7 +5607,7 @@
       "id": 401,
       "question": "Which Article of the Constitution establishes the Election Commission of India?",
       "options": [
-        "Article 51A✅ Correct Answer: Option B",
+        "Article 51A",
         "Article 324",
         "Article 1",
         "Article 32"
@@ -5651,7 +5651,7 @@
       "options": [
         "18 years",
         "16 years",
-        "25 years✅ Correct Answer: Option B",
+        "25 years",
         "21 years"
       ],
       "answer": 0,
@@ -5666,7 +5666,7 @@
         "Form 7",
         "Form 6",
         "Form 8",
-        "Form 16✅ Correct Answer: Option A"
+        "Form 16"
       ],
       "answer": 1,
       "explanation": "Form 6 is used for registering as a new voter, or when moving to a new constituency.",
@@ -5678,7 +5678,7 @@
       "question": "Which form is used to object to or seek deletion of an entry in the electoral roll?",
       "options": [
         "Form 8",
-        "Form 12✅ Correct Answer: Option B",
+        "Form 12",
         "Form 7",
         "Form 6"
       ],
@@ -5692,7 +5692,7 @@
       "question": "Which form is used for correcting details within the same constituency?",
       "options": [
         "Form 7",
-        "Form 10✅ Correct Answer: Option C",
+        "Form 10",
         "Form 6",
         "Form 8"
       ],
@@ -5721,7 +5721,7 @@
       "options": [
         "A physical voter ID card only",
         "The digital version of the Electors Photo Identity Card",
-        "A railway pass✅ Correct Answer: Option B",
+        "A railway pass",
         "A type of Aadhaar card"
       ],
       "answer": 1,
@@ -5764,7 +5764,7 @@
         "Kerala, in the 1960 Assembly elections",
         "Tamil Nadu",
         "Uttar Pradesh",
-        "Maharashtra✅ Correct Answer: Option A"
+        "Maharashtra"
       ],
       "answer": 0,
       "explanation": "The MCC originated with Kerala's 1960 Assembly elections before being circulated nationally ahead of the 1962 Lok Sabha\nelections.",
@@ -5789,7 +5789,7 @@
       "id": 414,
       "question": "Which Supreme Court case made VVPATs a mandatory safeguard?",
       "options": [
-        "Vishaka case✅ Correct Answer: Option B",
+        "Vishaka case",
         "Kesavananda Bharati case",
         "Subramanian Swamy vs Election Commission of India",
         "Maneka Gandhi case"
@@ -5860,7 +5860,7 @@
       "question": "Who is India's current Chief Election Commissioner, as of 2026?",
       "options": [
         "Sunil Arora",
-        "Om Birla✅ Correct Answer: Option A",
+        "Om Birla",
         "Rajiv Kumar",
         "Gyanesh Kumar"
       ],
