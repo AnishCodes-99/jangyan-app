@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../core/app_colors.dart';
+import '../models/quiz_mode.dart';
 import '../services/auth_service.dart';
 import '../services/data_repository.dart';
 import '../services/quiz_service.dart';
@@ -11,12 +12,14 @@ class QuizScreen extends StatefulWidget {
   final String categoryId;
   final String categoryTitle;
   final int questionCount;
+  final QuizSolutionMode solutionMode;
 
   const QuizScreen({
     super.key,
     required this.categoryId,
     required this.categoryTitle,
     this.questionCount = 20,
+    this.solutionMode = QuizSolutionMode.instant,
   });
 
   @override
@@ -82,7 +85,10 @@ class _QuizScreenState extends State<QuizScreen> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (_) => QuizResultsScreen(attempt: attempt),
+            builder: (_) => QuizResultsScreen(
+              attempt: attempt,
+              solutionMode: widget.solutionMode,
+            ),
           ),
         );
       }
@@ -174,7 +180,9 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                   ),
                   Text(
-                    'Assessment Mode • ${quiz.totalQuestions} Questions',
+                    widget.solutionMode == QuizSolutionMode.instant
+                        ? '⚡ Instant Solutions • ${quiz.totalQuestions} Questions'
+                        : '📝 After Test Result • ${quiz.totalQuestions} Questions',
                     style: const TextStyle(
                       fontSize: 11,
                       color: AppColors.textSecondary,
@@ -337,30 +345,49 @@ class _QuizScreenState extends State<QuizScreen> {
                             ),
                             const Spacer(),
                             if (isAnswered)
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 8,
-                                  vertical: 3,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: selectedOption == q.answer
-                                      ? AppColors.successLight
-                                      : AppColors.errorLight,
-                                  borderRadius: BorderRadius.circular(6),
-                                ),
-                                child: Text(
-                                  selectedOption == q.answer
-                                      ? 'CORRECT'
-                                      : 'INCORRECT',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                    color: selectedOption == q.answer
-                                        ? AppColors.success
-                                        : AppColors.error,
-                                  ),
-                                ),
-                              ),
+                              widget.solutionMode == QuizSolutionMode.instant
+                                  ? Container(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 8,
+                                        vertical: 3,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: selectedOption == q.answer
+                                            ? AppColors.successLight
+                                            : AppColors.errorLight,
+                                        borderRadius: BorderRadius.circular(6),
+                                      ),
+                                      child: Text(
+                                        selectedOption == q.answer
+                                            ? 'CORRECT'
+                                            : 'INCORRECT',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                          color: selectedOption == q.answer
+                                              ? AppColors.success
+                                              : AppColors.error,
+                                        ),
+                                      ),
+                                    )
+                                  : Container(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 8,
+                                        vertical: 3,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: AppColors.primaryTint,
+                                        borderRadius: BorderRadius.circular(6),
+                                      ),
+                                      child: const Text(
+                                        'ANSWERED',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                          color: AppColors.primaryDark,
+                                        ),
+                                      ),
+                                    ),
                           ],
                         ),
                         const SizedBox(height: 12),
@@ -387,13 +414,15 @@ class _QuizScreenState extends State<QuizScreen> {
                           final optLetter = String.fromCharCode(65 + optIdx);
                           final optText = q.options[optIdx];
                           final isSelected = selectedOption == optIdx;
+                          final isInstant =
+                              widget.solutionMode == QuizSolutionMode.instant;
 
                           Color cardBg = Colors.white;
                           Color borderCol = AppColors.border;
                           Color badgeBg = AppColors.background;
                           Color badgeText = AppColors.textPrimary;
 
-                          if (isAnswered) {
+                          if (isInstant && isAnswered) {
                             if (optIdx == q.answer) {
                               // Highlight correct option in green
                               cardBg = AppColors.successLight.withValues(
@@ -477,8 +506,9 @@ class _QuizScreenState extends State<QuizScreen> {
                           );
                         }),
 
-                        // Instant Official JanGyan Explanation Card
-                        if (isAnswered) ...[
+                        // Instant Official JanGyan Explanation Card (Only in Instant Solutions Mode)
+                        if (widget.solutionMode == QuizSolutionMode.instant &&
+                            isAnswered) ...[
                           const SizedBox(height: 10),
                           Container(
                             padding: const EdgeInsets.all(14),
@@ -521,6 +551,39 @@ class _QuizScreenState extends State<QuizScreen> {
                                     fontSize: 13,
                                     color: AppColors.textPrimary,
                                     height: 1.4,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ] else if (widget.solutionMode ==
+                            QuizSolutionMode.afterTest) ...[
+                          const SizedBox(height: 14),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 14,
+                              vertical: 10,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.background,
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(color: AppColors.border),
+                            ),
+                            child: Row(
+                              children: const [
+                                Icon(
+                                  Icons.info_outline,
+                                  size: 16,
+                                  color: AppColors.textMuted,
+                                ),
+                                SizedBox(width: 8),
+                                Expanded(
+                                  child: Text(
+                                    'After Test Result Mode: Complete solutions & explanations will be revealed after submission.',
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      color: AppColors.textSecondary,
+                                    ),
                                   ),
                                 ),
                               ],

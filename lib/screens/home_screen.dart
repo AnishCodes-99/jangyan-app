@@ -404,18 +404,19 @@ class _HomeContentTab extends StatelessWidget {
                         ),
                       ),
                       onPressed: () async {
-                        final count = await AssessmentModeDialog.show(
+                        final config = await AssessmentModeDialog.show(
                           context,
                           categoryTitle: 'Cyber Safety & Digital Security',
                         );
-                        if (count != null && context.mounted) {
+                        if (config != null && context.mounted) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (_) => QuizScreen(
                                 categoryId: 'cyber_safety',
                                 categoryTitle: 'Cyber Safety & Digital Security',
-                                questionCount: count,
+                                questionCount: config.questionCount,
+                                solutionMode: config.solutionMode,
                               ),
                             ),
                           );
@@ -801,22 +802,30 @@ class _QuickQuizLauncherTabState extends State<_QuickQuizLauncherTab> {
                             ? 'Begin Complete 500-Question Exam 🔥'
                             : 'Begin $_selectedCount-Question Quiz',
                       ),
-                      onPressed: () {
+                      onPressed: () async {
                         String catTitle = 'Mixed Domains';
                         if (_selectedCategory != 'all_mixed') {
                           final c = repo.getCategoryById(_selectedCategory);
                           catTitle = c?.title ?? _selectedCategory;
                         }
-                        Navigator.push(
+                        final config = await AssessmentModeDialog.show(
                           context,
-                          MaterialPageRoute(
-                            builder: (_) => QuizScreen(
-                              categoryId: _selectedCategory,
-                              categoryTitle: catTitle,
-                              questionCount: _selectedCount,
-                            ),
-                          ),
+                          categoryTitle: catTitle,
+                          initialCount: _selectedCount,
                         );
+                        if (config != null && context.mounted) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => QuizScreen(
+                                categoryId: _selectedCategory,
+                                categoryTitle: catTitle,
+                                questionCount: config.questionCount,
+                                solutionMode: config.solutionMode,
+                              ),
+                            ),
+                          );
+                        }
                       },
                     ),
                   ],

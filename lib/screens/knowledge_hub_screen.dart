@@ -25,18 +25,19 @@ class KnowledgeHubScreen extends StatelessWidget {
             tooltip: 'Take Assessment (20 / 50 / 500 MCQs)',
             icon: const Icon(Icons.quiz_outlined),
             onPressed: () async {
-              final count = await AssessmentModeDialog.show(
+              final config = await AssessmentModeDialog.show(
                 context,
                 categoryTitle: category.title,
               );
-              if (count != null && context.mounted) {
+              if (config != null && context.mounted) {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (_) => QuizScreen(
                       categoryId: category.id,
                       categoryTitle: category.title,
-                      questionCount: count,
+                      questionCount: config.questionCount,
+                      solutionMode: config.solutionMode,
                     ),
                   ),
                 );

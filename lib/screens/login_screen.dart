@@ -53,10 +53,6 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  void _fillDemoCredentials(String email, String password) {
-    _emailController.text = email;
-    _passwordController.text = password;
-  }
 
   Future<void> _handleGoogleSignIn() async {
     FocusScope.of(context).unfocus();
@@ -310,74 +306,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             fontWeight: FontWeight.w700,
                             color: Color(0xFF1F2937),
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-
-                  // Quick Evaluation Demo Chips
-                  Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: AppColors.primaryTint.withValues(alpha: 0.5),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: AppColors.primary.withValues(alpha: 0.2),
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        const Text(
-                          'Quick Evaluation Credentials:',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.primaryDark,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            OutlinedButton.icon(
-                              style: OutlinedButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 6,
-                                ),
-                              ),
-                              onPressed: () => _fillDemoCredentials(
-                                'citizen@jangyan.in',
-                                'password123',
-                              ),
-                              icon: const Icon(Icons.person, size: 16),
-                              label: const Text(
-                                'Citizen Demo',
-                                style: TextStyle(fontSize: 12),
-                              ),
-                            ),
-                            OutlinedButton.icon(
-                              style: OutlinedButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 6,
-                                ),
-                              ),
-                              onPressed: () => _fillDemoCredentials(
-                                'admin@jangyan.in',
-                                'admin123',
-                              ),
-                              icon: const Icon(
-                                Icons.admin_panel_settings,
-                                size: 16,
-                              ),
-                              label: const Text(
-                                'Admin Demo',
-                                style: TextStyle(fontSize: 12),
-                              ),
-                            ),
-                          ],
                         ),
                       ],
                     ),

@@ -150,18 +150,19 @@ class CategorySelectionScreen extends StatelessWidget {
                                   style: TextStyle(fontSize: 13),
                                 ),
                                 onPressed: () async {
-                                  final count = await AssessmentModeDialog.show(
+                                  final config = await AssessmentModeDialog.show(
                                     context,
                                     categoryTitle: cat.title,
                                   );
-                                  if (count != null && context.mounted) {
+                                  if (config != null && context.mounted) {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                         builder: (_) => QuizScreen(
                                           categoryId: cat.id,
                                           categoryTitle: cat.title,
-                                          questionCount: count,
+                                          questionCount: config.questionCount,
+                                          solutionMode: config.solutionMode,
                                         ),
                                       ),
                                     );

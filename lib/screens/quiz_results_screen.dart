@@ -8,13 +8,19 @@ import '../core/app_colors.dart';
 import '../models/quiz_attempt.dart';
 import '../services/auth_service.dart';
 import '../services/certificate_saver.dart';
+import '../widgets/assessment_mode_dialog.dart';
 import 'home_screen.dart';
 import 'quiz_screen.dart';
 
 class QuizResultsScreen extends StatelessWidget {
   final QuizAttempt attempt;
+  final QuizSolutionMode solutionMode;
 
-  const QuizResultsScreen({super.key, required this.attempt});
+  const QuizResultsScreen({
+    super.key,
+    required this.attempt,
+    this.solutionMode = QuizSolutionMode.instant,
+  });
 
   String _getBadge(double acc) {
     if (acc >= 90) return 'Citizen Champion 🌟';
@@ -167,6 +173,40 @@ class QuizResultsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
+            if (solutionMode == QuizSolutionMode.afterTest) ...[
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: AppColors.primaryTint,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                    color: AppColors.primary.withValues(alpha: 0.3),
+                  ),
+                ),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.assignment_turned_in,
+                      color: AppColors.primary,
+                      size: 20,
+                    ),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        'After Test Result: Complete test solutions revealed below with correct answers and official explanations.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.primaryDark,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 14),
+            ],
+
             // Question Review Accordion Header
             const Text(
               'Detailed Question Review',
@@ -316,17 +356,26 @@ class QuizResultsScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () {
-                      Navigator.pushReplacement(
+                    onPressed: () async {
+                      final config = await AssessmentModeDialog.show(
                         context,
-                        MaterialPageRoute(
-                          builder: (_) => QuizScreen(
-                            categoryId: attempt.categoryId,
-                            categoryTitle: attempt.categoryTitle,
-                            questionCount: attempt.totalQuestions,
-                          ),
-                        ),
+                        categoryTitle: attempt.categoryTitle,
+                        initialCount: attempt.totalQuestions,
+                        initialMode: solutionMode,
                       );
+                      if (config != null && context.mounted) {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => QuizScreen(
+                              categoryId: attempt.categoryId,
+                              categoryTitle: attempt.categoryTitle,
+                              questionCount: config.questionCount,
+                              solutionMode: config.solutionMode,
+                            ),
+                          ),
+                        );
+                      }
                     },
                     child: const Text('Retake Quiz'),
                   ),
