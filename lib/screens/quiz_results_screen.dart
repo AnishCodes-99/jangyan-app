@@ -1,9 +1,13 @@
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../core/app_colors.dart';
 import '../models/quiz_attempt.dart';
 import '../services/auth_service.dart';
+import '../services/certificate_saver.dart';
 import 'home_screen.dart';
 import 'quiz_screen.dart';
 
@@ -29,131 +33,9 @@ class QuizResultsScreen extends StatelessWidget {
   void _showCertificateDialog(BuildContext context, String citizenName) {
     showDialog(
       context: context,
-      builder: (ctx) => Dialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Certificate Header
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 32,
-                    height: 32,
-                    padding: const EdgeInsets.all(4),
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Image.asset(
-                      'assets/images/logo.png',
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  const Text(
-                    'JanGyan Citizen Certificate',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.primaryDark,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 16),
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: AppColors.background,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppColors.border),
-                ),
-                child: Column(
-                  children: [
-                    const Text(
-                      'CERTIFICATE OF CITIZEN LITERACY',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1.2,
-                        color: AppColors.primary,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    const Text(
-                      'This is proudly awarded to:',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: AppColors.textSecondary,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      citizenName,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.primaryDark,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      'For successfully completing the ${attempt.categoryTitle} National Civic Assessment with an accuracy score of ${attempt.accuracy.toStringAsFixed(1)}%.',
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 12,
-                        color: AppColors.textPrimary,
-                        height: 1.4,
-                      ),
-                    ),
-                    const SizedBox(height: 14),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Date: ${attempt.timestamp.day}/${attempt.timestamp.month}/${attempt.timestamp.year}',
-                          style: const TextStyle(
-                            fontSize: 10,
-                            color: AppColors.textMuted,
-                          ),
-                        ),
-                        const Text(
-                          'Verified: JAN-GYAN-IND',
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.success,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 16),
-              ElevatedButton.icon(
-                icon: const Icon(Icons.share, size: 16),
-                label: const Text('Share / Save Certificate'),
-                onPressed: () {
-                  Navigator.pop(ctx);
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text(
-                        'JanGyan Verified Certificate copied to clipboard!',
-                      ),
-                      behavior: SnackBarBehavior.floating,
-                      backgroundColor: AppColors.success,
-                    ),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
+      builder: (ctx) => _CertificateDialog(
+        attempt: attempt,
+        citizenName: citizenName,
       ),
     );
   }
@@ -489,6 +371,375 @@ class QuizResultsScreen extends StatelessWidget {
           style: const TextStyle(fontSize: 11, color: AppColors.textSecondary),
         ),
       ],
+    );
+  }
+}
+
+class _CertificateDialog extends StatefulWidget {
+  final QuizAttempt attempt;
+  final String citizenName;
+
+  const _CertificateDialog({
+    required this.attempt,
+    required this.citizenName,
+  });
+
+  @override
+  State<_CertificateDialog> createState() => _CertificateDialogState();
+}
+
+class _CertificateDialogState extends State<_CertificateDialog> {
+  final GlobalKey _certKey = GlobalKey();
+  bool _isDownloading = false;
+
+  Future<Uint8List?> _captureCertificate() async {
+    try {
+      final boundary =
+          _certKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+      if (boundary == null) return null;
+      final ui.Image image = await boundary.toImage(pixelRatio: 3.0);
+      final byteData =
+          await image.toByteData(format: ui.ImageByteFormat.png);
+      return byteData?.buffer.asUint8List();
+    } catch (e) {
+      debugPrint('[_CertificateDialog] Capture error: $e');
+      return null;
+    }
+  }
+
+  Future<void> _handleDownload() async {
+    setState(() => _isDownloading = true);
+    try {
+      final pngBytes = await _captureCertificate();
+      if (pngBytes == null) throw Exception('Failed to generate high-resolution certificate image');
+
+      final savedPath = await CertificateSaver.saveCertificate(
+        pngBytes: pngBytes,
+        title: widget.attempt.categoryTitle,
+      );
+
+      if (mounted) {
+        Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Row(
+              children: [
+                const Icon(Icons.check_circle, color: Colors.white, size: 20),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    savedPath != null
+                        ? 'Certificate saved to Downloads: ${savedPath.split(RegExp(r"[/\\]")).last}'
+                        : 'Certificate downloaded successfully!',
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                ),
+              ],
+            ),
+            backgroundColor: AppColors.success,
+            behavior: SnackBarBehavior.floating,
+            duration: const Duration(seconds: 4),
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Download failed: $e'),
+            backgroundColor: AppColors.error,
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _isDownloading = false);
+    }
+  }
+
+  Future<void> _handleShare() async {
+    setState(() => _isDownloading = true);
+    try {
+      final pngBytes = await _captureCertificate();
+      if (pngBytes != null) {
+        await CertificateSaver.shareCertificate(
+          pngBytes: pngBytes,
+          title: widget.attempt.categoryTitle,
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _isDownloading = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final certId = widget.attempt.id.length >= 8
+        ? widget.attempt.id.substring(0, 8).toUpperCase()
+        : 'JG${DateTime.now().millisecondsSinceEpoch % 100000}';
+    final dateStr =
+        '${widget.attempt.timestamp.day.toString().padLeft(2, '0')}/${widget.attempt.timestamp.month.toString().padLeft(2, '0')}/${widget.attempt.timestamp.year}';
+
+    return Dialog(
+      insetPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      backgroundColor: Colors.white,
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(18),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Header title
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Row(
+                    children: [
+                      Icon(Icons.workspace_premium_rounded,
+                          color: Color(0xFFD4AF37), size: 26),
+                      SizedBox(width: 8),
+                      Text(
+                        'Verified Citizen Certificate',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.primaryDark,
+                        ),
+                      ),
+                    ],
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.close, size: 20),
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+
+              // Captured High-Res Certificate Widget
+              RepaintBoundary(
+                key: _certKey,
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFCFDFE),
+                    borderRadius: BorderRadius.circular(14),
+                    border: Border.all(color: const Color(0xFFD4AF37), width: 3),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.05),
+                        blurRadius: 10,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    children: [
+                      // Sub-border inside
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 14, vertical: 12),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              color: AppColors.primary.withValues(alpha: 0.35),
+                              width: 1),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          children: [
+                            // Logo and Title
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/images/logo.png',
+                                  width: 44,
+                                  height: 44,
+                                  fit: BoxFit.contain,
+                                ),
+                                const SizedBox(width: 10),
+                                const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'JANGYAN 🇮🇳',
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w900,
+                                        color: AppColors.primaryDark,
+                                        letterSpacing: 0.8,
+                                      ),
+                                    ),
+                                    Text(
+                                      'National Civic Literacy Initiative',
+                                      style: TextStyle(
+                                        fontSize: 9,
+                                        fontWeight: FontWeight.w600,
+                                        color: AppColors.textSecondary,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            const Text(
+                              'CERTIFICATE OF CIVIC MASTERY',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: 1.2,
+                                color: Color(0xFFB45309),
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            const Text(
+                              'This is proudly presented to',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontStyle: FontStyle.italic,
+                                color: AppColors.textSecondary,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              widget.citizenName.toUpperCase(),
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w900,
+                                color: AppColors.primaryDark,
+                                letterSpacing: 0.5,
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              'for completing the official ${widget.attempt.categoryTitle} assessment with demonstrated proficiency in Indian civic laws and citizen responsibilities.',
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 11,
+                                height: 1.35,
+                                color: AppColors.textPrimary,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            // Score & Accuracy Pill
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 14, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: AppColors.primaryTint,
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(
+                                    color: AppColors.primary.withValues(alpha: 0.3)),
+                              ),
+                              child: Text(
+                                'Score: ${widget.attempt.score}/${widget.attempt.totalQuestions} • Accuracy: ${widget.attempt.accuracy.toStringAsFixed(1)}%',
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w700,
+                                  color: AppColors.primaryDark,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 14),
+                            // Verification Footer
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Date: $dateStr',
+                                  style: const TextStyle(
+                                    fontSize: 9,
+                                    color: AppColors.textMuted,
+                                  ),
+                                ),
+                                Text(
+                                  'ID: JAN-GYAN-$certId',
+                                  style: const TextStyle(
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.success,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 16),
+
+              // Action buttons (Direct Download without Screenshot!)
+              Row(
+                children: [
+                  Expanded(
+                    flex: 6,
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.primary,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      icon: _isDownloading
+                          ? const SizedBox(
+                              width: 16,
+                              height: 16,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                color: Colors.white,
+                              ),
+                            )
+                          : const Icon(Icons.file_download_outlined, size: 20),
+                      label: Text(
+                        _isDownloading ? 'Saving...' : 'Download Certificate',
+                        style: const TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      onPressed: _isDownloading ? null : _handleDownload,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    flex: 4,
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: AppColors.primaryDark,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        side: const BorderSide(color: AppColors.border),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      icon: const Icon(Icons.share_outlined, size: 18),
+                      label: const Text(
+                        'Share',
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      onPressed: _isDownloading ? null : _handleShare,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

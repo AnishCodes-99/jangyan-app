@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
 import '../core/app_colors.dart';
@@ -134,33 +136,65 @@ class _ProfileScreenState extends State<ProfileScreen> {
               const Divider(),
               const SizedBox(height: 8),
 
-              // Image URL Option
+              const SizedBox(height: 12),
+              const Divider(),
+              const SizedBox(height: 8),
+
+              // Option 1: Gallery direct media pick
               ListTile(
                 contentPadding: EdgeInsets.zero,
                 leading: Container(
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: AppColors.primaryTint,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Icon(Icons.link, color: AppColors.primary, size: 22),
+                  child: const Icon(Icons.photo_library_rounded, color: AppColors.primary, size: 22),
                 ),
                 title: const Text(
-                  'Web Image URL',
-                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14),
+                  'Choose from Gallery',
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
                 ),
                 subtitle: const Text(
-                  'Paste image link from Gravatar, Google or Unsplash',
-                  style: TextStyle(fontSize: 11),
+                  'Pick your photo directly from device storage / media',
+                  style: TextStyle(fontSize: 12),
                 ),
                 trailing: const Icon(Icons.chevron_right, size: 20),
                 onTap: () {
                   Navigator.pop(ctx);
-                  _showImageUrlDialog(context);
+                  _pickProfileImage(context, ImageSource.gallery);
                 },
               ),
 
-              if (auth.currentUser?.photoUrl != null)
+              // Option 2: Camera photo
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: AppColors.accent.withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Icon(Icons.camera_alt_rounded, color: AppColors.accent, size: 22),
+                ),
+                title: const Text(
+                  'Take Photo with Camera',
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                ),
+                subtitle: const Text(
+                  'Capture a new picture directly using your camera',
+                  style: TextStyle(fontSize: 12),
+                ),
+                trailing: const Icon(Icons.chevron_right, size: 20),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  _pickProfileImage(context, ImageSource.camera);
+                },
+              ),
+
+              if (auth.currentUser?.photoUrl != null) ...[
+                const SizedBox(height: 8),
+                const Divider(),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
                   leading: Container(
@@ -197,6 +231,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     }
                   },
                 ),
+              ],
             ],
           ),
         );
@@ -204,48 +239,42 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  void _showImageUrlDialog(BuildContext context) {
-    final controller = TextEditingController();
-    showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Add Profile Picture URL'),
-        content: TextField(
-          controller: controller,
-          decoration: const InputDecoration(
-            labelText: 'Image Web URL',
-            hintText: 'https://images.unsplash.com/...',
-            prefixIcon: Icon(Icons.image_outlined),
+  Future<void> _pickProfileImage(BuildContext context, ImageSource source) async {
+    try {
+      final picker = ImagePicker();
+      final picked = await picker.pickImage(
+        source: source,
+        maxWidth: 512,
+        maxHeight: 512,
+        imageQuality: 85,
+      );
+      if (picked == null) return;
+      final bytes = await picked.readAsBytes();
+      final base64String = 'data:image/jpeg;base64,${base64Encode(bytes)}';
+      if (!context.mounted) return;
+      final auth = Provider.of<AuthService>(context, listen: false);
+      await auth.updateProfilePicture(base64String);
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Profile photo updated directly from device!'),
+            backgroundColor: AppColors.success,
+            behavior: SnackBarBehavior.floating,
           ),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
+        );
+      }
+    } catch (e) {
+      debugPrint('[ProfileScreen] Error picking media image: $e');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Could not access device media: $e'),
+            backgroundColor: AppColors.error,
+            behavior: SnackBarBehavior.floating,
           ),
-          ElevatedButton(
-            onPressed: () async {
-              final url = controller.text.trim();
-              if (url.isNotEmpty) {
-                await Provider.of<AuthService>(context, listen: false)
-                    .updateProfilePicture(url);
-                if (ctx.mounted) Navigator.pop(ctx);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Profile photo updated successfully!'),
-                      backgroundColor: AppColors.success,
-                      behavior: SnackBarBehavior.floating,
-                    ),
-                  );
-                }
-              }
-            },
-            child: const Text('Save'),
-          ),
-        ],
-      ),
-    );
+        );
+      }
+    }
   }
 
   void _showEditNameDialog(BuildContext context, String currentName) {
