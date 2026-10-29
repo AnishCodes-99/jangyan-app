@@ -20,7 +20,6 @@ class _SplashScreenState extends State<SplashScreen>
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
-  Timer? _navTimer;
 
   @override
   void initState() {
@@ -41,27 +40,35 @@ class _SplashScreenState extends State<SplashScreen>
     ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
 
     _controller.forward();
+    _startNavigationFlow();
+  }
 
-    _navTimer = Timer(const Duration(milliseconds: 350), () {
-      if (!mounted) return;
-      final auth = Provider.of<AuthService>(context, listen: false);
-      if (auth.isAuthenticated) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const HomeScreen()),
-        );
-      } else {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const LoginScreen()),
-        );
-      }
-    });
+  Future<void> _startNavigationFlow() async {
+    final auth = Provider.of<AuthService>(context, listen: false);
+
+    // Wait for auth initialization to complete AND ensure smooth splash presentation
+    await Future.wait([
+      Future.delayed(const Duration(milliseconds: 650)),
+      auth.isReady,
+    ]);
+
+    if (!mounted) return;
+
+    if (auth.isAuthenticated) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const HomeScreen()),
+      );
+    } else {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const LoginScreen()),
+      );
+    }
   }
 
   @override
   void dispose() {
-    _navTimer?.cancel();
     _controller.dispose();
     super.dispose();
   }
