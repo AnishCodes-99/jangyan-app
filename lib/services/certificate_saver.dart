@@ -180,4 +180,110 @@ class CertificateSaver {
 
     return results;
   }
+
+  /// Retrieves certificates specifically for the current citizen (by email or name),
+  /// merging Cloud Firestore and local device records.
+  static Future<List<Map<String, dynamic>>> getUserCertificates({
+    String? userEmail,
+    String? userName,
+  }) async {
+    final List<Map<String, dynamic>> results = [];
+    final Set<String> seenSerials = {};
+
+    final cleanEmail = (userEmail ?? '').toLowerCase().trim();
+    final cleanName = (userName ?? '').toLowerCase().trim();
+
+    // 1. Fetch from Cloud Firestore
+    final fs = FirebaseService.firestore;
+    if (fs != null) {
+      try {
+        final snapshot = await fs
+            .collection('certificates')
+            .orderBy('issuedAt', descending: true)
+            .get();
+        for (var doc in snapshot.docs) {
+          final data = doc.data();
+          final serial = data['serialNumber'] as String? ?? doc.id;
+          final certEmail = (data['citizenEmail'] as String? ?? '').toLowerCase().trim();
+          final certName = (data['citizenName'] as String? ?? '').toLowerCase().trim();
+
+          final matchEmail = cleanEmail.isNotEmpty && certEmail.isNotEmpty && certEmail == cleanEmail;
+          final matchName = cleanName.isNotEmpty && certName.isNotEmpty && certName == cleanName;
+
+          if ((matchEmail || matchName) && seenSerials.add(serial)) {
+            results.add(data);
+          }
+        }
+      } catch (e) {
+        debugPrint('[CertificateSaver] Firestore user certs notice: $e');
+      }
+    }
+
+    // 2. Merge local records
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      const localKey = 'jangyan_certificates_database';
+      final existing = prefs.getStringList(localKey) ?? [];
+      for (var item in existing) {
+        try {
+          final map = jsonDecode(item) as Map<String, dynamic>;
+          final serial = map['serialNumber'] as String? ?? '';
+          final certEmail = (map['citizenEmail'] as String? ?? '').toLowerCase().trim();
+          final certName = (map['citizenName'] as String? ?? '').toLowerCase().trim();
+
+          final matchEmail = cleanEmail.isNotEmpty && certEmail.isNotEmpty && certEmail == cleanEmail;
+          final matchName = cleanName.isNotEmpty && certName.isNotEmpty && certName == cleanName;
+
+          if (serial.isNotEmpty && (matchEmail || matchName || (cleanEmail.isEmpty && cleanName.isEmpty))) {
+            if (seenSerials.add(serial)) {
+              results.add(map);
+            }
+          }
+        } catch (_) {}
+      }
+    } catch (e) {
+      debugPrint('[CertificateSaver] Local user certs notice: $e');
+    }
+
+    // 3. Fallback: Automatically extract qualifying attempts (accuracy >= 70%) if none found in cert DB
+    if (results.isEmpty) {
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        final history = prefs.getStringList('jangyan_attempts_history') ?? [];
+        for (var item in history) {
+          try {
+            final map = jsonDecode(item) as Map<String, dynamic>;
+            final accuracy = (map['accuracy'] as num?)?.toDouble() ?? 0.0;
+            if (accuracy >= 70.0) {
+              final attemptId = map['attemptId'] as String? ?? '';
+              final rawId = attemptId.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '');
+              final shortId = rawId.length >= 8
+                  ? rawId.substring(0, 8).toUpperCase()
+                  : 'CERT${DateTime.now().millisecondsSinceEpoch % 1000000}';
+              final year = DateTime.now().year;
+              final serial = 'JGYN-$year-$shortId';
+
+              if (seenSerials.add(serial)) {
+                results.add({
+                  'serialNumber': serial,
+                  'citizenName': userName ?? 'Citizen',
+                  'citizenEmail': userEmail ?? '',
+                  'categoryTitle': map['categoryTitle'] ?? 'Civic Literacy',
+                  'categoryId': map['categoryId'] ?? 'civic_literacy',
+                  'score': map['score'] ?? 0,
+                  'totalQuestions': map['totalQuestions'] ?? 20,
+                  'accuracy': accuracy,
+                  'attemptId': attemptId,
+                  'issuedAt': map['timestamp'] ?? DateTime.now().toIso8601String(),
+                });
+              }
+            }
+          } catch (_) {}
+        }
+      } catch (_) {}
+    }
+
+    return results;
+  }
 }
+

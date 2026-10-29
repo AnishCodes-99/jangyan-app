@@ -5,9 +5,11 @@ import 'package:provider/provider.dart';
 
 import '../core/app_colors.dart';
 import '../services/auth_service.dart';
-import 'login_screen.dart';
-
+import '../services/certificate_saver.dart';
 import '../widgets/citizen_avatar.dart';
+import '../widgets/jan_gyan_certificate_dialog.dart';
+import 'category_selection_screen.dart';
+import 'login_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   final bool isRootTab;
@@ -18,6 +20,325 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  Future<List<Map<String, dynamic>>>? _userCertificatesFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadCertificates();
+    });
+  }
+
+  void _loadCertificates() {
+    if (!mounted) return;
+    final auth = Provider.of<AuthService>(context, listen: false);
+    setState(() {
+      _userCertificatesFuture = CertificateSaver.getUserCertificates(
+        userEmail: auth.currentUser?.email,
+        userName: auth.currentUser?.fullName,
+      );
+    });
+  }
+
+  void _showCertificationStatusModal(
+    BuildContext context,
+    List<Map<String, dynamic>> certs,
+    String citizenName,
+  ) {
+    if (certs.isEmpty) {
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+          title: const Row(
+            children: [
+              Icon(Icons.workspace_premium_outlined, color: AppColors.primary),
+              SizedBox(width: 8),
+              Text('Civic Certification'),
+            ],
+          ),
+          content: const Text(
+            'You haven\'t earned any certificates yet.\n\nScore 70% or higher in any 20-MCQ domain assessment to automatically earn and download your accredited JanGyan Citizen Certificate!',
+            style: TextStyle(fontSize: 13, height: 1.4),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Close'),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
+              onPressed: () {
+                Navigator.pop(ctx);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const CategorySelectionScreen()),
+                );
+              },
+              child: const Text('Take Assessment Now'),
+            ),
+          ],
+        ),
+      );
+    } else {
+      showModalBottomSheet(
+        context: context,
+        isScrollControlled: true,
+        backgroundColor: Colors.transparent,
+        builder: (ctx) => DraggableScrollableSheet(
+          initialChildSize: 0.75,
+          minChildSize: 0.45,
+          maxChildSize: 0.95,
+          builder: (_, scrollController) => Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            ),
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
+            child: ListView(
+              controller: scrollController,
+              children: [
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    margin: const EdgeInsets.only(bottom: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade300,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.workspace_premium_rounded,
+                          color: Color(0xFFD4AF37),
+                          size: 26,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          'Your Certificates (${certs.length})',
+                          style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.primaryDark,
+                          ),
+                        ),
+                      ],
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.close),
+                      onPressed: () => Navigator.pop(ctx),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                ...certs.map((c) => _buildCertificateCard(context, c, citizenName)),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+  }
+
+  Widget _buildCertificateCard(
+    BuildContext context,
+    Map<String, dynamic> cert,
+    String defaultCitizenName,
+  ) {
+    final title = cert['categoryTitle'] as String? ?? 'Civic Literacy';
+    final serial = cert['serialNumber'] as String? ?? 'JGYN-2026';
+    final score = cert['score'] ?? 0;
+    final total = cert['totalQuestions'] ?? 20;
+    final accuracy = (cert['accuracy'] as num?)?.toDouble() ?? 0.0;
+    final citizenName = (cert['citizenName'] as String?)?.isNotEmpty == true
+        ? cert['citizenName'] as String
+        : defaultCitizenName;
+
+    DateTime issuedDate = DateTime.now();
+    if (cert['issuedAt'] != null) {
+      try {
+        issuedDate = DateTime.parse(cert['issuedAt'].toString());
+      } catch (_) {}
+    }
+    final dateStr =
+        '${issuedDate.day.toString().padLeft(2, '0')}/${issuedDate.month.toString().padLeft(2, '0')}/${issuedDate.year}';
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: const Color(0xFFD4AF37).withValues(alpha: 0.5),
+          width: 1.5,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFFD4AF37).withValues(alpha: 0.08),
+            blurRadius: 10,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFFFBEB),
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: const Color(0xFFD4AF37),
+                    width: 1.5,
+                  ),
+                ),
+                child: const Icon(
+                  Icons.workspace_premium_rounded,
+                  color: Color(0xFFB45309),
+                  size: 26,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.primaryDark,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      'Serial: $serial',
+                      style: const TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFFB45309),
+                        letterSpacing: 0.4,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: AppColors.success.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '${accuracy.toStringAsFixed(1)}%',
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.success,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Text(
+            'Score: $score / $total • Issued: $dateStr',
+            style: const TextStyle(
+              fontSize: 11,
+              color: AppColors.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 14),
+          Row(
+            children: [
+              Expanded(
+                child: ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFFFB300),
+                    foregroundColor: const Color(0xFF0F172A),
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    elevation: 0,
+                  ),
+                  icon: const Icon(Icons.file_download_outlined, size: 18),
+                  label: const Text(
+                    'Download PNG',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  onPressed: () {
+                    JanGyanCertificateDialog.show(
+                      context,
+                      citizenName: citizenName,
+                      categoryTitle: title,
+                      score: score is int ? score : int.tryParse('$score') ?? 0,
+                      totalQuestions: total is int ? total : int.tryParse('$total') ?? 20,
+                      accuracy: accuracy,
+                      serialNumber: serial,
+                      issuedAt: issuedDate,
+                      autoDownload: true,
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: OutlinedButton.icon(
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.primaryDark,
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    side: const BorderSide(color: AppColors.border),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  icon: const Icon(Icons.visibility_outlined, size: 16),
+                  label: const Text(
+                    'View Framed',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onPressed: () {
+                    JanGyanCertificateDialog.show(
+                      context,
+                      citizenName: citizenName,
+                      categoryTitle: title,
+                      score: score is int ? score : int.tryParse('$score') ?? 0,
+                      totalQuestions: total is int ? total : int.tryParse('$total') ?? 20,
+                      accuracy: accuracy,
+                      serialNumber: serial,
+                      issuedAt: issuedDate,
+                      autoDownload: false,
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
   void _showAvatarOptionsModal(BuildContext context) {
     showModalBottomSheet(
       context: context,
@@ -371,7 +692,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
+      body: RefreshIndicator(
+        onRefresh: () async {
+          _loadCertificates();
+          await Future.delayed(const Duration(milliseconds: 300));
+        },
+        child: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
@@ -559,19 +885,65 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         _showEditNameDialog(context, user?.fullName ?? ''),
                   ),
                   const Divider(height: 1, indent: 56),
-                  ListTile(
-                    leading: const Icon(
-                      Icons.verified_user_outlined,
-                      color: AppColors.success,
-                    ),
-                    title: const Text('Civic Certification Status'),
-                    subtitle: Text(
-                      (user?.accuracy ?? 0) >= 75
-                          ? 'Certified Citizen'
-                          : 'Complete 20-MCQ Quiz to earn certificate',
-                      style: const TextStyle(fontSize: 11),
-                    ),
-                    trailing: const Icon(Icons.chevron_right),
+                  FutureBuilder<List<Map<String, dynamic>>>(
+                    future: _userCertificatesFuture,
+                    builder: (context, snapshot) {
+                      final certs = snapshot.data ?? [];
+                      final count = certs.length;
+                      return ListTile(
+                        leading: Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: count > 0
+                                ? const Color(0xFFFEF3C7)
+                                : AppColors.success.withValues(alpha: 0.1),
+                            shape: BoxShape.circle,
+                          ),
+                          child: Icon(
+                            count > 0
+                                ? Icons.workspace_premium_rounded
+                                : Icons.verified_user_outlined,
+                            color: count > 0
+                                ? const Color(0xFFD97706)
+                                : AppColors.success,
+                            size: 22,
+                          ),
+                        ),
+                        title: const Text('Civic Certification Status'),
+                        subtitle: Text(
+                          count > 0
+                              ? '$count Verified JanGyan Certificate${count > 1 ? 's' : ''} Earned 🏆'
+                              : 'No certificates yet • Score ≥70% in Quiz to earn',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: count > 0 ? FontWeight.w600 : FontWeight.normal,
+                            color: count > 0 ? const Color(0xFFB45309) : AppColors.textSecondary,
+                          ),
+                        ),
+                        trailing: count > 0
+                            ? Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFD4AF37),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Text(
+                                  '$count View',
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              )
+                            : const Icon(Icons.chevron_right),
+                        onTap: () => _showCertificationStatusModal(
+                          context,
+                          certs,
+                          user?.fullName ?? 'Citizen',
+                        ),
+                      );
+                    },
                   ),
                   const Divider(height: 1, indent: 56),
                   ListTile(
@@ -587,6 +959,160 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ],
               ),
+            ),
+
+            // Section: Verified Civic Certificates Inline Display
+            FutureBuilder<List<Map<String, dynamic>>>(
+              future: _userCertificatesFuture,
+              builder: (context, snapshot) {
+                final certs = snapshot.data ?? [];
+
+                if (snapshot.connectionState == ConnectionState.waiting && certs.isEmpty) {
+                  return const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    child: Center(
+                      child: SizedBox(
+                        width: 24,
+                        height: 24,
+                        child: CircularProgressIndicator(strokeWidth: 2),
+                      ),
+                    ),
+                  );
+                }
+
+                if (certs.isEmpty) {
+                  return Container(
+                    margin: const EdgeInsets.only(top: 14),
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(color: AppColors.border),
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFFEF3C7),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.workspace_premium_outlined,
+                            color: Color(0xFFD97706),
+                            size: 26,
+                          ),
+                        ),
+                        const SizedBox(width: 14),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                'No Certificates Earned Yet',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14,
+                                  color: AppColors.textPrimary,
+                                ),
+                              ),
+                              const SizedBox(height: 3),
+                              const Text(
+                                'Complete any 20-MCQ assessment with 70%+ score to earn and download your accredited JanGyan Certificate.',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  color: AppColors.textSecondary,
+                                  height: 1.3,
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (_) => const CategorySelectionScreen(),
+                                    ),
+                                  );
+                                },
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: const [
+                                    Text(
+                                      'Take Quiz to Earn Certificate',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                        color: AppColors.primary,
+                                      ),
+                                    ),
+                                    SizedBox(width: 4),
+                                    Icon(Icons.arrow_forward, size: 14, color: AppColors.primary),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }
+
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(
+                              Icons.workspace_premium_rounded,
+                              color: Color(0xFFD4AF37),
+                              size: 22,
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              'Your Verified Certificates (${certs.length})',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.primaryDark,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFFFFBEB),
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: const Color(0xFFD4AF37).withValues(alpha: 0.5),
+                            ),
+                          ),
+                          child: const Text(
+                            'Accredited',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFB45309),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    ...certs.map((c) => _buildCertificateCard(
+                          context,
+                          c,
+                          user?.fullName ?? 'Citizen',
+                        )),
+                  ],
+                );
+              },
             ),
             const SizedBox(height: 24),
 
@@ -604,8 +1130,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 
   Widget _buildStatBox(IconData icon, String count, String label, Color color) {
     return Column(
