@@ -126,8 +126,12 @@ class QuizService extends ChangeNotifier {
     }
   }
 
-  void selectAnswer(int optionIndex) {
+  void selectAnswer(int optionIndex, {bool isInstant = false}) {
     if (_isFinished || optionIndex < 0 || optionIndex > 3) return;
+    if (isInstant && _userAnswers.containsKey(_currentIndex)) {
+      debugPrint('[QuizService] Blocked 2nd chance attempt for question $_currentIndex');
+      return;
+    }
     _userAnswers[_currentIndex] = optionIndex;
     notifyListeners();
   }

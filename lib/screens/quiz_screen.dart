@@ -416,29 +416,139 @@ class _QuizScreenState extends State<QuizScreen> {
                           final isSelected = selectedOption == optIdx;
                           final isInstant =
                               widget.solutionMode == QuizSolutionMode.instant;
+                          final isCorrectOption = optIdx == q.answer;
 
                           Color cardBg = Colors.white;
                           Color borderCol = AppColors.border;
+                          double borderWidth = 1.5;
                           Color badgeBg = AppColors.background;
                           Color badgeText = AppColors.textPrimary;
+                          Widget? trailingBadge;
 
                           if (isInstant && isAnswered) {
-                            if (optIdx == q.answer) {
-                              // Highlight correct option in green
-                              cardBg = AppColors.successLight.withValues(
-                                alpha: 0.4,
-                              );
-                              borderCol = AppColors.success;
-                              badgeBg = AppColors.success;
+                            if (isSelected && isCorrectOption) {
+                              // User selected CORRECT option -> Vibrant Green
+                              cardBg = const Color(0xFFF0FDF4);
+                              borderCol = const Color(0xFF16A34A);
+                              borderWidth = 2.0;
+                              badgeBg = const Color(0xFF16A34A);
                               badgeText = Colors.white;
-                            } else if (isSelected && optIdx != q.answer) {
-                              // Highlight wrong selected in red
-                              cardBg = AppColors.errorLight.withValues(
-                                alpha: 0.4,
+                              trailingBadge = Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFDCFCE7),
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: const Color(0xFF16A34A),
+                                  ),
+                                ),
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      Icons.check_circle_rounded,
+                                      size: 14,
+                                      color: Color(0xFF16A34A),
+                                    ),
+                                    SizedBox(width: 4),
+                                    Text(
+                                      'Correct Answer',
+                                      style: TextStyle(
+                                        color: Color(0xFF15803D),
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               );
-                              borderCol = AppColors.error;
-                              badgeBg = AppColors.error;
+                            } else if (isSelected && !isCorrectOption) {
+                              // User selected WRONG option -> Red
+                              cardBg = const Color(0xFFFEF2F2);
+                              borderCol = const Color(0xFFDC2626);
+                              borderWidth = 2.0;
+                              badgeBg = const Color(0xFFDC2626);
                               badgeText = Colors.white;
+                              trailingBadge = Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFEE2E2),
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: const Color(0xFFDC2626),
+                                  ),
+                                ),
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      Icons.cancel_rounded,
+                                      size: 14,
+                                      color: Color(0xFFDC2626),
+                                    ),
+                                    SizedBox(width: 4),
+                                    Text(
+                                      'Your Choice (Incorrect)',
+                                      style: TextStyle(
+                                        color: Color(0xFFB91C1C),
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            } else if (isCorrectOption) {
+                              // The actual correct answer when user was wrong -> Green
+                              cardBg = const Color(0xFFF0FDF4);
+                              borderCol = const Color(0xFF16A34A);
+                              borderWidth = 2.0;
+                              badgeBg = const Color(0xFF16A34A);
+                              badgeText = Colors.white;
+                              trailingBadge = Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFDCFCE7),
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: const Color(0xFF16A34A),
+                                  ),
+                                ),
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      Icons.check_circle_rounded,
+                                      size: 14,
+                                      color: Color(0xFF16A34A),
+                                    ),
+                                    SizedBox(width: 4),
+                                    Text(
+                                      'Correct Answer',
+                                      style: TextStyle(
+                                        color: Color(0xFF15803D),
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            } else {
+                              // Other unselected options -> Muted
+                              cardBg = Colors.grey.shade50;
+                              borderCol = Colors.grey.shade200;
+                              badgeBg = Colors.grey.shade200;
+                              badgeText = Colors.grey.shade600;
                             }
                           } else if (isSelected) {
                             cardBg = AppColors.primaryTint;
@@ -450,9 +560,15 @@ class _QuizScreenState extends State<QuizScreen> {
                           return Padding(
                             padding: const EdgeInsets.only(bottom: 10),
                             child: InkWell(
-                              onTap: () {
-                                quiz.selectAnswer(optIdx);
-                              },
+                              // Strictly NO second chance: unclickable once answered in instant mode
+                              onTap: (isInstant && isAnswered)
+                                  ? null
+                                  : () {
+                                      quiz.selectAnswer(
+                                        optIdx,
+                                        isInstant: isInstant,
+                                      );
+                                    },
                               borderRadius: BorderRadius.circular(12),
                               child: Container(
                                 padding: const EdgeInsets.all(14),
@@ -461,11 +577,11 @@ class _QuizScreenState extends State<QuizScreen> {
                                   borderRadius: BorderRadius.circular(12),
                                   border: Border.all(
                                     color: borderCol,
-                                    width: 1.5,
+                                    width: borderWidth,
                                   ),
                                 ),
                                 child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Container(
                                       width: 28,
@@ -486,19 +602,24 @@ class _QuizScreenState extends State<QuizScreen> {
                                     ),
                                     const SizedBox(width: 12),
                                     Expanded(
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(top: 4),
-                                        child: Text(
-                                          optText,
-                                          style: const TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w500,
-                                            color: AppColors.textPrimary,
-                                            height: 1.35,
-                                          ),
+                                      child: Text(
+                                        optText,
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: (isInstant && isAnswered && (isSelected || isCorrectOption))
+                                              ? FontWeight.w700
+                                              : FontWeight.w500,
+                                          color: (isInstant && isAnswered && !isSelected && !isCorrectOption)
+                                              ? Colors.grey.shade600
+                                              : AppColors.textPrimary,
+                                          height: 1.35,
                                         ),
                                       ),
                                     ),
+                                    if (trailingBadge != null) ...[
+                                      const SizedBox(width: 8),
+                                      trailingBadge,
+                                    ],
                                   ],
                                 ),
                               ),
@@ -509,51 +630,340 @@ class _QuizScreenState extends State<QuizScreen> {
                         // Instant Official JanGyan Explanation Card (Only in Instant Solutions Mode)
                         if (widget.solutionMode == QuizSolutionMode.instant &&
                             isAnswered) ...[
-                          const SizedBox(height: 10),
-                          Container(
-                            padding: const EdgeInsets.all(14),
-                            decoration: BoxDecoration(
-                              color: AppColors.primaryTint.withValues(
-                                alpha: 0.6,
-                              ),
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: AppColors.primaryLight.withValues(
-                                  alpha: 0.3,
+                          const SizedBox(height: 8),
+                          if (selectedOption != q.answer) ...[
+                            // INCORRECT SELECTION: Red Warning Card + Green Correct Option + Official Reason
+                            Container(
+                              padding: const EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFFF1F2),
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: const Color(0xFFF43F5E),
+                                  width: 1.5,
                                 ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: const Color(0xFFE11D48).withValues(alpha: 0.08),
+                                    blurRadius: 10,
+                                    offset: const Offset(0, 3),
+                                  ),
+                                ],
                               ),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: const [
-                                    Icon(
-                                      Icons.lightbulb_outline,
-                                      size: 18,
-                                      color: AppColors.primary,
-                                    ),
-                                    SizedBox(width: 6),
-                                    Text(
-                                      'Official JanGyan Explanation',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold,
-                                        color: AppColors.primaryDark,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: const EdgeInsets.all(6),
+                                        decoration: const BoxDecoration(
+                                          color: Color(0xFFFEE2E2),
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: const Icon(
+                                          Icons.cancel_rounded,
+                                          size: 20,
+                                          color: Color(0xFFDC2626),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: const [
+                                            Text(
+                                              'Incorrect Selection • No 2nd Chance',
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w800,
+                                                color: Color(0xFF9F1239),
+                                              ),
+                                            ),
+                                            SizedBox(height: 2),
+                                            Text(
+                                              'Your answer is locked. Review the correct option and reason below:',
+                                              style: TextStyle(
+                                                fontSize: 11,
+                                                color: Color(0xFFBE123C),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 3,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFFFEE2E2),
+                                          borderRadius: BorderRadius.circular(8),
+                                          border: Border.all(
+                                            color: const Color(0xFFDC2626).withValues(alpha: 0.4),
+                                          ),
+                                        ),
+                                        child: const Text(
+                                          'Locked',
+                                          style: TextStyle(
+                                            color: Color(0xFF9F1239),
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 12),
+
+                                  // Prominent Green Correct Answer Box
+                                  Container(
+                                    width: double.infinity,
+                                    padding: const EdgeInsets.all(12),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFFF0FDF4),
+                                      borderRadius: BorderRadius.circular(12),
+                                      border: Border.all(
+                                        color: const Color(0xFF16A34A),
+                                        width: 1.5,
                                       ),
                                     ),
-                                  ],
-                                ),
-                                const SizedBox(height: 6),
-                                Text(
-                                  q.explanation,
-                                  style: const TextStyle(
-                                    fontSize: 13,
-                                    color: AppColors.textPrimary,
-                                    height: 1.4,
+                                    child: Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        const Icon(
+                                          Icons.check_circle_rounded,
+                                          color: Color(0xFF16A34A),
+                                          size: 20,
+                                        ),
+                                        const SizedBox(width: 8),
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              const Text(
+                                                'CORRECT OPTION:',
+                                                style: TextStyle(
+                                                  fontSize: 11,
+                                                  fontWeight: FontWeight.w800,
+                                                  color: Color(0xFF15803D),
+                                                  letterSpacing: 0.5,
+                                                ),
+                                              ),
+                                              const SizedBox(height: 3),
+                                              Text(
+                                                'Option ${String.fromCharCode(65 + q.answer)}: ${q.options[q.answer]}',
+                                                style: const TextStyle(
+                                                  fontSize: 14,
+                                                  fontWeight: FontWeight.w800,
+                                                  color: Color(0xFF14532D),
+                                                  height: 1.3,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
+                                  const SizedBox(height: 12),
+
+                                  // Official Reason & Citation
+                                  Row(
+                                    children: const [
+                                      Icon(
+                                        Icons.menu_book_rounded,
+                                        size: 16,
+                                        color: Color(0xFF9F1239),
+                                      ),
+                                      SizedBox(width: 6),
+                                      Text(
+                                        'Official JanGyan Reason & Citation:',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                          color: Color(0xFF9F1239),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 6),
+                                  Container(
+                                    width: double.infinity,
+                                    padding: const EdgeInsets.all(12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(color: const Color(0xFFFDA4AF)),
+                                    ),
+                                    child: Text(
+                                      q.explanation,
+                                      style: const TextStyle(
+                                        fontSize: 13,
+                                        color: AppColors.textPrimary,
+                                        height: 1.45,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ] else ...[
+                            // CORRECT SELECTION: Emerald Card + Reason
+                            Container(
+                              padding: const EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFF0FDF4),
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: const Color(0xFF16A34A),
+                                  width: 1.5,
                                 ),
-                              ],
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: const Color(0xFF16A34A).withValues(alpha: 0.08),
+                                    blurRadius: 10,
+                                    offset: const Offset(0, 3),
+                                  ),
+                                ],
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: const EdgeInsets.all(6),
+                                        decoration: const BoxDecoration(
+                                          color: Color(0xFFDCFCE7),
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: const Icon(
+                                          Icons.check_circle_rounded,
+                                          size: 20,
+                                          color: Color(0xFF16A34A),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: const [
+                                            Text(
+                                              'Correct Answer! Well Done 🎯',
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w800,
+                                                color: Color(0xFF14532D),
+                                              ),
+                                            ),
+                                            SizedBox(height: 2),
+                                            Text(
+                                              '🔒 1-Attempt Locked: Score recorded for this question.',
+                                              style: TextStyle(
+                                                fontSize: 11,
+                                                color: Color(0xFF15803D),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 3,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xFFDCFCE7),
+                                          borderRadius: BorderRadius.circular(8),
+                                          border: Border.all(
+                                            color: const Color(0xFF16A34A).withValues(alpha: 0.5),
+                                          ),
+                                        ),
+                                        child: const Text(
+                                          '+1 Mark',
+                                          style: TextStyle(
+                                            color: Color(0xFF15803D),
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 12),
+
+                                  // Official Reason & Citation
+                                  Row(
+                                    children: const [
+                                      Icon(
+                                        Icons.lightbulb_rounded,
+                                        size: 16,
+                                        color: Color(0xFF15803D),
+                                      ),
+                                      SizedBox(width: 6),
+                                      Text(
+                                        'Official JanGyan Reason & Citation:',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                          color: Color(0xFF15803D),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 6),
+                                  Container(
+                                    width: double.infinity,
+                                    padding: const EdgeInsets.all(12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(color: const Color(0xFF86EFAC)),
+                                    ),
+                                    child: Text(
+                                      q.explanation,
+                                      style: const TextStyle(
+                                        fontSize: 13,
+                                        color: AppColors.textPrimary,
+                                        height: 1.45,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                          const SizedBox(height: 12),
+                          SizedBox(
+                            width: double.infinity,
+                            child: ElevatedButton.icon(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.primary,
+                                foregroundColor: Colors.white,
+                                padding: const EdgeInsets.symmetric(vertical: 12),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                              ),
+                              icon: Icon(
+                                qIndex < quiz.totalQuestions - 1
+                                    ? Icons.arrow_forward_rounded
+                                    : Icons.done_all_rounded,
+                                size: 18,
+                              ),
+                              label: Text(
+                                qIndex < quiz.totalQuestions - 1
+                                    ? 'Proceed to Next Question (${qIndex + 2}/${quiz.totalQuestions})'
+                                    : 'Submit & View Assessment Results 🏆',
+                                style: const TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              onPressed: qIndex < quiz.totalQuestions - 1
+                                  ? quiz.nextQuestion
+                                  : _handleFinish,
                             ),
                           ),
                         ] else if (widget.solutionMode ==
