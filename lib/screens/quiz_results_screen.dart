@@ -1,4 +1,6 @@
+import 'dart:io' as io;
 import 'dart:ui' as ui;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -36,12 +38,17 @@ class QuizResultsScreen extends StatelessWidget {
     return AppColors.textSecondary;
   }
 
-  void _showCertificateDialog(BuildContext context, String citizenName) {
+  void _showCertificateDialog(
+    BuildContext context,
+    String citizenName, {
+    bool autoDownload = false,
+  }) {
     showDialog(
       context: context,
       builder: (ctx) => _CertificateDialog(
         attempt: attempt,
         citizenName: citizenName,
+        autoDownload: autoDownload,
       ),
     );
   }
@@ -162,14 +169,131 @@ class QuizResultsScreen extends StatelessWidget {
             const SizedBox(height: 14),
 
             // Certificate Generator Action Banner
-            ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primaryDark,
-                padding: const EdgeInsets.symmetric(vertical: 14),
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color(0xFF0D47A1), Color(0xFF1565C0)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.primary.withValues(alpha: 0.25),
+                    blurRadius: 12,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
               ),
-              icon: const Icon(Icons.card_membership, size: 20),
-              label: const Text('View & Download JanGyan Certificate'),
-              onPressed: () => _showCertificateDialog(context, citizenName),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.amber.withValues(alpha: 0.2),
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.workspace_premium_rounded,
+                          color: Color(0xFFFFD700),
+                          size: 26,
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Verified JanGyan Certificate',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.3,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              'Accredited for ${attempt.categoryTitle} (${attempt.accuracy.toStringAsFixed(1)}% Accuracy)',
+                              style: const TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 14),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: ElevatedButton.icon(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFFFFB300),
+                            foregroundColor: const Color(0xFF0F172A),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            elevation: 0,
+                          ),
+                          icon: const Icon(Icons.file_download_outlined, size: 20),
+                          label: const Text(
+                            'Download Certificate',
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          onPressed: () => _showCertificateDialog(
+                            context,
+                            citizenName,
+                            autoDownload: true,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      ElevatedButton.icon(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white.withValues(alpha: 0.15),
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 14,
+                            vertical: 12,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(
+                              color: Colors.white.withValues(alpha: 0.3),
+                            ),
+                          ),
+                          elevation: 0,
+                        ),
+                        icon: const Icon(Icons.visibility_outlined, size: 18),
+                        label: const Text(
+                          'View',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        onPressed: () => _showCertificateDialog(
+                          context,
+                          citizenName,
+                          autoDownload: false,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 20),
 
@@ -427,10 +551,12 @@ class QuizResultsScreen extends StatelessWidget {
 class _CertificateDialog extends StatefulWidget {
   final QuizAttempt attempt;
   final String citizenName;
+  final bool autoDownload;
 
   const _CertificateDialog({
     required this.attempt,
     required this.citizenName,
+    this.autoDownload = false,
   });
 
   @override
@@ -440,6 +566,7 @@ class _CertificateDialog extends StatefulWidget {
 class _CertificateDialogState extends State<_CertificateDialog> {
   final GlobalKey _certKey = GlobalKey();
   bool _isDownloading = false;
+  bool _hasDownloaded = false;
   late String _serialNumber;
 
   @override
@@ -467,14 +594,29 @@ class _CertificateDialogState extends State<_CertificateDialog> {
         accuracy: widget.attempt.accuracy,
         attemptId: widget.attempt.attemptId,
       );
+
+      // Auto-trigger direct download if user clicked Download Certificate from results screen
+      if (widget.autoDownload) {
+        Future.delayed(const Duration(milliseconds: 350), () {
+          if (mounted) _handleDownload();
+        });
+      }
     });
   }
 
   Future<Uint8List?> _captureCertificate() async {
     try {
-      final boundary =
+      await WidgetsBinding.instance.endOfFrame;
+      var boundary =
           _certKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+      if (boundary == null) {
+        await Future.delayed(const Duration(milliseconds: 150));
+        boundary = _certKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+      }
       if (boundary == null) return null;
+      if (boundary.debugNeedsPaint) {
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
       final ui.Image image = await boundary.toImage(pixelRatio: 3.0);
       final byteData =
           await image.toByteData(format: ui.ImageByteFormat.png);
@@ -486,10 +628,13 @@ class _CertificateDialogState extends State<_CertificateDialog> {
   }
 
   Future<void> _handleDownload() async {
+    if (_isDownloading) return;
     setState(() => _isDownloading = true);
     try {
       final pngBytes = await _captureCertificate();
-      if (pngBytes == null) throw Exception('Failed to generate high-resolution certificate image');
+      if (pngBytes == null) {
+        throw Exception('Failed to generate high-resolution certificate image. Please try again.');
+      }
 
       final savedPath = await CertificateSaver.saveCertificate(
         pngBytes: pngBytes,
@@ -497,20 +642,41 @@ class _CertificateDialogState extends State<_CertificateDialog> {
         serialNumber: _serialNumber,
       );
 
+      if (savedPath == null) {
+        throw Exception('Failed to save certificate to downloads.');
+      }
+
       if (mounted) {
-        Navigator.pop(context);
+        setState(() {
+          _isDownloading = false;
+          _hasDownloaded = true;
+        });
+
+        final fileName = savedPath.split(RegExp(r"[/\\]")).last;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Row(
               children: [
-                const Icon(Icons.check_circle, color: Colors.white, size: 20),
-                const SizedBox(width: 10),
+                const Icon(Icons.check_circle, color: Colors.white, size: 22),
+                const SizedBox(width: 12),
                 Expanded(
-                  child: Text(
-                    savedPath != null
-                        ? 'Certificate saved to Downloads: ${savedPath.split(RegExp(r"[/\\]")).last}'
-                        : 'Certificate downloaded successfully! (Serial: $_serialNumber)',
-                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Certificate Downloaded Directly! 🎉',
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                      ),
+                      Text(
+                        kIsWeb
+                            ? 'Saved to browser Downloads ($fileName)'
+                            : 'Saved to Downloads: $fileName',
+                        style: const TextStyle(fontSize: 11, color: Colors.white70),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -518,11 +684,19 @@ class _CertificateDialogState extends State<_CertificateDialog> {
             backgroundColor: AppColors.success,
             behavior: SnackBarBehavior.floating,
             duration: const Duration(seconds: 4),
+            action: (!kIsWeb && io.Platform.isAndroid)
+                ? SnackBarAction(
+                    label: 'SHARE',
+                    textColor: Colors.white,
+                    onPressed: _handleShare,
+                  )
+                : null,
           ),
         );
       }
     } catch (e) {
       if (mounted) {
+        setState(() => _isDownloading = false);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Download failed: $e'),
@@ -531,8 +705,6 @@ class _CertificateDialogState extends State<_CertificateDialog> {
           ),
         );
       }
-    } finally {
-      if (mounted) setState(() => _isDownloading = false);
     }
   }
 
@@ -762,7 +934,9 @@ class _CertificateDialogState extends State<_CertificateDialog> {
                     flex: 6,
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.primary,
+                        backgroundColor: _hasDownloaded
+                            ? AppColors.success
+                            : AppColors.primary,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         shape: RoundedRectangleBorder(
@@ -778,9 +952,18 @@ class _CertificateDialogState extends State<_CertificateDialog> {
                                 color: Colors.white,
                               ),
                             )
-                          : const Icon(Icons.file_download_outlined, size: 20),
+                          : Icon(
+                              _hasDownloaded
+                                  ? Icons.check_circle_outline
+                                  : Icons.file_download_outlined,
+                              size: 20,
+                            ),
                       label: Text(
-                        _isDownloading ? 'Saving...' : 'Download Certificate',
+                        _isDownloading
+                            ? 'Downloading...'
+                            : (_hasDownloaded
+                                ? 'Downloaded (Download Again)'
+                                : 'Download Certificate'),
                         style: const TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.bold,

@@ -5,13 +5,13 @@ import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import 'downloader/certificate_downloader.dart';
 import 'firebase_service.dart';
 
 class CertificateSaver {
-  /// Saves the rendered PNG certificate directly to device storage.
-  /// Returns the saved absolute file path on mobile or a success message on Web.
+  /// Saves the rendered PNG certificate directly to device storage or browser Downloads.
+  /// Returns the saved absolute file path on mobile/desktop, or the filename on Web.
   static Future<String?> saveCertificate({
     required Uint8List pngBytes,
     required String title,
@@ -23,41 +23,12 @@ class CertificateSaver {
         : '${DateTime.now().millisecondsSinceEpoch}';
     final filename = 'JanGyan_Certificate_${sanitizedTitle}_$suffix.png';
 
-    if (kIsWeb) {
-      try {
-        final uri = Uri.dataFromBytes(pngBytes, mimeType: 'image/png');
-        await launchUrl(uri);
-        return 'Certificate downloaded in browser!';
-      } catch (e) {
-        debugPrint('[CertificateSaver] Web download notice: $e');
-        return null;
-      }
-    }
-
     try {
-      // 1. Android public Download folder (/storage/emulated/0/Download)
-      if (io.Platform.isAndroid) {
-        final publicDownload = io.Directory('/storage/emulated/0/Download');
-        if (await publicDownload.exists()) {
-          final target = io.File('${publicDownload.path}/$filename');
-          await target.writeAsBytes(pngBytes, flush: true);
-          return target.path;
-        }
-      }
-
-      // 2. Standard downloads directory
-      final downloadsDir = await getDownloadsDirectory();
-      if (downloadsDir != null) {
-        final target = io.File('${downloadsDir.path}/$filename');
-        await target.writeAsBytes(pngBytes, flush: true);
-        return target.path;
-      }
-
-      // 3. Application Documents Directory fallback
-      final appDir = await getApplicationDocumentsDirectory();
-      final target = io.File('${appDir.path}/$filename');
-      await target.writeAsBytes(pngBytes, flush: true);
-      return target.path;
+      final savedResult = await downloadCertificateFile(
+        bytes: pngBytes,
+        filename: filename,
+      );
+      return savedResult;
     } catch (e) {
       debugPrint('[CertificateSaver] Error saving certificate: $e');
       return null;
@@ -71,13 +42,14 @@ class CertificateSaver {
     String? serialNumber,
   }) async {
     final sanitizedTitle = title.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '_');
-    final filename = serialNumber != null
-        ? 'JanGyan_Certificate_${serialNumber.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '_')}.png'
-        : 'JanGyan_Certificate_$sanitizedTitle.png';
+    final suffix = serialNumber != null
+        ? serialNumber.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '_')
+        : '${DateTime.now().millisecondsSinceEpoch}';
+    final filename = 'JanGyan_Certificate_${sanitizedTitle}_$suffix.png';
 
     if (kIsWeb) {
-      final uri = Uri.dataFromBytes(pngBytes, mimeType: 'image/png');
-      await launchUrl(uri);
+      // On web, direct download triggers immediately
+      await downloadCertificateFile(bytes: pngBytes, filename: filename);
       return;
     }
 
